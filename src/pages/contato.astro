@@ -1,0 +1,27 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { site } from "../lib/site";
+---
+
+<BaseLayout
+  title="Contato"
+  description={`Fale com a ${site.company} pelo e-mail ${site.email}.`}
+  path="/contato"
+>
+  <section class="section">
+    <div class="container prose">
+      <p class="eyebrow">Contato</p>
+      <h1>Vamos conversar</h1>
+      <p>
+        Dúvida sobre os produtos, proposta ou parceria: escreva para
+        <a href={`mailto:${site.email}`}>{site.email}</a>.
+      </p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  h1 { margin-block: var(--space-4) var(--space-6); font-size: var(--text-3xl); }
+  p { color: var(--text-2); }
+  a { color: var(--accent); font-weight: 600; }
+</style>

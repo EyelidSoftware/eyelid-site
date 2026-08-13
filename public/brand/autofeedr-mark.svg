@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="76 48 465 465" fill="none">
+  <title>Logo AF</title>
+  <desc>Logo AF vetorial, fundo transparente. Cores: #ec7b17, #ce5705, #bc4905.</desc>
+  <defs>
+    <linearGradient id="base" x1="118" y1="407" x2="489" y2="154" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ce5705"/>
+      <stop offset="0.52" stop-color="#ec7b17"/>
+      <stop offset="1" stop-color="#ec7b17"/>
+    </linearGradient>
+    <linearGradient id="leftFold" x1="188" y1="146" x2="242" y2="302" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#bc4905"/>
+      <stop offset="1" stop-color="#ce5705"/>
+    </linearGradient>
+    <linearGradient id="stemFold" x1="329" y1="221" x2="391" y2="221" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ce5705"/>
+      <stop offset="1" stop-color="#bc4905"/>
+    </linearGradient>
+    <linearGradient id="bottomFold" x1="304" y1="336" x2="365" y2="427" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ce5705"/>
+      <stop offset="0.52" stop-color="#bc4905"/>
+      <stop offset="1" stop-color="#ce5705"/>
+    </linearGradient>
+    <clipPath id="clipLogo">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="
+        M 516 128
+        C 521 128 522 133 519 140
+        L 497 182
+        C 494 189 489 194 480 194
+        L 391 194
+        L 391 247
+        L 472 247
+        C 479 247 483 253 480 259
+        L 454 305
+        C 451 311 446 314 438 314
+        L 391 314
+        L 391 404
+        C 391 421 381 431 365 431
+        L 323 431
+        C 314 431 309 427 306 419
+        L 287 371
+        L 202 371
+        L 186 419
+        C 183 428 178 433 170 433
+        L 107 433
+        C 99 433 95 427 98 417
+        L 188 146
+        C 191 136 194 130 201 130
+        L 270 130
+        C 278 130 281 134 284 143
+        L 320 251
+        C 323 259 327 259 328 254
+        L 328 209
+        C 328 202 331 196 336 189
+        L 366 145
+        C 374 133 382 128 395 128
+        Z
+        M 240 246
+        C 244 246 246 249 247 253
+        L 265 308
+        C 267 312 264 314 260 314
+        L 220 314
+        Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Silhueta principal -->
+  <path fill="url(#base)" fill-rule="evenodd" clip-rule="evenodd" d="
+    M 516 128
+    C 521 128 522 133 519 140
+    L 497 182
+    C 494 189 489 194 480 194
+    L 391 194
+    L 391 247
+    L 472 247
+    C 479 247 483 253 480 259
+    L 454 305
+    C 451 311 446 314 438 314
+    L 391 314
+    L 391 404
+    C 391 421 381 431 365 431
+    L 323 431
+    C 314 431 309 427 306 419
+    L 287 371
+    L 202 371
+    L 186 419
+    C 183 428 178 433 170 433
+    L 107 433
+    C 99 433 95 427 98 417
+    L 188 146
+    C 191 136 194 130 201 130
+    L 270 130
+    C 278 130 281 134 284 143
+    L 320 251
+    C 323 259 327 259 328 254
+    L 328 209
+    C 328 202 331 196 336 189
+    L 366 145
+    C 374 133 382 128 395 128
+    Z
+    M 240 246
+    C 244 246 246 249 247 253
+    L 265 308
+    C 267 312 264 314 260 314
+    L 220 314
+    Z"/>
+
+  <g clip-path="url(#clipLogo)">
+    <!-- sombra interna do A -->
+    <path d="M 198 130 C 207 130 212 140 216 153 L 243 244 L 220 314 L 194 314 L 159 300 L 188 150 C 191 137 194 131 198 130 Z" fill="url(#leftFold)"/>
+
+    <!-- face frontal clara da perna direita do A -->
+    <path d="M 202 130 L 270 130 C 278 130 281 135 284 144 L 327 333 L 276 333 L 214 151 C 211 140 207 133 202 130 Z" fill="#ec7b17"/>
+
+    <!-- barra do A -->
+    <path d="M 201 314 L 271 314 L 289 371 L 186 371 L 194 333 C 196 322 198 317 201 314 Z" fill="#ec7b17"/>
+    <path d="M 184 371 C 177 371 173 377 177 382 C 181 387 190 390 197 391 L 202 371 Z" fill="#bc4905"/>
+
+    <!-- dobra vertical superior do F -->
+    <path d="M 328 209 C 328 200 336 194 347 194 L 391 194 L 391 247 L 351 247 C 340 247 332 253 328 264 Z" fill="url(#stemFold)"/>
+
+    <!-- barras frontais do F -->
+    <path d="M 391 128 L 516 128 C 521 128 522 133 519 140 L 497 182 C 494 189 489 194 480 194 L 391 194 Z" fill="#ec7b17"/>
+    <path d="M 391 247 L 472 247 C 479 247 483 253 480 259 L 454 305 C 451 311 446 314 438 314 L 391 314 Z" fill="#ec7b17"/>
+
+    <!-- dobra inferior / curva -->
+    <path d="M 287 333 L 391 333 L 391 404 C 391 421 381 431 365 431 L 323 431 C 314 431 309 427 306 419 L 287 371 Z" fill="#ce5705"/>
+    <path d="M 306 333 L 333 333 L 330 397 C 330 413 326 425 319 428 C 313 430 308 424 305 414 L 287 371 L 287 333 Z" fill="url(#bottomFold)"/>
+
+    <!-- luz frontal da haste inferior -->
+    <path d="M 331 333 L 391 333 L 391 404 C 391 421 381 431 365 431 L 326 431 C 335 425 338 415 338 402 Z" fill="#ec7b17" opacity="0.70"/>
+  </g>
+</svg>

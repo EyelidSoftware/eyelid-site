@@ -1,0 +1,78 @@
+---
+/**
+ * Todo o <head> de SEO de uma página.
+ *
+ * É o motivo de termos escolhido Astro: estas tags saem no HTML servido, sem
+ * depender de JavaScript. Os robôs do LinkedIn, WhatsApp e Slack não executam
+ * JS — se as tags Open Graph fossem montadas no navegador, o card de
+ * compartilhamento sairia vazio. Num produto que se divulga no LinkedIn, isso
+ * seria o pior lugar para falhar.
+ */
+import { site, absoluteUrl } from "../lib/site";
+
+interface Props {
+  title: string;
+  description: string;
+  /** Caminho relativo desta página, ex.: "/autofeedr". */
+  path?: string;
+  /** Imagem do card social. Relativa ao site; 1200x630 é o formato esperado. */
+  image?: string;
+  type?: "website" | "article";
+  /** Marca a página como não indexável (obrigado, páginas de rascunho). */
+  noindex?: boolean;
+  /** JSON-LD extra, além da Organization que já vai em toda página. */
+  schema?: Record<string, unknown>;
+}
+
+const {
+  title,
+  description,
+  path = Astro.url.pathname,
+  image = "/og/default.png",
+  type = "website",
+  noindex = false,
+  schema,
+} = Astro.props;
+
+// Título da home fica só "Eyelid — tagline"; internas ganham o sufixo.
+const isHome = path === "/";
+const fullTitle = isHome ? `${site.company} — ${site.tagline}` : `${title} | ${site.company}`;
+
+const canonical = absoluteUrl(path);
+const imageUrl = absoluteUrl(image);
+
+const organization = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: site.company,
+  legalName: site.legalName,
+  url: site.url,
+  logo: absoluteUrl("/brand/eyelid-mark.svg"),
+  email: site.email,
+  sameAs: Object.values(site.social).filter(Boolean),
+};
+---
+
+<title>{fullTitle}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+
+{noindex && <meta name="robots" content="noindex, nofollow" />}
+
+<meta property="og:site_name" content={site.company} />
+<meta property="og:type" content={type} />
+<meta property="og:title" content={fullTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<meta property="og:image" content={imageUrl} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content={site.locale.replace("-", "_")} />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={fullTitle} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={imageUrl} />
+
+<script is:inline type="application/ld+json" set:html={JSON.stringify(organization)} />
+{schema && <script is:inline type="application/ld+json" set:html={JSON.stringify(schema)} />}

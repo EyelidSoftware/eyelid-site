@@ -1,0 +1,26 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { site } from "../lib/site";
+---
+
+<BaseLayout
+  title="Sobre"
+  description={`Quem é a ${site.company} e por que construímos produtos de automação.`}
+  path="/sobre"
+>
+  <section class="section">
+    <div class="container prose">
+      <p class="eyebrow">Sobre</p>
+      <h1>A {site.company}</h1>
+      <p>
+        Esta página ainda vai receber a história da empresa, o time e o que nos
+        move. Estrutura pronta, conteúdo pendente.
+      </p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  h1 { margin-block: var(--space-4) var(--space-6); font-size: var(--text-3xl); }
+  p { color: var(--text-2); }
+</style>

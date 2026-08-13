@@ -1,0 +1,94 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { site, products } from "../lib/site";
+---
+
+<BaseLayout title="Início" description={site.description} path="/">
+  <section class="hero section">
+    <div class="container">
+      <p class="eyebrow">{site.company}</p>
+      <h1>{site.tagline}</h1>
+      <p class="hero__lead prose">{site.description}</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href={`/${products[0].slug}`}>Conhecer o AutoFeedr</a>
+        <a class="btn btn--ghost" href="/contato">Falar com a gente</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Nossos produtos</h2>
+      <div class="products">
+        {products.map((product) => (
+          <article class="card product">
+            <img src={`/brand/${product.slug}-mark.svg`} alt="" width="44" height="44" />
+            <h3>{product.name}</h3>
+            <p class="product__tagline">{product.tagline}</p>
+            <p class="product__summary">{product.summary}</p>
+            <a class="product__link" href={`/${product.slug}`}>
+              Ver detalhes <span aria-hidden="true">→</span>
+            </a>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero {
+    padding-block: var(--space-24) var(--space-16);
+  }
+
+  .hero h1 {
+    margin-block: var(--space-4) var(--space-6);
+    font-size: clamp(2.2rem, 6vw, var(--text-4xl));
+    max-width: 18ch;
+  }
+
+  .hero__lead {
+    font-size: var(--text-lg);
+    color: var(--text-2);
+  }
+
+  .hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    margin-top: var(--space-8);
+  }
+
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-6);
+    margin-top: var(--space-8);
+  }
+
+  .product h3 {
+    margin-block: var(--space-4) var(--space-2);
+    font-size: var(--text-xl);
+  }
+
+  .product__tagline {
+    color: var(--accent);
+    font-weight: 600;
+    font-size: var(--text-sm);
+  }
+
+  .product__summary {
+    margin-block: var(--space-4);
+    color: var(--text-2);
+    font-size: var(--text-sm);
+  }
+
+  .product__link {
+    font-weight: 600;
+    font-size: var(--text-sm);
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  .product__link:hover { text-decoration: underline; }
+</style>

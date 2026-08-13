@@ -1,0 +1,24 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Página não encontrada"
+  description="O endereço acessado não existe."
+  path="/404"
+  noindex
+>
+  <section class="section">
+    <div class="container prose">
+      <p class="eyebrow">Erro 404</p>
+      <h1>Não encontramos esta página</h1>
+      <p>O endereço pode ter mudado ou nunca ter existido.</p>
+      <a class="btn btn--primary" href="/">Voltar ao início</a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  h1 { margin-block: var(--space-4) var(--space-6); font-size: var(--text-3xl); }
+  p { color: var(--text-2); margin-bottom: var(--space-8); }
+</style>

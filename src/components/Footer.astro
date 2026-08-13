@@ -1,0 +1,113 @@
+---
+import { site, products } from "../lib/site";
+
+const year = new Date().getFullYear();
+const socialLinks = Object.entries(site.social).filter(([, url]) => url);
+const labels: Record<string, string> = {
+  linkedin: "LinkedIn",
+  github: "GitHub",
+  instagram: "Instagram",
+};
+---
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div>
+      <a class="footer__brand" href="/">
+        <img src="/brand/eyelid-mark.svg" alt="" width="26" height="26" />
+        <span>{site.company}</span>
+      </a>
+      <p class="footer__tagline">{site.tagline}</p>
+    </div>
+
+    <nav class="footer__group" aria-label="Produtos">
+      <h2>Produtos</h2>
+      {products.map((product) => <a href={`/${product.slug}`}>{product.name}</a>)}
+    </nav>
+
+    <nav class="footer__group" aria-label="Empresa">
+      <h2>Empresa</h2>
+      <a href="/sobre">Sobre</a>
+      <a href="/contato">Contato</a>
+      <a href={`mailto:${site.email}`}>{site.email}</a>
+    </nav>
+
+    {socialLinks.length > 0 && (
+      <nav class="footer__group" aria-label="Redes sociais">
+        <h2>Redes</h2>
+        {socialLinks.map(([key, url]) => (
+          <a href={url} rel="me noopener">{labels[key] ?? key}</a>
+        ))}
+      </nav>
+    )}
+  </div>
+
+  <div class="container footer__legal">
+    <p>© {year} {site.legalName}. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    margin-top: var(--space-24);
+    border-top: 1px solid var(--border);
+    background: var(--bg-subtle);
+    padding-block: var(--space-16) var(--space-8);
+  }
+
+  .footer__inner {
+    display: grid;
+    grid-template-columns: 2fr repeat(auto-fit, minmax(140px, 1fr));
+    gap: var(--space-12);
+  }
+
+  .footer__brand {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .footer__tagline {
+    margin-top: var(--space-3);
+    max-width: 34ch;
+    color: var(--text-2);
+    font-size: var(--text-sm);
+  }
+
+  .footer__group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    font-size: var(--text-sm);
+  }
+
+  .footer__group h2 {
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-3);
+    margin-bottom: var(--space-2);
+  }
+
+  .footer__group a {
+    color: var(--text-2);
+    text-decoration: none;
+    transition: color var(--transition);
+  }
+
+  .footer__group a:hover { color: var(--accent); }
+
+  .footer__legal {
+    margin-top: var(--space-12);
+    padding-top: var(--space-6);
+    border-top: 1px solid var(--border);
+    color: var(--text-3);
+    font-size: var(--text-xs);
+  }
+
+  @media (max-width: 720px) {
+    .footer__inner { grid-template-columns: 1fr 1fr; gap: var(--space-8); }
+  }
+</style>

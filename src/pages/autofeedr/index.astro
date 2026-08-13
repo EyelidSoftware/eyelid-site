@@ -1,0 +1,74 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PricingTable from "../../components/PricingTable.astro";
+import { productBySlug, absoluteUrl } from "../../lib/site";
+import { fetchPlans } from "../../lib/plans";
+
+const product = productBySlug("autofeedr")!;
+const { plans, live } = await fetchPlans();
+
+// JSON-LD de produto de software: é o que faz o Google entender a página
+// como um produto com preço, e não como um texto qualquer.
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: product.name,
+  applicationCategory: "BusinessApplication",
+  operatingSystem: "Web",
+  description: product.summary,
+  url: absoluteUrl("/autofeedr"),
+  offers: plans.map((plan) => ({
+    "@type": "Offer",
+    name: plan.plan_type,
+    price: (plan.price_cents / 100).toFixed(2),
+    priceCurrency: "BRL",
+    availability: "https://schema.org/InStock",
+  })),
+};
+---
+
+<BaseLayout
+  title={product.name}
+  description={product.summary}
+  path="/autofeedr"
+  schema={schema}
+>
+  <section class="hero section">
+    <div class="container">
+      <img src="/brand/autofeedr-mark.svg" alt="" width="60" height="60" />
+      <h1>{product.tagline}</h1>
+      <p class="hero__lead prose">{product.summary}</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href={product.appUrl}>Começar agora</a>
+        <a class="btn btn--ghost" href="#precos">Ver preços</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="precos">
+    <div class="container">
+      <p class="eyebrow">Planos</p>
+      <h2>Escolha o ritmo da sua presença</h2>
+      <PricingTable plans={plans} live={live} appUrl={product.appUrl} />
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero { padding-block: var(--space-24) var(--space-16); }
+
+  .hero h1 {
+    margin-block: var(--space-6);
+    font-size: clamp(2rem, 5.5vw, var(--text-4xl));
+    max-width: 20ch;
+  }
+
+  .hero__lead { font-size: var(--text-lg); color: var(--text-2); }
+
+  .hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    margin-top: var(--space-8);
+  }
+</style>

@@ -1,0 +1,142 @@
+---
+import { formatBRL, bestDiscount, planCopy, type Plan } from "../lib/plans";
+
+interface Props {
+  plans: Plan[];
+  /** false = os preços vieram do fallback, não da API. */
+  live: boolean;
+  appUrl: string;
+}
+
+const { plans, live, appUrl } = Astro.props;
+---
+
+<div class="pricing">
+  {plans.map((plan) => {
+    const copy = planCopy[plan.plan_type] ?? { name: plan.plan_type, pitch: "" };
+    const desconto = bestDiscount(plan);
+
+    return (
+      <article class:list={["card", "plan", copy.highlight && "plan--highlight"]}>
+        {copy.highlight && <span class="plan__badge">Mais escolhido</span>}
+
+        <h3>{copy.name}</h3>
+        <p class="plan__pitch">{copy.pitch}</p>
+
+        <p class="plan__price">
+          <strong>{formatBRL(plan.price_cents)}</strong>
+          <span>/mês</span>
+        </p>
+
+        {desconto > 0 && (
+          <p class="plan__discount">Economize até {desconto}% pagando adiantado</p>
+        )}
+
+        <ul class="plan__features">
+          <li>{plan.weekly_credits} créditos por semana</li>
+          <li>Publicação automática no LinkedIn</li>
+          <li>Soluções de LeetCode com commit no GitHub</li>
+        </ul>
+
+        <a class:list={["btn", copy.highlight ? "btn--primary" : "btn--ghost", "plan__cta"]} href={appUrl}>
+          Assinar {copy.name}
+        </a>
+      </article>
+    );
+  })}
+</div>
+
+{/* Quando `live` é false os preços vieram do fallback: o build não alcançou
+    a API. O aviso sai no HTML para percebermos antes do cliente. */}
+{!live && (
+  <p class="pricing__stale" data-build-warning>
+    Valores de referência. Confirme o preço atual ao assinar.
+  </p>
+)}
+
+<style>
+  .pricing {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-6);
+    margin-top: var(--space-8);
+    align-items: start;
+  }
+
+  .plan { display: flex; flex-direction: column; position: relative; }
+
+  .plan--highlight {
+    border-color: var(--accent);
+    box-shadow: var(--shadow);
+  }
+
+  .plan__badge {
+    position: absolute;
+    top: calc(var(--space-4) * -1);
+    left: var(--space-8);
+    padding: 0.25rem 0.7rem;
+    border-radius: var(--radius-full);
+    background: var(--accent);
+    color: var(--accent-contrast);
+    font-size: var(--text-xs);
+    font-weight: 700;
+  }
+
+  .plan h3 { font-size: var(--text-xl); }
+
+  .plan__pitch {
+    margin-top: var(--space-2);
+    color: var(--text-2);
+    font-size: var(--text-sm);
+    min-height: 3em;
+  }
+
+  .plan__price {
+    margin-top: var(--space-4);
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-2);
+  }
+
+  .plan__price strong { font-size: var(--text-3xl); letter-spacing: -0.03em; }
+  .plan__price span { color: var(--text-3); font-size: var(--text-sm); }
+
+  .plan__discount {
+    margin-top: var(--space-2);
+    color: var(--success);
+    font-size: var(--text-sm);
+    font-weight: 600;
+  }
+
+  .plan__features {
+    margin-block: var(--space-6);
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    font-size: var(--text-sm);
+    color: var(--text-2);
+  }
+
+  .plan__features li {
+    padding-inline-start: 1.4rem;
+    position: relative;
+  }
+
+  .plan__features li::before {
+    content: "✓";
+    position: absolute;
+    inset-inline-start: 0;
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  .plan__cta { margin-top: auto; }
+
+  .pricing__stale {
+    margin-top: var(--space-4);
+    color: var(--text-3);
+    font-size: var(--text-xs);
+  }
+</style>
