@@ -39,7 +39,7 @@ A rota `/autofeedr` permanece disponível e direciona à aplicação existente. 
 
 O arquivo `wrangler.jsonc` configura exclusivamente arquivos estáticos, com página 404 própria. Na integração Git da Cloudflare:
 
-- Repositório: `Elian-Abrao/eyelid-site`.
+- Repositório: `EyelidSoftware/eyelid-site`.
 - Branch de produção: `main`.
 - Build: `npm ci && npm run check && npm run build && npm run verify:site`.
 - Deploy: `npx wrangler deploy`.
