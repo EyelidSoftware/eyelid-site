@@ -113,7 +113,7 @@ export const articles = [
     slug: "consultoria-tecnologica-quando-contratar",
     category: "Consultoria tecnológica",
     title: "O que uma consultoria tecnológica entrega e quando contratar?",
-    excerpt: "Veja como transformar um gargalo operacional em uma decisão entre ajustar o processo, integrar ferramentas ou desenvolver um sistema.",
+    excerpt: "Saiba quando contratar consultoria tecnológica, o que pedir no diagnóstico e como comparar propostas com um exemplo de escopo.",
   },
   {
     slug: "como-acompanhar-e-melhorar-processos",

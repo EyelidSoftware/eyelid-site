@@ -21,4 +21,21 @@ Uma boa proposta identifica o que será entregue e como você vai avaliar. Para 
 
 Confirme no escopo se a implantação faz parte do trabalho. Se o contrato termina com a decisão, peça os materiais num formato que sua equipe consiga levar para orçamento ou execução.
 
+## Como comparar propostas de consultoria tecnológica
+
+Envie o mesmo recorte a cada fornecedor. Assim fica mais fácil distinguir uma proposta de diagnóstico de outra que já inclui implementação. Você pode usar este texto como ponto de partida:
+
+> Queremos reduzir o tempo entre a aprovação de um pedido e seu registro no ERP. O diagnóstico deve cobrir uma unidade e considerar pedidos concluídos, devolvidos e fora do fluxo padrão. Esperamos sair com o gargalo identificado, alternativas comparáveis e um primeiro passo que nossa equipe possa aprovar.
+
+Na resposta, procure quatro compromissos que possam ser conferidos ao final:
+
+1. **Evidências.** Quais pessoas serão ouvidas e quais registros serão examinados? Se o histórico do ERP estiver incompleto, que outra fonte pode confirmar onde o pedido ficou parado?
+2. **Limites.** Quantas áreas e sistemas entram no diagnóstico? A proposta inclui teste de integração ou apenas uma avaliação da documentação?
+3. **Comparação.** Como a proposta vai avaliar custo de operação, impacto na rotina e dependências de cada alternativa? Peça que inclua o cenário de usar melhor as ferramentas que a empresa já tem.
+4. **Entrega.** Quem apresenta a recomendação, quem pode contestar as premissas e que material sua equipe recebe para aprovar o investimento ou executar o plano?
+
+Para entender a diferença de custo, peça que cada proposta separe diagnóstico, teste técnico e implantação. Duas propostas com o mesmo valor podem cobrir atividades bem diferentes. Se ainda não houver acesso a dados suficientes, combine o que pode ser concluído com as evidências disponíveis e que decisão precisa ficar para uma etapa seguinte.
+
+Na [consultoria tecnológica da eyelid](/servicos/consultoria-tecnologica), o diagnóstico pode ser contratado como uma etapa independente.
+
 Quando a recomendação começar a rodar, use o [roteiro de acompanhamento de processos](/blog/como-acompanhar-e-melhorar-processos) para medir o resultado.
