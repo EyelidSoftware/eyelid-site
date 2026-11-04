@@ -32,6 +32,9 @@ const props = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/brand/eyelid-mark.svg" />
     <meta name="theme-color" content="#151515" />
     <meta name="generator" content={Astro.generator} />
+    {props.path === "/" && (
+      <meta name="google-site-verification" content="VB19mxn8Zly_DxODZs6NTQm-PnlJ0MxOXwtPRcFMz8s" />
+    )}
     <Seo {...props} />
   </head>
 
