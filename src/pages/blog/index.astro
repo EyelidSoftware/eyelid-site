@@ -1,0 +1,35 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { articles } from "../../lib/content";
+---
+
+<BaseLayout
+  title="Ideias sobre software, automação e IA"
+  description="Artigos sobre desenvolvimento de software, automação de processos e inteligência artificial para apoiar decisões de tecnologia."
+  path="/blog"
+>
+  <div class="container">
+    <header class="page-heading">
+      <p class="eyebrow">Ideias</p>
+      <h1>
+        Pensar melhor.
+        <br />
+        Construir melhor.
+      </h1>
+      <p class="lead">
+        Perguntas, critérios e aprendizados para transformar desafios de negócio
+        em soluções de tecnologia.
+      </p>
+    </header>
+    <section class="section article-grid">
+      {articles.map((a) => (
+        <a class="article-card" href={`/blog/${a.slug}`}>
+          <span class="eyebrow">{a.category}</span>
+          <h3>{a.title}</h3>
+          <p>{a.excerpt}</p>
+          <span class="read">Ler artigo ↗</span>
+        </a>
+      ))}
+    </section>
+  </div>
+</BaseLayout>

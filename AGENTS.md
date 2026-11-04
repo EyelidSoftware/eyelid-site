@@ -14,7 +14,7 @@ produtos ficam em `src/lib/site.ts`. Nada de `"Eyelid"` ou
 `"https://eyelid.com.br"` solto em página ou componente.
 
 **Nada de cor ou espaçamento solto.** Use os tokens de `src/styles/tokens.css`.
-A paleta espelha a do painel do AutoFeedr — se mudar lá, espelhe aqui.
+A identidade aprovada é monocromática: Ink, branco e cinzas. Quicksand nos títulos e Inter no corpo. Os SVGs aprovados da marca estão em public/brand.
 
 **Toda página passa por `BaseLayout` com `title` e `description`.** São eles que
 alimentam `<title>`, meta description e Open Graph. Página sem isso é página que

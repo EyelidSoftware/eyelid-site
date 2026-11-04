@@ -1,0 +1,62 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { site } from "../lib/site";
+---
+
+<BaseLayout
+  title="Privacidade"
+  description="Informações sobre navegação, contato e tratamento de dados no site institucional."
+  path="/privacidade"
+>
+  <div class="container">
+    <header class="page-heading prose">
+      <p class="eyebrow">Transparência</p>
+      <h1>Privacidade no site.</h1>
+      <p class="lead">
+        Informações sobre esta versão do site institucional e os canais de
+        contato.
+      </p>
+    </header>
+    <div class="prose reading">
+      <h2>Navegação</h2>
+      <p>
+        Este site apresenta informações sobre nossos serviços e artigos. Não
+        possui cadastro, área autenticada, formulário de coleta ou ferramentas
+        próprias de publicidade e análise de audiência nesta versão. As fontes
+        são servidas junto com o site.
+      </p>
+      <h2>Hospedagem</h2>
+      <p>
+        A hospedagem é fornecida pela Cloudflare. O acesso envolve o
+        processamento de informações técnicas, como endereço IP e dados da
+        requisição, para entregar as páginas e proteger o serviço, conforme as
+        configurações e políticas do provedor.
+      </p>
+      <h2>Contato por e-mail</h2>
+      <p>
+        Ao enviar uma mensagem, você compartilha o endereço de e-mail e as
+        informações que decidir incluir. Utilizamos esse conteúdo para responder
+        à solicitação e conduzir as tratativas relacionadas. O envio e a guarda
+        das mensagens também dependem dos serviços de e-mail utilizados.
+      </p>
+      <h2>Dados de projetos</h2>
+      <p>
+        O acesso a documentos, sistemas e informações de clientes é definido
+        separadamente, conforme a finalidade do serviço e os instrumentos
+        aplicáveis. Não envie senhas ou documentos confidenciais em um primeiro
+        contato.
+      </p>
+      <h2>Dúvidas e solicitações</h2>
+      <p>
+        Para conversar sobre privacidade ou solicitar esclarecimentos sobre suas
+        informações, escreva para{" "}
+        <a href={`mailto:${site.email}`}>{site.email}</a>. Avaliaremos a
+        solicitação e as medidas aplicáveis ao caso.
+      </p>
+      <p>
+        Esta página será atualizada caso sejam adicionados formulários,
+        ferramentas de audiência ou novas formas de tratamento de dados.
+      </p>
+    </div>
+  </div>
+</BaseLayout>

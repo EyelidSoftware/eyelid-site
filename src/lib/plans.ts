@@ -30,29 +30,57 @@ export interface Plan {
 }
 
 /** Rótulos e posicionamento — isto é conteúdo de marketing, não vem da API. */
-export const planCopy: Record<string, { name: string; pitch: string; highlight?: boolean }> = {
+export const planCopy: Record<
+  string,
+  { name: string; pitch: string; highlight?: boolean }
+> = {
   lite: { name: "Lite", pitch: "Para começar com consistência." },
   plus: { name: "Plus", pitch: "Para quem já tem ritmo de publicação." },
-  pro: { name: "Pro", pitch: "Volume máximo para crescer rápido.", highlight: true },
+  pro: {
+    name: "Pro",
+    pitch: "Volume máximo para crescer rápido.",
+    highlight: true,
+  },
 };
 
 /** Usado só quando a API não responde no build. Mantenha plausível. */
 const FALLBACK: Plan[] = [
-  { plan_type: "lite", weekly_credits: 12, price_cents: 2000, is_available: true, month_options: [] },
-  { plan_type: "plus", weekly_credits: 24, price_cents: 4000, is_available: true, month_options: [] },
-  { plan_type: "pro", weekly_credits: 50, price_cents: 8000, is_available: true, month_options: [] },
+  {
+    plan_type: "lite",
+    weekly_credits: 12,
+    price_cents: 2000,
+    is_available: true,
+    month_options: [],
+  },
+  {
+    plan_type: "plus",
+    weekly_credits: 24,
+    price_cents: 4000,
+    is_available: true,
+    month_options: [],
+  },
+  {
+    plan_type: "pro",
+    weekly_credits: 50,
+    price_cents: 8000,
+    is_available: true,
+    month_options: [],
+  },
 ];
 
 export async function fetchPlans(): Promise<{ plans: Plan[]; live: boolean }> {
   const endpoint = `${products[0].apiUrl}/plans`;
 
   try {
-    const response = await fetch(endpoint, { signal: AbortSignal.timeout(10_000) });
+    const response = await fetch(endpoint, {
+      signal: AbortSignal.timeout(10_000),
+    });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
     const data = (await response.json()) as Plan[];
     const available = data.filter((plan) => plan.is_available);
-    if (available.length === 0) throw new Error("nenhum plano disponível na resposta");
+    if (available.length === 0)
+      throw new Error("nenhum plano disponível na resposta");
 
     return { plans: available, live: true };
   } catch (error) {
@@ -65,10 +93,16 @@ export async function fetchPlans(): Promise<{ plans: Plan[]; live: boolean }> {
 }
 
 export function formatBRL(cents: number): string {
-  return (cents / 100).toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+  return (cents / 100).toLocaleString("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+  });
 }
 
 /** Maior desconto oferecido no plano — vira selo de "economize até X%". */
 export function bestDiscount(plan: Plan): number {
-  return plan.month_options.reduce((max, option) => Math.max(max, option.percent_off), 0);
+  return plan.month_options.reduce(
+    (max, option) => Math.max(max, option.percent_off),
+    0,
+  );
 }

@@ -8,23 +8,17 @@
 
 export const site = {
   /** Empresa. O site é da Eyelid; AutoFeedr é um dos produtos. */
-  company: "Eyelid",
-  legalName: "Eyelid",
-  tagline: "Software que trabalha enquanto você foca no que importa",
+  company: "eyelid",
+  legalName: "eyelid",
+  tagline: "Software bem pensado. Em cada detalhe.",
   description:
-    "A Eyelid cria produtos de automação que tiram tarefas repetitivas do seu dia. " +
-    "Conheça o AutoFeedr, nossa plataforma de conteúdo automático para LinkedIn e LeetCode.",
-
-  /** Sem barra no final — o Astro monta as URLs a partir daqui. */
+    "Software sob medida, integrações, automação e inteligência artificial. Tecnologia pensada para quem usa, com cuidado da descoberta à entrega.",
   url: "https://eyelid.com.br",
   locale: "pt-BR",
-
   email: "contato@eyelid.com.br",
-
-  /** Preencha conforme criarmos os perfis; entradas vazias são ignoradas. */
   social: {
     linkedin: "",
-    github: "https://github.com/LuigiNeto01/AutoFeedr",
+    github: "https://github.com/EyelidSoftware",
     instagram: "",
   },
 } as const;

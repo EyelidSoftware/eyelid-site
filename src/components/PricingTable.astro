@@ -13,11 +13,16 @@ const { plans, live, appUrl } = Astro.props;
 
 <div class="pricing">
   {plans.map((plan) => {
-    const copy = planCopy[plan.plan_type] ?? { name: plan.plan_type, pitch: "" };
+    const copy = planCopy[plan.plan_type] ?? {
+      name: plan.plan_type,
+      pitch: "",
+    };
     const desconto = bestDiscount(plan);
 
     return (
-      <article class:list={["card", "plan", copy.highlight && "plan--highlight"]}>
+      <article
+        class:list={["card", "plan", copy.highlight && "plan--highlight"]}
+      >
         {copy.highlight && <span class="plan__badge">Mais escolhido</span>}
 
         <h3>{copy.name}</h3>
@@ -29,7 +34,9 @@ const { plans, live, appUrl } = Astro.props;
         </p>
 
         {desconto > 0 && (
-          <p class="plan__discount">Economize até {desconto}% pagando adiantado</p>
+          <p class="plan__discount">
+            Economize até {desconto}% pagando adiantado
+          </p>
         )}
 
         <ul class="plan__features">
@@ -38,7 +45,14 @@ const { plans, live, appUrl } = Astro.props;
           <li>Soluções de LeetCode com commit no GitHub</li>
         </ul>
 
-        <a class:list={["btn", copy.highlight ? "btn--primary" : "btn--ghost", "plan__cta"]} href={appUrl}>
+        <a
+          class:list={[
+            "btn",
+            copy.highlight ? "btn--primary" : "btn--ghost",
+            "plan__cta",
+          ]}
+          href={appUrl}
+        >
           Assinar {copy.name}
         </a>
       </article>
@@ -63,7 +77,11 @@ const { plans, live, appUrl } = Astro.props;
     align-items: start;
   }
 
-  .plan { display: flex; flex-direction: column; position: relative; }
+  .plan {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
 
   .plan--highlight {
     border-color: var(--accent);
@@ -82,7 +100,9 @@ const { plans, live, appUrl } = Astro.props;
     font-weight: 700;
   }
 
-  .plan h3 { font-size: var(--text-xl); }
+  .plan h3 {
+    font-size: var(--text-xl);
+  }
 
   .plan__pitch {
     margin-top: var(--space-2);
@@ -98,8 +118,14 @@ const { plans, live, appUrl } = Astro.props;
     gap: var(--space-2);
   }
 
-  .plan__price strong { font-size: var(--text-3xl); letter-spacing: -0.03em; }
-  .plan__price span { color: var(--text-3); font-size: var(--text-sm); }
+  .plan__price strong {
+    font-size: var(--text-3xl);
+    letter-spacing: -0.03em;
+  }
+  .plan__price span {
+    color: var(--text-3);
+    font-size: var(--text-sm);
+  }
 
   .plan__discount {
     margin-top: var(--space-2);
@@ -132,7 +158,9 @@ const { plans, live, appUrl } = Astro.props;
     font-weight: 700;
   }
 
-  .plan__cta { margin-top: auto; }
+  .plan__cta {
+    margin-top: auto;
+  }
 
   .pricing__stale {
     margin-top: var(--space-4);

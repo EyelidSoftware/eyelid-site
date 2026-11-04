@@ -1,0 +1,56 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { services } from "../../lib/content";
+export function getStaticPaths() {
+  return services.map((service) => ({
+    params: { slug: service.slug },
+    props: { service },
+  }));
+}
+const { service } = Astro.props;
+---
+
+<BaseLayout
+  title={service.title}
+  description={service.description}
+  path={`/servicos/${service.slug}`}
+>
+  <div class="container">
+    <header class="page-heading">
+      <a class="eyebrow" href="/servicos">
+        ← Nossos serviços
+      </a>
+      <h1>{service.title}</h1>
+      <p class="lead">{service.description}</p>
+      <a href="/contato" class="btn btn--primary">
+        Converse sobre seu projeto ↗
+      </a>
+    </header>
+    <section class="section split">
+      <div>
+        <p class="eyebrow">Possibilidades</p>
+        <h2>Uma solução alinhada ao trabalho real.</h2>
+        <ul>
+          {service.examples.map((e) => (
+            <li>{e}</li>
+          ))}
+        </ul>
+      </div>
+      <div>
+        <p class="eyebrow">Perguntas que orientam</p>
+        <div class="faq">
+          {service.questions.map((q) => (
+            <details>
+              <summary>{q}</summary>
+              <p>
+                Essa definição é construída com sua equipe durante o
+                entendimento do projeto e orienta o escopo, as permissões e a
+                validação da entrega.
+              </p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+  </div>
+</BaseLayout>

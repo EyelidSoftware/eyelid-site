@@ -1,88 +1,31 @@
 ---
-import { site, products } from "../lib/site";
-
-const path = Astro.url.pathname;
-const isActive = (href: string) =>
-  href === "/" ? path === "/" : path.startsWith(href);
+import { site } from "../lib/site";
+const links = [
+  { href: "/servicos", label: "O que fazemos" },
+  { href: "/sobre", label: "Quem somos" },
+  { href: "/blog", label: "Ideias" },
+];
 ---
 
-<header class="header">
-  <div class="container header__inner">
-    <a class="header__brand" href="/" aria-label={`${site.company} — página inicial`}>
-      <img src="/brand/eyelid-mark.svg" alt="" width="30" height="30" />
-      <span>{site.company}</span>
+<header class="site-header">
+  <div class="container nav-row">
+    <a href="/" aria-label={`${site.company}, início`} class="brand">
+      <img src="/brand/logo.svg" alt={site.company} width="150" height="44" />
     </a>
-
-    <nav class="header__nav" aria-label="Principal">
-      {products.map((product) => (
+    <nav aria-label="Principal">
+      {links.map((l) => (
         <a
-          href={`/${product.slug}`}
-          aria-current={isActive(`/${product.slug}`) ? "page" : undefined}
+          href={l.href}
+          aria-current={
+            Astro.url.pathname.startsWith(l.href) ? "page" : undefined
+          }
         >
-          {product.name}
+          {l.label}
         </a>
       ))}
-      <a href="/sobre" aria-current={isActive("/sobre") ? "page" : undefined}>Sobre</a>
-      <a href="/contato" aria-current={isActive("/contato") ? "page" : undefined}>Contato</a>
+      <a class="nav-contact" href="/contato">
+        Vamos conversar <span aria-hidden="true">↗</span>
+      </a>
     </nav>
-
-    <a class="btn btn--primary header__cta" href={products[0].appUrl}>Entrar</a>
   </div>
 </header>
-
-<style>
-  .header {
-    position: sticky;
-    top: 0;
-    z-index: 50;
-    background: color-mix(in srgb, var(--bg-page) 88%, transparent);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--border);
-  }
-
-  .header__inner {
-    display: flex;
-    align-items: center;
-    gap: var(--space-8);
-    min-height: 68px;
-  }
-
-  .header__brand {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--space-3);
-    font-weight: 700;
-    font-size: var(--text-lg);
-    letter-spacing: -0.02em;
-    text-decoration: none;
-  }
-
-  .header__nav {
-    display: flex;
-    gap: var(--space-6);
-    margin-inline-start: auto;
-    font-size: var(--text-sm);
-  }
-
-  .header__nav a {
-    color: var(--text-2);
-    text-decoration: none;
-    transition: color var(--transition);
-  }
-
-  .header__nav a:hover,
-  .header__nav a[aria-current="page"] {
-    color: var(--text-1);
-  }
-
-  .header__cta {
-    padding: 0.6rem 1.2rem;
-  }
-
-  /* Numa página de marketing, menu hamburguer custa JavaScript. Enquanto os
-     itens couberem, escondemos a navegação secundária e mantemos o CTA. */
-  @media (max-width: 720px) {
-    .header__nav { display: none; }
-    .header__cta { margin-inline-start: auto; }
-  }
-</style>

@@ -30,13 +30,15 @@ const props = Astro.props;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/svg+xml" href="/brand/eyelid-mark.svg" />
-    <meta name="theme-color" content="#b4663c" />
+    <meta name="theme-color" content="#151515" />
     <meta name="generator" content={Astro.generator} />
     <Seo {...props} />
   </head>
 
   <body>
-    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <a class="skip-link" href="#conteudo">
+      Pular para o conteúdo
+    </a>
     <Header />
     <main id="conteudo">
       <slot />

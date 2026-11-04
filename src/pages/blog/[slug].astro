@@ -1,0 +1,58 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { articles } from "../../lib/content";
+import { site, absoluteUrl } from "../../lib/site";
+export function getStaticPaths() {
+  return articles.map((article) => ({
+    params: { slug: article.slug },
+    props: { article },
+  }));
+}
+const { article } = Astro.props;
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: article.title,
+  description: article.excerpt,
+  author: { "@type": "Organization", name: site.company, url: site.url },
+  mainEntityOfPage: absoluteUrl(`/blog/${article.slug}`),
+  image: absoluteUrl("/og/default.png"),
+};
+---
+
+<BaseLayout
+  title={article.title}
+  description={article.excerpt}
+  path={`/blog/${article.slug}`}
+  type="article"
+  schema={schema}
+>
+  <article class="container">
+    <header class="page-heading prose">
+      <a class="eyebrow" href="/blog">
+        ← Ideias / {article.category}
+      </a>
+      <h1>{article.title}</h1>
+      <p class="lead">{article.excerpt}</p>
+      <p class="eyebrow">Por {site.company} · Leitura prática</p>
+    </header>
+    <div class="prose reading">
+      {article.sections.map((s) => (
+        <section>
+          <h2>{s.title}</h2>
+          <p>{s.text}</p>
+        </section>
+      ))}
+      <section>
+        <h2>Vamos olhar para o seu contexto?</h2>
+        <p>
+          Conte o desafio da sua operação e podemos conversar sobre os próximos
+          passos.
+        </p>
+        <a class="btn btn--primary" href="/contato">
+          Falar com a equipe ↗
+        </a>
+      </section>
+    </div>
+  </article>
+</BaseLayout>

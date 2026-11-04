@@ -1,0 +1,44 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { services } from "../../lib/content";
+---
+
+<BaseLayout
+  title="Software sob medida, automação e IA"
+  description="Conheça nossa abordagem para desenvolver software sob medida, conectar sistemas e aplicar inteligência artificial ao seu negócio."
+  path="/servicos"
+>
+  <div class="container">
+    <header class="page-heading">
+      <p class="eyebrow">O que fazemos</p>
+      <h1>Soluções que começam pelo seu contexto.</h1>
+      <p class="lead">
+        Cada operação tem suas regras, suas pessoas e seus desafios. Nosso papel
+        é transformar esse entendimento em tecnologia útil.
+      </p>
+    </header>
+    <div class="service-list">
+      {services.map((s) => (
+        <a class="service-row" href={`/servicos/${s.slug}`}>
+          <span class="num">{s.num}</span>
+          <h3>{s.title}</h3>
+          <p>{s.description}</p>
+          <span class="arrow" aria-hidden="true">
+            ↗
+          </span>
+        </a>
+      ))}
+    </div>
+    <section class="section">
+      <div class="contact-band">
+        <div>
+          <h2>Vamos encontrar o caminho?</h2>
+          <p>Uma conversa sobre seu processo é um bom começo.</p>
+        </div>
+        <a class="btn btn--primary" href="/contato">
+          Fale com a gente ↗
+        </a>
+      </div>
+    </section>
+  </div>
+</BaseLayout>

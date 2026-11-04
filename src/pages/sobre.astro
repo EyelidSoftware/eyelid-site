@@ -4,23 +4,80 @@ import { site } from "../lib/site";
 ---
 
 <BaseLayout
-  title="Sobre"
-  description={`Quem é a ${site.company} e por que construímos produtos de automação.`}
+  title="Quem somos"
+  description="Conheça a origem e a abordagem da nossa empresa: precisão técnica, qualidade na entrega e cuidado com a experiência de uso."
   path="/sobre"
 >
-  <section class="section">
-    <div class="container prose">
-      <p class="eyebrow">Sobre</p>
-      <h1>A {site.company}</h1>
-      <p>
-        Esta página ainda vai receber a história da empresa, o time e o que nos
-        move. Estrutura pronta, conteúdo pendente.
+  <div class="container">
+    <header class="page-heading">
+      <p class="eyebrow">Quem somos</p>
+      <h1>
+        Cuidado na construção.
+        <br />
+        Clareza na experiência.
+      </h1>
+      <p class="lead">
+        Somos uma empresa de soluções de tecnologia. Desenvolvemos software,
+        integrações e automações com atenção ao negócio e às pessoas que vão
+        usar cada entrega.
       </p>
-    </div>
-  </section>
+    </header>
+    <section class="section split">
+      <div class="big-symbol">
+        <img
+          src="/brand/logo.svg"
+          alt={site.company}
+          width="350"
+          height="100"
+        />
+      </div>
+      <div>
+        <p class="eyebrow">Uma origem real</p>
+        <h2>Tudo começou com uma demanda.</h2>
+        <p>
+          Antes de fundarmos a {site.company}, recebemos um projeto para
+          automatizar um fluxo em uma plataforma chamada Iris. A relação entre a
+          íris e a pálpebra inspirou nosso nome.
+        </p>
+        <p>
+          Elian e Luigi fundaram a empresa em 5 de fevereiro de 2024. Essa
+          parceria continua presente na construção das soluções e nas decisões
+          sobre os caminhos da empresa.
+        </p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="section-head">
+        <h2>O que orienta nossas decisões.</h2>
+        <p>
+          Qualidade é uma prática que atravessa o projeto, não um detalhe
+          reservado para o fim.
+        </p>
+      </div>
+      <div class="service-list">
+        <div class="service-row">
+          <span class="num">01</span>
+          <h3>Precisão</h3>
+          <p>
+            Entender o problema, definir limites e validar o que foi construído.
+          </p>
+        </div>
+        <div class="service-row">
+          <span class="num">02</span>
+          <h3>Simplicidade</h3>
+          <p>
+            Dar clareza aos fluxos para que a tecnologia ajude as pessoas a
+            realizar seu trabalho.
+          </p>
+        </div>
+        <div class="service-row">
+          <span class="num">03</span>
+          <h3>Responsabilidade</h3>
+          <p>
+            Comunicar com proximidade e cuidar da entrega e de sua continuidade.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
 </BaseLayout>
-
-<style>
-  h1 { margin-block: var(--space-4) var(--space-6); font-size: var(--text-3xl); }
-  p { color: var(--text-2); }
-</style>

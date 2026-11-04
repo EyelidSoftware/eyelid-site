@@ -1,27 +1,58 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { site } from "../lib/site";
+const subject = encodeURIComponent("Vamos conversar sobre um projeto");
 ---
 
 <BaseLayout
   title="Contato"
-  description={`Fale com a ${site.company} pelo e-mail ${site.email}.`}
+  description="Converse com nossa equipe sobre desenvolvimento de software, integrações, automação e inteligência artificial para sua empresa."
   path="/contato"
 >
-  <section class="section">
-    <div class="container prose">
-      <p class="eyebrow">Contato</p>
-      <h1>Vamos conversar</h1>
-      <p>
-        Dúvida sobre os produtos, proposta ou parceria: escreva para
-        <a href={`mailto:${site.email}`}>{site.email}</a>.
+  <div class="container">
+    <header class="page-heading">
+      <p class="eyebrow">Vamos conversar</p>
+      <h1>O próximo passo começa com uma boa conversa.</h1>
+      <p class="lead">
+        Conte qual processo precisa melhorar, o que sua equipe já utiliza e o
+        resultado que você procura.
       </p>
-    </div>
-  </section>
+    </header>
+    <section class="section split">
+      <div>
+        <span class="inline-label">Fale com a equipe</span>
+        <a
+          class="contact-link"
+          href={`mailto:${site.email}?subject=${subject}`}
+        >
+          {site.email} ↗
+        </a>
+        <p>
+          O link abre seu aplicativo de e-mail. Se preferir, copie o endereço e
+          envie sua mensagem.
+        </p>
+        <a class="text-link" href={site.social.github}>
+          Conheça nosso GitHub ↗
+        </a>
+      </div>
+      <div>
+        <h2>
+          Para começar,
+          <br />
+          conte um pouco.
+        </h2>
+        <ul>
+          <li>Qual é o desafio ou a oportunidade?</li>
+          <li>Como esse trabalho acontece hoje?</li>
+          <li>Quem utiliza ou será impactado pela solução?</li>
+          <li>Existe um prazo ou uma prioridade?</li>
+        </ul>
+        <p class="lead">
+          Nesta primeira conversa, evite enviar senhas, dados pessoais sensíveis
+          ou documentos confidenciais. Podemos combinar o acesso e o sigilo
+          antes de analisar essas informações.
+        </p>
+      </div>
+    </section>
+  </div>
 </BaseLayout>
-
-<style>
-  h1 { margin-block: var(--space-4) var(--space-6); font-size: var(--text-3xl); }
-  p { color: var(--text-2); }
-  a { color: var(--accent); font-weight: 600; }
-</style>

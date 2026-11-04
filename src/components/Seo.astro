@@ -36,7 +36,9 @@ const {
 
 // Título da home fica só "Eyelid — tagline"; internas ganham o sufixo.
 const isHome = path === "/";
-const fullTitle = isHome ? `${site.company} — ${site.tagline}` : `${title} | ${site.company}`;
+const fullTitle = isHome
+  ? `${site.company} | ${site.tagline}`
+  : `${title} | ${site.company}`;
 
 const canonical = absoluteUrl(path);
 const imageUrl = absoluteUrl(image);
@@ -45,7 +47,6 @@ const organization = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: site.company,
-  legalName: site.legalName,
   url: site.url,
   logo: absoluteUrl("/brand/eyelid-mark.svg"),
   email: site.email,
@@ -74,5 +75,15 @@ const organization = {
 <meta name="twitter:description" content={description} />
 <meta name="twitter:image" content={imageUrl} />
 
-<script is:inline type="application/ld+json" set:html={JSON.stringify(organization)} />
-{schema && <script is:inline type="application/ld+json" set:html={JSON.stringify(schema)} />}
+<script
+  is:inline
+  type="application/ld+json"
+  set:html={JSON.stringify(organization)}
+/>
+{schema && (
+  <script
+    is:inline
+    type="application/ld+json"
+    set:html={JSON.stringify(schema)}
+  />
+)}
