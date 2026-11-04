@@ -46,5 +46,17 @@ const guide = articles.find((article) => article.slug === service.guide);
         </ol>
       </div>
     </section>
+    {"questions" in service && (
+      <section class="section prose">
+        <h2>Dúvidas sobre a contratação</h2>
+        {service.questions.map(([question, answer]) => (
+          <details>
+            <summary>{question}</summary>
+            <p>{answer}</p>
+          </details>
+        ))}
+        <a class="btn btn--primary" href="/contato">Converse sobre seu projeto ↗</a>
+      </section>
+    )}
   </div>
 </BaseLayout>

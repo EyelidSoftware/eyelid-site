@@ -5,14 +5,14 @@ import { services, articles } from "../lib/content";
 const featured = services.map((service) => articles.find((article) => article.slug === service.guide)!);
 ---
 
-<BaseLayout title={site.company} description={site.description} path="/">
+<BaseLayout title="Desenvolvimento de software e consultoria tecnológica" description={site.description} path="/">
   <section class="container studio-intro">
     <div class="intro-copy">
-      <p class="eyebrow">Estúdio de software e consultoria</p>
+      <p class="eyebrow">Desenvolvimento de software e consultoria tecnológica</p>
       <h1>Software para o seu jeito de trabalhar.</h1>
       <p class="lead">
-        Criamos sistemas sob medida, ajudamos sua equipe a decidir onde investir
-        em tecnologia e acompanhamos a operação para melhorar o que já existe.
+        A {site.company} desenvolve sistemas sob medida, integra ferramentas e ajuda
+        empresas a escolher e implantar soluções para seus processos.
       </p>
       <div class="actions">
         <a class="btn btn--primary" href="/contato">Conte seu desafio <span aria-hidden="true">↗</span></a>
