@@ -104,6 +104,18 @@ export const servicePages = [
 
 export const articles = [
   {
+    slug: "implementacao-consultoria-ia-empresas",
+    category: "Inteligência artificial",
+    title: "Implementação e consultoria de IA para empresas: do diagnóstico ao uso real",
+    excerpt: "Entenda quando usar IA, o que pedir no diagnóstico e como validar uma solução com a equipe antes de colocá-la em produção.",
+  },
+  {
+    slug: "como-descobrir-o-que-automatizar-e-monitorar",
+    category: "Automação",
+    title: "Como descobrir o que automatizar e monitorar na sua empresa",
+    excerpt: "Aprenda a identificar tarefas repetitivas, falhas silenciosas e atrasos, e a decidir por onde começar.",
+  },
+  {
     slug: "como-escolher-empresa-desenvolvimento-software",
     category: "Produto & engenharia",
     title: "Como escolher uma empresa de desenvolvimento de software?",
