@@ -97,24 +97,12 @@ export const articles = [
     category: "Consultoria tecnológica",
     title: "O que uma consultoria tecnológica entrega e quando contratar?",
     excerpt: "Veja como transformar um gargalo operacional em uma decisão entre ajustar o processo, integrar ferramentas ou desenvolver um sistema.",
-    sections: [
-      { title: "Comece pela decisão que precisa tomar", text: "Uma boa demanda descreve o que acontece, quem sente o problema e qual decisão está travada. Imagine pedidos que passam por planilha, e-mail e ERP. O atraso pode vir da digitação duplicada, de uma regra de aprovação ou de dados incompletos. Cada causa pede uma intervenção diferente. Leve três exemplos recentes, incluindo um que saiu errado." },
-      { title: "Peça um diagnóstico com evidências", text: "O diagnóstico deve mostrar o fluxo atual, quem responde por cada etapa e onde aparecem as exceções. Combine quais dados podem ser consultados e trabalhe com amostras anonimizadas quando possível. Separe observações de hipóteses. Uma fila que cresce no fim do mês, por exemplo, pode indicar excesso de demanda ou falta de capacidade em uma única etapa." },
-      { title: "Compare opções pelo custo de operar", text: "Para cada alternativa, estime implantação, treinamento, licenças, integração e manutenção. Inclua o caminho de aproveitar as ferramentas atuais. Um teste curto pode responder se a API do ERP cobre a rotina ou se ainda seria necessário conferir dados manualmente. Defina antes qual resultado aprova o teste." },
-      { title: "Combine o que ficará com sua equipe", text: "Antes de contratar, peça os entregáveis e o critério de conclusão. Um diagnóstico pode terminar com um mapa do fluxo, comparação de alternativas, recomendação e plano de ação com responsáveis. Deixe explícito se a implantação faz parte do escopo e quais acessos serão devolvidos ao fim." },
-    ],
   },
   {
     slug: "como-acompanhar-e-melhorar-processos",
     category: "Melhoria de processos",
     title: "Como acompanhar um processo e medir se ele melhorou?",
     excerpt: "Um roteiro para escolher indicadores, investigar atrasos e testar melhorias sem perder de vista o trabalho da equipe.",
-    sections: [
-      { title: "Escolha uma rotina que tenha início e fim", text: "Em vez de medir o departamento inteiro, escolha uma rotina como cadastrar um pedido ou aprovar uma solicitação. Registre o que conta como entrada, o que significa conclusão e em quais casos o processo é interrompido. Defina um responsável e separe casos comuns de exceções, como solicitações que chegam sem documentação." },
-      { title: "Meça tempo e qualidade juntos", text: "Use o tempo entre entrada e conclusão, a proporção de casos reabertos e o número de intervenções manuais. Registre também volume e período. A mediana indica o tempo típico. Para enxergar atrasos que afetam uma parte menor dos casos, olhe os mais lentos ou um percentil alto, se houver amostra suficiente." },
-      { title: "Teste uma mudança que você consiga observar", text: "Se as solicitações voltam por falta de informação, teste uma validação na entrada para um grupo ou tipo de solicitação. Combine antes o que espera mudar e monitore possíveis efeitos colaterais, como abandono do formulário ou aumento de chamados. Compare com um período de volume e perfil de casos semelhantes." },
-      { title: "Crie uma revisão com dono e decisão", text: "Em cada revisão, escolha uma ocorrência para investigar e uma melhoria para testar. Registre quem responde, quando o grupo volta a olhar o indicador e o que faria a equipe manter, ajustar ou reverter a mudança. Dê acesso ao histórico para quem opera o processo poder explicar o que os números não mostram." },
-    ],
   },
   {
     slug: "quando-desenvolver-software-sob-medida",
@@ -122,24 +110,6 @@ export const articles = [
     title: "Quando faz sentido desenvolver software sob medida?",
     excerpt:
       "Comece pelo processo, pelas pessoas e pelos limites das ferramentas que você já usa.",
-    sections: [
-      {
-        title: "O ponto de partida é o trabalho",
-        text: "Antes de escolher uma tecnologia, descreva a atividade que precisa melhorar. Quem a executa? O que dispara o processo? Onde surgem retrabalho e dúvidas? Uma conversa com quem vive a operação costuma revelar necessidades que uma lista de funcionalidades não mostra.",
-      },
-      {
-        title: "Compare adaptação e desenvolvimento",
-        text: "Uma ferramenta pronta pode atender bem quando o processo é comum e há pouca necessidade de integração. O desenvolvimento sob medida merece consideração quando regras específicas, múltiplos sistemas ou uma experiência própria são centrais para o negócio. Compare o custo total: implantação, treinamento, integração, manutenção e evolução.",
-      },
-      {
-        title: "Defina uma primeira entrega verificável",
-        text: "Evite começar tentando reproduzir toda a operação. Escolha um fluxo relevante e delimite o que estará pronto na primeira versão. Defina quem irá testar, quais situações precisam funcionar e o que comprova que a solução ajudou. O aprendizado desse ciclo orienta as próximas decisões.",
-      },
-      {
-        title: "Considere a vida depois da entrega",
-        text: "Um sistema precisa de manutenção, responsáveis, documentação e um caminho de evolução. Antes de contratar, alinhe como serão tratados acessos, dados, implantação, correções e suporte. A qualidade da solução inclui a capacidade de continuar funcionando e de ser compreendida por outras pessoas.",
-      },
-    ],
   },
   {
     slug: "automatizar-processos-com-seguranca",
@@ -147,24 +117,6 @@ export const articles = [
     title: "Antes de automatizar, entenda as exceções.",
     excerpt:
       "Um fluxo confiável precisa saber o que fazer quando o caminho esperado não acontece.",
-    sections: [
-      {
-        title: "Mapeie o caminho real",
-        text: "Documente a entrada, as regras, a saída e as pessoas responsáveis por cada etapa. Observe casos reais, incluindo aqueles que fogem do padrão. Automatizar um processo pouco compreendido pode apenas fazer os mesmos erros acontecerem mais rápido.",
-      },
-      {
-        title: "Projete para entradas repetidas e falhas",
-        text: "Um arquivo pode chegar duas vezes. Uma API pode ficar indisponível. Um dado obrigatório pode estar ausente. Decida quais situações permitem nova tentativa, quais precisam de revisão humana e como evitar operações duplicadas. O comportamento de falha deve fazer parte do desenho inicial.",
-      },
-      {
-        title: "Torne a execução observável",
-        text: "Registre início, fim, resultado e motivo de interrupção. Use identificadores para acompanhar uma execução entre etapas, sem registrar credenciais ou conteúdo sensível desnecessário. Defina quem será avisado e quais informações essa pessoa precisa para agir.",
-      },
-      {
-        title: "Valide com um piloto",
-        text: "Comece com um conjunto controlado de operações e compare os resultados com a rotina existente. Meça tempo de processamento, intervenções manuais e erros antes e depois. Esses dados permitem avaliar o impacto real, em vez de assumir que toda automação gera economia automaticamente.",
-      },
-    ],
   },
   {
     slug: "ia-empresarial-com-contexto-e-limites",
@@ -172,23 +124,5 @@ export const articles = [
     title: "Uma IA útil começa com contexto e limites claros.",
     excerpt:
       "Escolher o modelo é uma parte do trabalho. Definir dados, permissões e avaliação é outra igualmente importante.",
-    sections: [
-      {
-        title: "Escolha uma tarefa concreta",
-        text: "Consultar uma informação, apoiar uma análise ou preparar um documento são objetivos mais verificáveis do que simplesmente adicionar IA ao negócio. Descreva a tarefa, o público e as situações em que a ferramenta deve pedir ajuda ou declarar que não possui informação suficiente.",
-      },
-      {
-        title: "Organize as fontes e os acessos",
-        text: "Defina quais documentos e sistemas podem ser consultados e quais permissões se aplicam a cada pessoa. A conexão técnica com uma fonte não significa que todo usuário deva acessar seu conteúdo. Considere atualização, qualidade e contexto dos dados ao desenhar a solução.",
-      },
-      {
-        title: "Avalie além de uma demonstração",
-        text: "Uma boa resposta isolada não demonstra confiabilidade. Monte exemplos representativos, incluindo perguntas ambíguas, ausência de dados e pedidos fora do escopo. Verifique a consistência das respostas e a capacidade de explicar limitações. O nível de supervisão deve acompanhar o risco da tarefa.",
-      },
-      {
-        title: "Planeje operação e melhoria",
-        text: "Estabeleça como acompanhar falhas, consumo e retorno dos usuários. Revise instruções e integrações a partir de problemas observados. Preserve a rastreabilidade necessária sem acumular conteúdo sensível sem finalidade. Uma aplicação de IA exige cuidado contínuo com a experiência e com os limites definidos.",
-      },
-    ],
   },
 ] as const;

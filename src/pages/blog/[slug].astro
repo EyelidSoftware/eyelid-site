@@ -3,12 +3,17 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import { articles, servicePages } from "../../lib/content";
 import { site, absoluteUrl } from "../../lib/site";
 export function getStaticPaths() {
+  const entries = import.meta.glob<import("astro").MarkdownInstance<Record<string, never>>>(
+    "../../articles/*.md",
+    { eager: true },
+  );
   return articles.map((article) => ({
     params: { slug: article.slug },
-    props: { article },
+    props: { article, entry: entries[`../../articles/${article.slug}.md`] },
   }));
 }
-const { article } = Astro.props;
+const { article, entry } = Astro.props;
+const { Content } = entry;
 const service = servicePages.find((item) => item.guide === article.slug);
 const schema = {
   "@context": "https://schema.org",
@@ -38,12 +43,7 @@ const schema = {
       <p class="eyebrow">Por {site.company} · Leitura prática</p>
     </header>
     <div class="prose reading">
-      {article.sections.map((s) => (
-        <section>
-          <h2>{s.title}</h2>
-          <p>{s.text}</p>
-        </section>
-      ))}
+      <Content />
       <section>
         <h2>Como podemos ajudar</h2>
         <p>
