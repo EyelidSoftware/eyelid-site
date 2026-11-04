@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { site } from "../lib/site";
+import { site, products } from "../lib/site";
 ---
 
 <BaseLayout
@@ -76,6 +76,15 @@ import { site } from "../lib/site";
           </p>
         </div>
       </div>
+    </section>
+    <section class="section prose">
+      <h2>Produtos que desenvolvemos</h2>
+      <p>Também desenvolvemos produtos próprios. Conheça o que está disponível para experimentar.</p>
+      <ul>
+        {products.map((product) => (
+          <li><a href={`/${product.slug}`}>{product.name}</a>. {product.tagline}.</li>
+        ))}
+      </ul>
     </section>
   </div>
 </BaseLayout>

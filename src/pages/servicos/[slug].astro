@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { servicePages, articles } from "../../lib/content";
+import { productBySlug } from "../../lib/site";
 export function getStaticPaths() {
   return servicePages.map((service) => ({
     params: { slug: service.slug },
@@ -8,6 +9,7 @@ export function getStaticPaths() {
   }));
 }
 const { service } = Astro.props;
+const exampleProduct = service.slug === "software-sob-medida" ? productBySlug("autofeedr") : undefined;
 const additionalGuide = "additionalGuide" in service ? service.additionalGuide : undefined;
 const guides = articles.filter((article) =>
   article.slug === service.guide || article.slug === additionalGuide,
@@ -37,6 +39,12 @@ const guides = articles.filter((article) =>
         <ul>
           {service.examples.map((example) => <li>{example}</li>)}
         </ul>
+        {exampleProduct && (
+          <p>
+            Conheça um produto que desenvolvemos, o <a href={`/${exampleProduct.slug}`}>{exampleProduct.name}</a>,
+            que reúne publicação de conteúdo e integração com GitHub.
+          </p>
+        )}
         <h3>Guias para decidir</h3>
         <ul>
           {guides.map((guide) => (

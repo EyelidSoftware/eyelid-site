@@ -1,12 +1,12 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { productBySlug } from "../../lib/site";
+import { productBySlug, site } from "../../lib/site";
 const product = productBySlug("autofeedr")!;
 ---
 
 <BaseLayout
-  title={product.name}
-  description={`Conheça ${product.name}, um produto de automação de conteúdo.`}
+  title={`${product.name}, automação de conteúdo para LinkedIn e GitHub`}
+  description={`Conheça o ${product.name}, produto da ${site.company} para preparar conteúdo técnico para LinkedIn e automatizar o registro de desafios no GitHub.`}
   path="/autofeedr"
 >
   <div class="container">
@@ -14,8 +14,8 @@ const product = productBySlug("autofeedr")!;
       <p class="eyebrow">Produto</p>
       <h1>{product.name}</h1>
       <p class="lead">
-        Uma plataforma de automação de conteúdo. Consulte a aplicação para
-        conhecer os recursos e condições disponíveis.
+        {product.name} é um produto da {site.company} para quem publica conteúdo
+        técnico no LinkedIn e pratica programação no LeetCode.
       </p>
       <div class="actions">
         <a class="btn btn--primary" href={product.appUrl}>
@@ -24,5 +24,18 @@ const product = productBySlug("autofeedr")!;
         <a href="/contato">Falar com a equipe</a>
       </div>
     </header>
+    <section class="section prose">
+      <h2>O que o AutoFeedr reúne</h2>
+      <ul>
+        <li><strong>Preparação de conteúdo.</strong> A plataforma ajuda a preparar posts técnicos para LinkedIn e permite revisar o conteúdo antes de publicar.</li>
+        <li><strong>Prática de programação.</strong> O fluxo de desafios de LeetCode pode registrar as soluções com commits no GitHub.</li>
+      </ul>
+      <p>
+        O produto reúne etapas que costumam ficar espalhadas entre ferramentas,
+        com controle sobre o que será publicado. É um exemplo do tipo de
+        integração que desenvolvemos para reduzir trabalho manual em uma rotina.
+      </p>
+      <a class="text-link" href="/servicos/software-sob-medida">Veja como desenvolvemos software sob medida ↗</a>
+    </section>
   </div>
 </BaseLayout>
