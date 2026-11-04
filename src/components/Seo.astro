@@ -21,7 +21,7 @@ interface Props {
   /** Marca a página como não indexável (obrigado, páginas de rascunho). */
   noindex?: boolean;
   /** JSON-LD específico da página. */
-  schema?: Record<string, unknown>;
+  schema?: Record<string, unknown> | Record<string, unknown>[];
 }
 
 const {
@@ -90,10 +90,6 @@ const website = {
     <script is:inline type="application/ld+json" set:html={JSON.stringify(website)} />
   </>
 )}
-{schema && (
-  <script
-    is:inline
-    type="application/ld+json"
-    set:html={JSON.stringify(schema)}
-  />
-)}
+{[schema].flat().filter(Boolean).map((entry) => (
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(entry)} />
+))}

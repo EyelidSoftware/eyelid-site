@@ -18,7 +18,7 @@ interface Props {
   image?: string;
   type?: "website" | "article";
   noindex?: boolean;
-  schema?: Record<string, unknown>;
+  schema?: Record<string, unknown> | Record<string, unknown>[];
 }
 
 const props = Astro.props;

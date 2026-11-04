@@ -50,3 +50,23 @@ export function productBySlug(slug: string): Product | undefined {
 export function absoluteUrl(path = "/"): string {
   return new URL(path, site.url).href;
 }
+
+export function breadcrumbSchema(
+  section: { name: string; path: string },
+  page: { name: string; path: string },
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { name: "Início", path: "/" },
+      section,
+      page,
+    ].map(({ name, path }, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name,
+      item: absoluteUrl(path),
+    })),
+  };
+}
