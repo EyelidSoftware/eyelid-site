@@ -26,3 +26,5 @@ Some os custos para o mesmo período, por exemplo os primeiros 12 meses. Conside
 Se a integração ainda for uma incógnita, vale estimar separadamente uma etapa curta para testar acesso, formato dos dados e limites da API. Isso dá base para precificar a implementação com menos suposições. Se o processo já estiver claro, descreva a primeira entrega e peça uma proposta que mostre o custo de colocar essa etapa em uso.
 
 Veja [como funciona o desenvolvimento sob medida na eyelid](/servicos/software-sob-medida) ou [conte o que sua equipe precisa resolver](/contato).
+
+Antes de decidir com quem trabalhar, veja [como escolher uma empresa de desenvolvimento de software](/blog/como-escolher-empresa-desenvolvimento-software).

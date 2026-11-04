@@ -104,6 +104,12 @@ export const servicePages = [
 
 export const articles = [
   {
+    slug: "como-escolher-empresa-desenvolvimento-software",
+    category: "Produto & engenharia",
+    title: "Como escolher uma empresa de desenvolvimento de software?",
+    excerpt: "Compare fornecedores de software sob medida pelo diagnóstico, pela primeira entrega, pelos critérios de aceite e pela continuidade da operação.",
+  },
+  {
     slug: "quanto-custa-desenvolver-software-sob-medida",
     category: "Produto & engenharia",
     title: "Quanto custa desenvolver um software sob medida?",
