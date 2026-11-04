@@ -14,7 +14,10 @@ export function getStaticPaths() {
 }
 const { article, entry } = Astro.props;
 const { Content } = entry;
-const service = servicePages.find((item) => item.guide === article.slug);
+const service = servicePages.find((item) =>
+  item.guide === article.slug ||
+  ("additionalGuide" in item && item.additionalGuide === article.slug),
+);
 const schema = {
   "@context": "https://schema.org",
   "@type": "Article",

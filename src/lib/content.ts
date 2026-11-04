@@ -45,6 +45,7 @@ export const services = [
       ["Como vocês estimam prazo e investimento?", "A estimativa considera o número de fluxos, as integrações, a migração de dados e os critérios de aceite. Se uma dependência ainda for incerta, combinamos como validá-la antes de comprometer a implantação."],
     ],
     guide: "quando-desenvolver-software-sob-medida",
+    additionalGuide: "quanto-custa-desenvolver-software-sob-medida",
   },
   {
     slug: "consultoria-tecnologica",
@@ -102,6 +103,12 @@ export const servicePages = [
 ] as const;
 
 export const articles = [
+  {
+    slug: "quanto-custa-desenvolver-software-sob-medida",
+    category: "Produto & engenharia",
+    title: "Quanto custa desenvolver um software sob medida?",
+    excerpt: "Veja o que entra no orçamento, como comparar propostas e o que preparar para pedir uma estimativa de desenvolvimento.",
+  },
   {
     slug: "consultoria-tecnologica-quando-contratar",
     category: "Consultoria tecnológica",

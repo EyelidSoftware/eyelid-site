@@ -19,3 +19,5 @@ Combine como os dados serão migrados, como voltar à rotina anterior se surgir 
 Antes de pedir propostas, reúna os três casos, um mapa simples do fluxo e o critério de aceite da primeira entrega. Com esse material, fica mais fácil comparar propostas que parecem iguais no orçamento, mas cobrem partes diferentes da operação.
 
 Se a decisão ainda estiver aberta, veja [o que uma consultoria tecnológica entrega](/blog/consultoria-tecnologica-quando-contratar).
+
+Se o projeto já está definido, veja [como estimar o custo e comparar propostas](/blog/quanto-custa-desenvolver-software-sob-medida).
