@@ -10,9 +10,9 @@ export const site = {
   /** Empresa. O site é da Eyelid; AutoFeedr é um dos produtos. */
   company: "eyelid",
   legalName: "eyelid",
-  tagline: "Software bem pensado. Em cada detalhe.",
+  tagline: "Software para o seu jeito de trabalhar.",
   description:
-    "Software sob medida, integrações, automação e inteligência artificial. Tecnologia pensada para quem usa, com cuidado da descoberta à entrega.",
+    "Desenvolvimento de software sob medida, consultoria tecnológica e acompanhamento de processos para empresas.",
   url: "https://eyelid.com.br",
   locale: "pt-BR",
   email: "contato@eyelid.com.br",

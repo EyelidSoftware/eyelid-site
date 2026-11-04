@@ -526,3 +526,34 @@ details p {
     animation: none !important;
   }
 }
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: color-mix(in srgb, var(--bg-page) 92%, transparent);
+  backdrop-filter: blur(var(--space-4));
+}
+.nav-row { padding-block: var(--space-3); }
+.nav-row a[aria-current="page"] {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+.btn:active { transform: scale(0.98); }
+.delivery-steps { padding-inline-start: var(--space-6); }
+.delivery-steps li { padding-inline-start: var(--space-2); }
+.delivery-steps h3 { margin-bottom: var(--space-2); }
+
+@media (prefers-reduced-transparency: reduce), (prefers-contrast: more) {
+  .site-header { background: var(--bg-page); backdrop-filter: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn:active { transform: none; }
+}
+
+@media (max-width: 540px) {
+  .nav-row { gap: var(--space-2); }
+  .nav-row nav { justify-content: space-between; gap: var(--space-2); }
+  .nav-row nav a { display: inline-flex; align-items: center; min-height: 44px; }
+  .nav-contact { gap: var(--space-1); }
+}

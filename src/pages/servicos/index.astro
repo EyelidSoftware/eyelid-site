@@ -1,20 +1,19 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { services } from "../../lib/content";
+import { services, servicePages } from "../../lib/content";
 ---
 
 <BaseLayout
-  title="Software sob medida, automação e IA"
-  description="Conheça nossa abordagem para desenvolver software sob medida, conectar sistemas e aplicar inteligência artificial ao seu negócio."
+  title="Desenvolvimento sob medida e consultoria tecnológica"
+  description="Conheça as três formas de trabalhar com nossa equipe: desenvolvimento sob medida, consultoria tecnológica e acompanhamento de processos."
   path="/servicos"
 >
   <div class="container">
     <header class="page-heading">
       <p class="eyebrow">O que fazemos</p>
-      <h1>Soluções que começam pelo seu contexto.</h1>
+      <h1>Três formas de trabalhar com a gente.</h1>
       <p class="lead">
-        Cada operação tem suas regras, suas pessoas e seus desafios. Nosso papel
-        é transformar esse entendimento em tecnologia útil.
+        Podemos construir um sistema, ajudar sua equipe a escolher um caminho ou acompanhar melhorias em uma operação que já funciona.
       </p>
     </header>
     <div class="service-list">
@@ -29,6 +28,13 @@ import { services } from "../../lib/content";
         </a>
       ))}
     </div>
+    <section class="section">
+      <h2>Automação e IA</h2>
+      <p class="lead">Aplicamos essas ferramentas nos projetos em que elas resolvem uma tarefa definida.</p>
+      <div class="actions">
+        {servicePages.slice(3).map((service) => <a href={`/servicos/${service.slug}`}>{service.title} ↗</a>)}
+      </div>
+    </section>
     <section class="section">
       <div class="contact-band">
         <div>

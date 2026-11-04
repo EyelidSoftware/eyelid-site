@@ -1,13 +1,14 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { services } from "../../lib/content";
+import { servicePages, articles } from "../../lib/content";
 export function getStaticPaths() {
-  return services.map((service) => ({
+  return servicePages.map((service) => ({
     params: { slug: service.slug },
     props: { service },
   }));
 }
 const { service } = Astro.props;
+const guide = articles.find((article) => article.slug === service.guide);
 ---
 
 <BaseLayout
@@ -28,28 +29,21 @@ const { service } = Astro.props;
     </header>
     <section class="section split">
       <div>
-        <p class="eyebrow">Possibilidades</p>
-        <h2>Uma solução alinhada ao trabalho real.</h2>
+        <p class="eyebrow">Onde atuamos</p>
+        <h2>Quando faz sentido</h2>
         <ul>
-          {service.examples.map((e) => (
-            <li>{e}</li>
-          ))}
+          {service.examples.map((example) => <li>{example}</li>)}
         </ul>
+        {guide && <a class="text-link" href={`/blog/${guide.slug}`}>{guide.title} ↗</a>}
       </div>
       <div>
-        <p class="eyebrow">Perguntas que orientam</p>
-        <div class="faq">
-          {service.questions.map((q) => (
-            <details>
-              <summary>{q}</summary>
-              <p>
-                Essa definição é construída com sua equipe durante o
-                entendimento do projeto e orienta o escopo, as permissões e a
-                validação da entrega.
-              </p>
-            </details>
+        <p class="eyebrow">Da conversa à entrega</p>
+        <h2>Como trabalhamos</h2>
+        <ol class="delivery-steps">
+          {service.steps.map(([title, text]) => (
+            <li><h3>{title}</h3><p>{text}</p></li>
           ))}
-        </div>
+        </ol>
       </div>
     </section>
   </div>

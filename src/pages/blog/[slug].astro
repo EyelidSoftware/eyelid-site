@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { articles } from "../../lib/content";
+import { articles, servicePages } from "../../lib/content";
 import { site, absoluteUrl } from "../../lib/site";
 export function getStaticPaths() {
   return articles.map((article) => ({
@@ -9,6 +9,7 @@ export function getStaticPaths() {
   }));
 }
 const { article } = Astro.props;
+const service = servicePages.find((item) => item.guide === article.slug);
 const schema = {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -30,7 +31,7 @@ const schema = {
   <article class="container">
     <header class="page-heading prose">
       <a class="eyebrow" href="/blog">
-        ← Ideias / {article.category}
+        ← Artigos / {article.category}
       </a>
       <h1>{article.title}</h1>
       <p class="lead">{article.excerpt}</p>
@@ -44,10 +45,9 @@ const schema = {
         </section>
       ))}
       <section>
-        <h2>Vamos olhar para o seu contexto?</h2>
+        <h2>Como podemos ajudar</h2>
         <p>
-          Conte o desafio da sua operação e podemos conversar sobre os próximos
-          passos.
+          {service && <a href={`/servicos/${service.slug}`}>{service.title} ↗</a>}
         </p>
         <a class="btn btn--primary" href="/contato">
           Falar com a equipe ↗
