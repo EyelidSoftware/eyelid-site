@@ -1,8 +1,8 @@
 ---
 import { site } from "../lib/site";
 const links = [
-  { href: "/servicos", label: "Serviços" },
-  { href: "/sobre", label: "Quem somos" },
+  { href: "/#solucoes", label: "Soluções" },
+  { href: "/#como-trabalhamos", label: "Como trabalhamos" },
   { href: "/blog", label: "Artigos" },
 ];
 ---
@@ -10,7 +10,12 @@ const links = [
 <header class="site-header">
   <div class="container nav-row">
     <a href="/" aria-label={`${site.company}, início`} class="brand">
-      <img src="/brand/logo.svg" alt={site.company} width="150" height="44" />
+      <img
+        src="/brand/logo-white.svg"
+        alt={site.company}
+        width="150"
+        height="44"
+      />
     </a>
     <nav aria-label="Principal">
       {links.map((l) => (
@@ -23,7 +28,11 @@ const links = [
           {l.label}
         </a>
       ))}
-      <a class="nav-contact" href="/contato">
+      <a
+        class="nav-contact"
+        href="/contato"
+        aria-current={Astro.url.pathname === "/contato" ? "page" : undefined}
+      >
         Contato <span aria-hidden="true">↗</span>
       </a>
     </nav>

@@ -56,3 +56,33 @@
   --measure: 68ch;
   --transition: 160ms ease;
 }
+
+/* Monochrome technology presentation */
+:root {
+  --tech-bg: #0b0b0c;
+  --tech-panel: #18181a;
+  --tech-fill: #242427;
+  --tech-border: #343438;
+  --tech-muted: #ababaf;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --shadow-tech: 0 24px 70px #00000055;
+  --space-32: 128px;
+  --space-40: 160px;
+}
+
+/* Shared institutional theme. */
+body.site-continuous {
+  --bg-page: var(--tech-bg);
+  --bg-surface: var(--tech-panel);
+  --bg-subtle: var(--tech-fill);
+  --bg-inverse: var(--tech-bg);
+  --text-1: #f1f1f3;
+  --text-2: #b0b0b6;
+  --text-3: #9999a2;
+  --border: #2a2a30;
+  --border-strong: #46464f;
+  --accent: #f1f1f3;
+  --focus: #adc3ff;
+  --canvas-line: #ffffff05;
+  --canvas-light: #ffffff06;
+}

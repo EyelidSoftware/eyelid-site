@@ -20,7 +20,7 @@ npm run verify:site
 npm run preview
 ```
 
-O build gera `dist/`, sem backend, banco de dados ou JavaScript de aplicação no navegador. O contato usa `mailto:`, não um formulário de envio. O endereço atualmente configurado é `contato@eyelid.com.br`; confirme a existência e o atendimento da caixa no serviço de e-mail.
+O build gera `dist/`, sem backend ou banco de dados. A home tem um módulo JavaScript local para profundidade e navegação horizontal dos painéis; o restante do conteúdo é estático e indexável. O contato usa `mailto:`, não um formulário de envio. O endereço atualmente configurado é `contato@eyelid.com.br`; confirme a existência e o atendimento da caixa no serviço de e-mail.
 
 ## Conteúdo e identidade
 
@@ -30,6 +30,8 @@ O build gera `dist/`, sem backend, banco de dados ou JavaScript de aplicação n
 - `public/brand`: vetores aprovados, símbolo 02 e escrita 13B.
 - `public/fonts`: fontes hospedadas localmente e respectivas licenças.
 - `public/og/default.png`: imagem de compartilhamento.
+- `public/visuals`: telas vetoriais próprias em temas claro e escuro, geradas com `python3 scripts/generate-visuals.py`.
+- `src/components/CurvedPanels.astro`: faixa de painéis com scroll horizontal nativo, arraste e teclado.
 
 Não publicar nomes de clientes, métricas internas, depoimentos ou cases sem autorização. Os artigos iniciais são conteúdo editorial geral; não descrevem resultados medidos em clientes.
 

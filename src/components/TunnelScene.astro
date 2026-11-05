@@ -1,0 +1,147 @@
+---
+const panels = [
+  "operacao-claro",
+  "automacao",
+  "assistente",
+  "monitoramento-claro",
+  "operacao",
+  "assistente",
+];
+---
+
+<div class="tunnel-scene" aria-hidden="true">
+  <div class="tunnel-guides"></div>
+  {panels.map((name, i) => (
+    <div class="tunnel-panel" data-depth={i} style={`--i:${i}`}>
+      <img
+        src={`/visuals/${name}.svg?v=3`}
+        alt=""
+        width="800"
+        height="580"
+        loading={i < 2 ? "eager" : "lazy"}
+      />
+    </div>
+  ))}
+</div>
+<style>
+  .tunnel-scene {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    perspective: 1000px;
+    pointer-events: none;
+    z-index: 0;
+    --travel: 0;
+    --pan-x: 0;
+    --pan-y: 0;
+    mask-image: linear-gradient(
+      transparent,
+      var(--tech-bg) 8%,
+      var(--tech-bg) 86%,
+      transparent
+    );
+  }
+  .tunnel-guides {
+    position: absolute;
+    width: 135%;
+    aspect-ratio: 1;
+    left: -17.5%;
+    top: -35%;
+    border: 1px solid var(--tech-border);
+    border-radius: 50%;
+    opacity: 0.45;
+    transform: rotateX(66deg);
+    box-shadow:
+      0 0 0 var(--space-24)
+        color-mix(in srgb, var(--tech-border) 16%, transparent),
+      0 0 0 calc(var(--space-24) * 2)
+        color-mix(in srgb, var(--tech-border) 8%, transparent);
+  }
+  .tunnel-panel {
+    position: absolute;
+    width: clamp(230px, 25vw, 390px);
+    left: 50%;
+    top: 50%;
+    transform-style: preserve-3d;
+    will-change: transform;
+    opacity: 0.65;
+    filter: drop-shadow(0 var(--space-6) var(--space-8) var(--tech-bg));
+    --x: -41vw;
+    --y: -30vh;
+    --r: -12deg;
+    --z: -100px;
+    transform: translate3d(
+        calc(-50% + var(--x)),
+        calc(-50% + var(--y)),
+        var(--z)
+      )
+      rotateZ(var(--r));
+  }
+  .tunnel-panel:nth-of-type(3) {
+    --x: 42vw;
+    --y: -28vh;
+    --r: 11deg;
+    --z: -190px;
+  }
+  .tunnel-panel:nth-of-type(4) {
+    --x: -43vw;
+    --y: 24vh;
+    --r: 9deg;
+    --z: -310px;
+  }
+  .tunnel-panel:nth-of-type(5) {
+    --x: 43vw;
+    --y: 30vh;
+    --r: -10deg;
+    --z: -260px;
+  }
+  .tunnel-panel:nth-of-type(6) {
+    --x: -27vw;
+    --y: 40vh;
+    --r: -8deg;
+    --z: -850px;
+  }
+  .tunnel-panel:nth-of-type(7) {
+    --x: 30vw;
+    --y: -41vh;
+    --r: 8deg;
+    --z: -900px;
+  }
+  .tunnel-panel img {
+    display: block;
+    width: 100%;
+    border-radius: var(--radius);
+    border: 1px solid var(--tech-border);
+  }
+  @media (max-width: 700px) {
+    .tunnel-scene {
+      perspective: 750px;
+    }
+    .tunnel-panel {
+      width: 230px;
+      --x: -62vw;
+      --y: -26vh;
+      opacity: 0.5;
+    }
+    .tunnel-panel:nth-of-type(3) {
+      --x: 65vw;
+      --y: -28vh;
+    }
+    .tunnel-panel:nth-of-type(4) {
+      --x: -56vw;
+      --y: 31vh;
+    }
+    .tunnel-panel:nth-of-type(5) {
+      --x: 58vw;
+      --y: 34vh;
+    }
+    .tunnel-panel:nth-of-type(n + 6) {
+      display: none;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .tunnel-panel {
+      will-change: auto;
+    }
+  }
+</style>

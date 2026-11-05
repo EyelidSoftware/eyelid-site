@@ -1,0 +1,385 @@
+<div class="curved-showcase" data-curved-showcase>
+  <div class="curved-stage">
+    <div class="curved-track" aria-hidden="true"></div>
+    <div
+      class="curve-input"
+      tabindex="0"
+      role="region"
+      aria-label="Explorar telas das soluções"
+      aria-describedby="curve-instructions"
+    >
+      <div class="curve-space"></div>
+    </div>
+  </div>
+  <p class="curve-hint" id="curve-instructions">
+    Arraste ou deslize para explorar <span aria-hidden="true">↔</span>
+  </p>
+  <noscript>
+    <div class="static-panels">
+      <img
+        src="/visuals/operacao-claro.svg?v=3"
+        alt="Painel de gestão de solicitações"
+        width="800"
+        height="580"
+      />
+      <img
+        src="/visuals/assistente.svg?v=3"
+        alt="Interface de assistente conectado a documentos"
+        width="800"
+        height="580"
+      />
+    </div>
+  </noscript>
+</div>
+<style>
+  .curved-showcase {
+    /* The padded paint boundary contains projected 3D overflow without cutting visible panels. */
+    overflow: clip;
+    contain: paint;
+    padding-block: clamp(var(--space-12), 9vw, var(--space-32));
+    background: transparent;
+    color: var(--text-inverse);
+  }
+  .curved-stage {
+    height: clamp(330px, 37vw, 550px);
+    position: relative;
+    overflow: visible;
+    container-type: size;
+  }
+  .curved-track {
+    position: absolute;
+    inset: 0;
+    perspective: var(--camera, 1000px);
+    transform-style: preserve-3d;
+    perspective-origin: 50% 50%;
+  }
+  .curved-track :global(.curve-tile) {
+    position: absolute;
+    transform-style: preserve-3d;
+  }
+  .curved-track :global(.curve-slice) {
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    background-size: var(--image-width) 100%;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+  }
+  .static-panels {
+    display: flex;
+    gap: var(--space-6);
+    padding: var(--space-6);
+  }
+  .static-panels img {
+    width: 48%;
+  }
+  .curve-input {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    cursor: grab;
+    touch-action: pan-x pan-y;
+    -webkit-overflow-scrolling: touch;
+  }
+  .curve-input::-webkit-scrollbar {
+    display: none;
+  }
+  .curve-input[data-dragging] {
+    cursor: grabbing;
+  }
+  .curve-input:focus-visible {
+    outline-offset: calc(-1 * var(--space-3));
+    border-radius: var(--radius);
+  }
+  .curve-space {
+    width: 500%;
+    height: 100%;
+    pointer-events: none;
+  }
+  .curve-hint {
+    margin: var(--space-6) var(--space-6) 0;
+    text-align: center;
+    color: var(--text-2);
+    font-size: var(--text-xs);
+    pointer-events: none;
+  }
+  .curve-hint span {
+    margin-left: var(--space-3);
+  }
+</style>
+
+<script is:inline type="module" id="technology-motion">
+  /*
+   * Astro/CSS adaptation of the cylindrical geometry in Tilted Grid Hero
+   * (ruixen.ui, 21st.dev demo 36749). Native scroll depth draws from the
+   * Perspective Tunnel Hero (daiwiikharihar, demo 39043).
+   * Native horizontal scrolling, with no vertical wheel interception or external requests.
+   */
+  const root = document.querySelector("[data-curved-showcase]");
+  const stage = root?.querySelector(".curved-stage");
+  const track = root?.querySelector(".curved-track");
+  const input = root?.querySelector(".curve-input");
+  const scene = document.querySelector(".tunnel-scene");
+  const hero = document.querySelector(".technology-hero");
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)");
+  const images = [
+    "operacao-claro",
+    "automacao",
+    "assistente-claro",
+    "monitoramento",
+  ];
+  let curve = [];
+  let curveProgress = 0;
+  let manualMode = false,
+    manualBase = 0,
+    manualOffset = 0;
+  let dragStart = null;
+  let frame = 0;
+  let px = 0,
+    py = 0,
+    sx = 0,
+    sy = 0,
+    progress = 0,
+    current = 0;
+  function draw() {
+    if (!stage || !track) return;
+    const width = stage.clientWidth,
+      height = stage.clientHeight;
+    if (!width || !height) return;
+    const bend = (68 * Math.PI) / 180,
+      camera = 1.6,
+      aspect = 800 / 580;
+    const radius =
+      (width * (camera - 1 + Math.cos(bend))) / (2 * camera * Math.sin(bend));
+    const tileH = Math.min(height * 0.55, (width * 0.48) / aspect);
+    const tileW = tileH * aspect;
+    const unit = ((tileH / radius) * 180) / Math.PI;
+    const pitch = (aspect + 0.1) * unit;
+    const count = Math.min(
+      24,
+      Math.max(4, Math.ceil((2 * (68 + (aspect * unit) / 2)) / pitch)),
+    );
+    const sweep = (count * pitch) / 2;
+
+    track.style.setProperty("--camera", radius * camera + "px");
+    const fragment = document.createDocumentFragment();
+    curve = [];
+    for (let i = 0; i < count; i++) {
+      const tile = document.createElement("div");
+      tile.className = "curve-tile";
+      Object.assign(tile.style, {
+        left: (width - tileW) / 2 + "px",
+        top: (height - tileH) / 2 + "px",
+        width: tileW + "px",
+        height: tileH + "px",
+      });
+      for (let k = 0; k < 16; k++) {
+        const strip = document.createElement("div");
+        strip.className = "curve-slice";
+        const share = tileW / 16;
+        const angle = (aspect / 2 - ((k + 0.5) * aspect) / 16) * unit;
+        Object.assign(strip.style, {
+          left: (tileW - share) / 2 + "px",
+          width: share + 1 + "px",
+          backgroundImage:
+            'url("/visuals/' + images[i % images.length] + '.svg?v=3")',
+          backgroundPosition: -k * share + "px 0",
+          transform:
+            "translateZ(" +
+            radius +
+            "px) rotateY(" +
+            angle +
+            "deg) translateZ(-" +
+            radius +
+            "px)",
+        });
+        strip.style.setProperty("--image-width", tileW + "px");
+        tile.append(strip);
+      }
+      // The inline pose remains visible when CSS animations are disabled.
+      const stillAngle = -sweep + (i / count) * 2 * sweep;
+      tile.style.transform =
+        "translateZ(" +
+        radius +
+        "px) rotateY(" +
+        stillAngle +
+        "deg) translateZ(-" +
+        radius +
+        "px)";
+      curve.push({ tile, radius, sweep, i, count });
+      fragment.append(tile);
+    }
+    track.replaceChildren(fragment);
+    if (input) {
+      const range = input.scrollWidth - input.clientWidth;
+      input.scrollLeft = range * (0.5 + manualOffset);
+    }
+    updateMotion();
+  }
+  function updateMotion() {
+    cancelAnimationFrame(frame);
+    frame = 0;
+    if (reduce.matches) {
+      scene?.querySelectorAll(".tunnel-panel").forEach((card) => {
+        card.style.transform = "";
+        card.style.opacity = "";
+      });
+      curveProgress = 0;
+      positionCurve();
+    } else queue();
+  }
+  function positionCurve() {
+    for (const { tile, radius, sweep, i, count } of curve) {
+      const turn = manualMode
+        ? manualBase + manualOffset
+        : curveProgress * 0.36;
+      const phase = (((i / count + turn) % 1) + 1) % 1;
+      const angle = -sweep + phase * 2 * sweep;
+      // Fade in angular space instead of clipping at a rectangular container.
+      const fade = Math.max(0, Math.min(1, (86 - Math.abs(angle)) / 22));
+      tile.style.opacity = String(fade);
+      tile.style.display = fade > 0 ? "" : "none";
+      tile.style.transform =
+        "translateZ(" +
+        radius +
+        "px) rotateY(" +
+        angle +
+        "deg) translateZ(-" +
+        radius +
+        "px)";
+    }
+  }
+  function tick() {
+    frame = 0;
+    if (!hero || !scene || reduce.matches || document.hidden) return;
+    const rect = hero.getBoundingClientRect();
+    const curveRect = stage?.getBoundingClientRect();
+    const curveTarget = curveRect
+      ? Math.max(
+          -1,
+          Math.min(
+            1,
+            (innerHeight / 2 - (curveRect.top + curveRect.height / 2)) /
+              innerHeight,
+          ),
+        )
+      : 0;
+    if (!manualMode) curveProgress += (curveTarget - curveProgress) * 0.1;
+    positionCurve();
+    if (rect.bottom < 0 || rect.top > innerHeight) {
+      if (!manualMode && Math.abs(curveTarget - curveProgress) > 0.0005)
+        queue();
+      return;
+    }
+    progress = Math.min(
+      1,
+      Math.max(0, -rect.top / Math.max(1, hero.offsetHeight * 0.85)),
+    );
+    current += (progress - current) * 0.09;
+    sx += (px - sx) * 0.07;
+    sy += (py - sy) * 0.07;
+    scene.querySelectorAll(".tunnel-panel").forEach((card, i) => {
+      const z = parseFloat(getComputedStyle(card).getPropertyValue("--z")) || 0;
+      const travel = current * (1100 + i * 90);
+      card.style.transform =
+        "translate3d(calc(-50% + var(--x) + " +
+        -sx * 22 +
+        "px),calc(-50% + var(--y) + " +
+        -sy * 16 +
+        "px)," +
+        (z + travel) +
+        "px) rotateZ(var(--r))";
+      card.style.opacity = String(
+        Math.max(0, Math.min(0.78, 1 - (z + travel) / 650)),
+      );
+    });
+    if (
+      Math.abs(progress - current) > 0.0005 ||
+      Math.abs(px - sx) > 0.005 ||
+      Math.abs(py - sy) > 0.005 ||
+      (!manualMode && Math.abs(curveTarget - curveProgress) > 0.0005)
+    )
+      queue();
+  }
+  function queue() {
+    if (!frame && !reduce.matches && !document.hidden)
+      frame = requestAnimationFrame(tick);
+  }
+  addEventListener("scroll", queue, { passive: true });
+  hero?.addEventListener(
+    "pointermove",
+    (e) => {
+      if (e.pointerType === "touch") return;
+      px = (e.clientX / innerWidth - 0.5) * 2;
+      py = (e.clientY / innerHeight - 0.5) * 2;
+      queue();
+    },
+    { passive: true },
+  );
+  hero?.addEventListener("pointerleave", () => {
+    px = py = 0;
+    queue();
+  });
+  function enterManual() {
+    if (!manualMode) {
+      manualBase = curveProgress * 0.36;
+      manualMode = true;
+    }
+  }
+  function movePanels() {
+    if (!input || !manualMode) return;
+    const range = input.scrollWidth - input.clientWidth;
+    manualOffset = range ? input.scrollLeft / range - 0.5 : 0;
+    positionCurve();
+  }
+  input?.addEventListener("scroll", movePanels, { passive: true });
+  input?.addEventListener(
+    "wheel",
+    (e) => {
+      if (Math.abs(e.deltaX) > Math.abs(e.deltaY) || e.shiftKey) enterManual();
+    },
+    { passive: true },
+  );
+  input?.addEventListener("pointerdown", (e) => {
+    enterManual();
+    if (e.pointerType !== "mouse" || e.button !== 0) return;
+    dragStart = { x: e.clientX, left: input.scrollLeft };
+    input.setPointerCapture(e.pointerId);
+    input.setAttribute("data-dragging", "");
+  });
+  input?.addEventListener("pointermove", (e) => {
+    if (!dragStart) return;
+    input.scrollLeft = dragStart.left - (e.clientX - dragStart.x);
+    movePanels();
+  });
+  function endDrag() {
+    dragStart = null;
+    input?.removeAttribute("data-dragging");
+  }
+  input?.addEventListener("pointerup", endDrag);
+  input?.addEventListener("pointercancel", endDrag);
+  input?.addEventListener("lostpointercapture", endDrag);
+  input?.addEventListener("keydown", (e) => {
+    if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(e.key)) return;
+    e.preventDefault();
+    enterManual();
+    const range = input.scrollWidth - input.clientWidth;
+    if (e.key === "Home") input.scrollLeft = 0;
+    else if (e.key === "End") input.scrollLeft = range;
+    else
+      input.scrollBy({
+        left: (e.key === "ArrowRight" ? 1 : -1) * input.clientWidth * 0.65,
+        behavior: reduce.matches ? "auto" : "smooth",
+      });
+    movePanels();
+  });
+  reduce.addEventListener("change", updateMotion);
+  document.addEventListener("visibilitychange", updateMotion);
+  if (stage) new ResizeObserver(draw).observe(stage);
+  draw();
+  queue();
+</script>

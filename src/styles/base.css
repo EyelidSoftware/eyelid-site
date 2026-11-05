@@ -534,26 +534,172 @@ details p {
   background: color-mix(in srgb, var(--bg-page) 92%, transparent);
   backdrop-filter: blur(var(--space-4));
 }
-.nav-row { padding-block: var(--space-3); }
+.nav-row {
+  padding-block: var(--space-3);
+}
 .nav-row a[aria-current="page"] {
   text-decoration: underline;
   text-decoration-thickness: 1px;
 }
-.btn:active { transform: scale(0.98); }
-.delivery-steps { padding-inline-start: var(--space-6); }
-.delivery-steps li { padding-inline-start: var(--space-2); }
-.delivery-steps h3 { margin-bottom: var(--space-2); }
+.btn:active {
+  transform: scale(0.98);
+}
+.delivery-steps {
+  padding-inline-start: var(--space-6);
+}
+.delivery-steps li {
+  padding-inline-start: var(--space-2);
+}
+.delivery-steps h3 {
+  margin-bottom: var(--space-2);
+}
 
 @media (prefers-reduced-transparency: reduce), (prefers-contrast: more) {
-  .site-header { background: var(--bg-page); backdrop-filter: none; }
+  .site-header {
+    background: var(--bg-page);
+    backdrop-filter: none;
+  }
 }
 @media (prefers-reduced-motion: reduce) {
-  .btn:active { transform: none; }
+  .btn:active {
+    transform: none;
+  }
 }
 
 @media (max-width: 540px) {
-  .nav-row { gap: var(--space-2); }
-  .nav-row nav { justify-content: space-between; gap: var(--space-2); }
-  .nav-row nav a { display: inline-flex; align-items: center; min-height: 44px; }
-  .nav-contact { gap: var(--space-1); }
+  .nav-row {
+    gap: var(--space-2);
+  }
+  .nav-row nav {
+    justify-content: space-between;
+    gap: var(--space-2);
+  }
+  .nav-row nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+  .nav-contact {
+    gap: var(--space-1);
+  }
+}
+
+/* A fixed, subtle canvas links the institutional pages without alternating bands. */
+.site-continuous {
+  isolation: isolate;
+}
+.site-continuous::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    radial-gradient(ellipse at 70% 20%, var(--canvas-light), transparent 65%),
+    linear-gradient(var(--canvas-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--canvas-line) 1px, transparent 1px);
+  background-size:
+    auto,
+    var(--space-24) var(--space-24),
+    var(--space-24) var(--space-24);
+}
+.site-continuous .site-header {
+  background: color-mix(in srgb, var(--tech-bg) 88%, transparent);
+  border-bottom-color: var(--border);
+}
+.site-continuous .site-footer {
+  background: transparent;
+  border-top: 1px solid var(--border);
+}
+.site-continuous .site-footer p,
+.site-continuous .footer-top > a:last-child,
+.site-continuous .footer-bottom {
+  color: var(--text-2);
+}
+.site-continuous .btn--primary:hover {
+  background: var(--bg-subtle);
+  color: var(--text-inverse);
+}
+@media (prefers-reduced-transparency: reduce), (prefers-contrast: more) {
+  .site-continuous .site-header {
+    background: var(--tech-bg);
+  }
+  .site-continuous::before {
+    display: none;
+  }
+}
+
+.site-continuous .dark-section {
+  background: transparent;
+}
+.site-continuous .dark-section .eyebrow,
+.site-continuous .dark-section p {
+  color: var(--text-2);
+}
+.site-continuous .big-symbol img,
+.site-continuous .hero-art img {
+  filter: invert(1);
+}
+.site-continuous .article-card {
+  background: transparent;
+}
+.site-continuous .page-heading h1 {
+  font-weight: 500;
+}
+.site-continuous .prose {
+  line-height: 1.85;
+}
+.site-continuous .prose h2,
+.site-continuous .prose h3 {
+  color: var(--text-1);
+}
+.site-continuous .prose a {
+  color: var(--text-1);
+}
+.site-continuous .prose .btn--primary {
+  color: var(--tech-bg);
+}
+.site-continuous .prose .btn--primary:hover {
+  color: var(--text-1);
+}
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-sm);
+  margin-block: var(--space-8);
+}
+.prose th,
+.prose td {
+  text-align: left;
+  vertical-align: top;
+  padding: var(--space-4);
+  border-bottom: 1px solid var(--border);
+}
+.prose th {
+  color: var(--text-1);
+  font-weight: 500;
+}
+.prose td {
+  color: var(--text-2);
+}
+.prose blockquote {
+  border-left: 2px solid var(--border-strong);
+  margin-inline: 0;
+  padding-left: var(--space-6);
+}
+@media (max-width: 540px) {
+  .prose th,
+  .prose td {
+    padding: var(--space-3) var(--space-2);
+    overflow-wrap: anywhere;
+  }
+}
+
+/* The document scrolls vertically only within its content bounds. */
+html {
+  overflow-x: clip;
+  overscroll-behavior: none;
+}
+body {
+  overscroll-behavior: none;
 }

@@ -3,10 +3,9 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import { articles, servicePages } from "../../lib/content";
 import { site, absoluteUrl, breadcrumbSchema } from "../../lib/site";
 export function getStaticPaths() {
-  const entries = import.meta.glob<import("astro").MarkdownInstance<Record<string, never>>>(
-    "../../articles/*.md",
-    { eager: true },
-  );
+  const entries = import.meta.glob<
+    import("astro").MarkdownInstance<Record<string, never>>
+  >("../../articles/*.md", { eager: true });
   return articles.map((article) => ({
     params: { slug: article.slug },
     props: { article, entry: entries[`../../articles/${article.slug}.md`] },
@@ -14,9 +13,10 @@ export function getStaticPaths() {
 }
 const { article, entry } = Astro.props;
 const { Content } = entry;
-const service = servicePages.find((item) =>
-  item.guide === article.slug ||
-  ("additionalGuide" in item && item.additionalGuide === article.slug),
+const service = servicePages.find(
+  (item) =>
+    item.guide === article.slug ||
+    ("additionalGuide" in item && item.additionalGuide === article.slug),
 );
 const path = `/blog/${article.slug}`;
 const articleSchema = {
@@ -35,7 +35,13 @@ const articleSchema = {
   description={article.excerpt}
   path={path}
   type="article"
-  schema={[articleSchema, breadcrumbSchema({ name: "Artigos", path: "/blog" }, { name: article.title, path })]}
+  schema={[
+    articleSchema,
+    breadcrumbSchema(
+      { name: "Artigos", path: "/blog" },
+      { name: article.title, path },
+    ),
+  ]}
 >
   <article class="container">
     <header class="page-heading prose">
@@ -51,7 +57,9 @@ const articleSchema = {
       <section>
         <h2>Como podemos ajudar</h2>
         <p>
-          {service && <a href={`/servicos/${service.slug}`}>{service.title} ↗</a>}
+          {service && (
+            <a href={`/servicos/${service.slug}`}>{service.title} ↗</a>
+          )}
         </p>
         <a class="btn btn--primary" href="/contato">
           Falar com a equipe ↗

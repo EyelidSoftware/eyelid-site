@@ -40,5 +40,5 @@ assert(files.length >= 14);
 assert(existsSync("dist/og/default.png"));
 assert(existsSync("dist/sitemap-index.xml"));
 console.log(
-  `${files.length} páginas verificadas: SEO, links locais, JSON-LD e ausência de JS de aplicação.`,
+  `${files.length} páginas verificadas: SEO, links locais, JSON-LD e ausência de bundles JS externos.`,
 );
