@@ -48,7 +48,12 @@ const organization = {
   "@id": absoluteUrl("/#organization"),
   name: site.company,
   url: absoluteUrl(),
-  logo: absoluteUrl("/brand/eyelid-mark.svg"),
+  logo: {
+    "@type": "ImageObject",
+    url: absoluteUrl("/brand/logo-square.png"),
+    width: 512,
+    height: 512,
+  },
   email: site.email,
   sameAs: Object.values(site.social).filter(Boolean),
 };
@@ -86,10 +91,25 @@ const website = {
 
 {isHome && (
   <>
-    <script is:inline type="application/ld+json" set:html={JSON.stringify(organization)} />
-    <script is:inline type="application/ld+json" set:html={JSON.stringify(website)} />
+    <script
+      is:inline
+      type="application/ld+json"
+      set:html={JSON.stringify(organization)}
+    />
+    <script
+      is:inline
+      type="application/ld+json"
+      set:html={JSON.stringify(website)}
+    />
   </>
 )}
-{[schema].flat().filter(Boolean).map((entry) => (
-  <script is:inline type="application/ld+json" set:html={JSON.stringify(entry)} />
-))}
+{[schema]
+  .flat()
+  .filter(Boolean)
+  .map((entry) => (
+    <script
+      is:inline
+      type="application/ld+json"
+      set:html={JSON.stringify(entry)}
+    />
+  ))}
