@@ -414,5 +414,165 @@
       "Planejamento de ações e responsáveis"
     ],
     "service": "software-sob-medida"
+  },
+  {
+    "slug": "producao-industrial",
+    "title": "Produção industrial e ordens",
+    "category": "Operações especializadas",
+    "theme": "dark",
+    "accent": "blue",
+    "screen": "O ritmo da fábrica, em perspectiva.",
+    "subtitle": "Ordens, células e apontamentos conectados à rotina industrial.",
+    "description": "Conceito de aplicação de execução da produção com ordens por célula, andamento dos lotes e apontamentos para a equipe industrial.",
+    "features": [
+      "Ordens e lotes por célula de produção",
+      "Planejamento e apontamentos por etapa",
+      "Ocorrências e responsabilidades visíveis"
+    ],
+    "service": "software-sob-medida"
+  },
+  {
+    "slug": "supervisao-instalacoes",
+    "title": "Supervisão de instalações",
+    "category": "Operações especializadas",
+    "theme": "light",
+    "accent": "teal",
+    "screen": "Entenda o processo em uma única vista.",
+    "subtitle": "Equipamentos, leituras e ocorrências em um painel de supervisão.",
+    "description": "Conceito de supervisório de instalações com diagrama de processo, leituras demonstrativas e acompanhamento de ocorrências por equipamento.",
+    "features": [
+      "Diagrama operacional com identificação de ativos",
+      "Leituras e tendências contextualizadas",
+      "Ocorrências encaminhadas à equipe responsável"
+    ],
+    "service": "software-sob-medida"
+  },
+  {
+    "slug": "armazem-separacao",
+    "title": "Armazém e separação de pedidos",
+    "category": "Operações especializadas",
+    "theme": "dark",
+    "accent": "amber",
+    "screen": "Do endereço certo à próxima expedição.",
+    "subtitle": "Posições, ondas de separação e pedidos no mesmo ambiente.",
+    "description": "Conceito de sistema de gestão de armazém com endereçamento visual, ondas de separação e acompanhamento de pedidos para expedição.",
+    "features": [
+      "Endereços e ocupação por corredor",
+      "Ondas de separação e sequência de coleta",
+      "Pedidos e conferências antes da expedição"
+    ],
+    "service": "software-sob-medida"
+  },
+  {
+    "slug": "planejamento-agricola",
+    "title": "Planejamento e operação agrícola",
+    "category": "Operações especializadas",
+    "theme": "light",
+    "accent": "teal",
+    "screen": "Cada área, no tempo da operação.",
+    "subtitle": "Áreas de manejo, calendário e atividades para a equipe de campo.",
+    "description": "Conceito de plataforma agrícola com áreas de manejo esquemáticas, planejamento de atividades e acompanhamento do calendário operacional.",
+    "features": [
+      "Áreas e atividades de manejo em uma visão",
+      "Calendário de execução por equipe",
+      "Observações de campo e planejamento conjunto"
+    ],
+    "service": "software-sob-medida"
+  },
+  {
+    "slug": "inspecao-visual-ia",
+    "title": "Inspeção visual com IA",
+    "category": "Operações especializadas",
+    "theme": "dark",
+    "accent": "violet",
+    "screen": "Veja o detalhe que merece revisão.",
+    "subtitle": "Imagens, regiões de interesse e decisão humana no processo de qualidade.",
+    "description": "Conceito de aplicação de inspeção visual com IA que destaca regiões de interesse em uma peça e organiza a revisão humana da análise.",
+    "features": [
+      "Regiões de interesse vinculadas à imagem",
+      "Fila de inspeções para revisão humana",
+      "Registro de decisões e contexto da avaliação"
+    ],
+    "service": "inteligencia-artificial"
+  },
+  {
+    "slug": "orcamento-quantitativos-obras",
+    "title": "Orçamento e quantitativos de obras",
+    "category": "Operações especializadas",
+    "theme": "light",
+    "accent": "blue",
+    "screen": "Do desenho ao planejamento da obra.",
+    "subtitle": "Elementos, quantidades e composições organizados por ambiente.",
+    "description": "Conceito de ferramenta de orçamento de obras com desenho de referência, seleção de elementos e composição de quantitativos por ambiente.",
+    "features": [
+      "Elementos e quantidades vinculados ao desenho",
+      "Composições de custo por etapa",
+      "Revisão das premissas com a equipe do projeto"
+    ],
+    "service": "software-sob-medida"
+  },
+  {
+    "slug": "gestao-energia",
+    "title": "Gestão de energia e consumo",
+    "category": "Operações especializadas",
+    "theme": "dark",
+    "accent": "teal",
+    "screen": "Energia com contexto para decidir.",
+    "subtitle": "Fontes, consumo e prioridades de acompanhamento da instalação.",
+    "description": "Conceito de aplicação de gestão de energia com fluxo entre fontes e cargas, perfil de consumo e acompanhamento por área da instalação.",
+    "features": [
+      "Fluxo de fontes e cargas da instalação",
+      "Perfis de consumo por período",
+      "Leituras e prioridades para acompanhamento"
+    ],
+    "service": "software-sob-medida"
+  },
+  {
+    "slug": "portal-comercial-b2b",
+    "title": "Portal comercial B2B",
+    "category": "Operações especializadas",
+    "theme": "light",
+    "accent": "violet",
+    "screen": "Comprar também pode ser simples.",
+    "subtitle": "Catálogo, condições e pedidos em uma experiência para empresas.",
+    "description": "Conceito de portal B2B com catálogo de materiais, seleção de itens e montagem de pedidos para avaliação comercial.",
+    "features": [
+      "Catálogo organizado por categoria e disponibilidade",
+      "Montagem de pedidos com quantidades",
+      "Condições comerciais e revisão antes de enviar"
+    ],
+    "service": "software-sob-medida"
+  },
+  {
+    "slug": "agenda-equipes-campo",
+    "title": "Agenda de equipes de campo",
+    "category": "Operações especializadas",
+    "theme": "dark",
+    "accent": "blue",
+    "screen": "O serviço certo, com a equipe certa.",
+    "subtitle": "Disponibilidade, visitas e ordens de serviço em uma agenda compartilhada.",
+    "description": "Conceito de aplicação para equipes de campo com agenda de técnicos, ordens de serviço e contexto necessário para preparar cada visita.",
+    "features": [
+      "Agenda por equipe e janela de atendimento",
+      "Ordens com contexto e prioridades",
+      "Disponibilidade e próximos atendimentos visíveis"
+    ],
+    "service": "software-sob-medida"
+  },
+  {
+    "slug": "central-integracoes-dados",
+    "title": "Central de integrações e dados",
+    "category": "Operações especializadas",
+    "theme": "light",
+    "accent": "blue",
+    "screen": "Dados que encontram o caminho certo.",
+    "subtitle": "Fontes, mapeamentos e validações para conectar a operação.",
+    "description": "Conceito de central de integração de dados com mapeamento de campos, prévia de registros e validações entre sistemas da operação.",
+    "features": [
+      "Mapeamento entre campos de origem e destino",
+      "Prévia dos registros e regras de transformação",
+      "Validações e histórico de sincronização"
+    ],
+    "service": "automacao-e-integracoes"
   }
 ]

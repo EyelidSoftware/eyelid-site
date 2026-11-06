@@ -5,6 +5,12 @@ import { site, absoluteUrl } from "../../lib/site";
 import "../../styles/solutions.css";
 const categories = [
   {
+    name: "Operações especializadas",
+    id: "operacoes-especializadas",
+    description:
+      "Conceitos de aplicações para indústria, campo, energia, obras e operações comerciais.",
+  },
+  {
     name: "Engenharia e operação",
     id: "engenharia-e-operacao",
     description:
@@ -109,7 +115,7 @@ const schema = {
                     width="800"
                     height="550"
                     loading={
-                      category.id === "engenharia-e-operacao" && index < 2
+                      category.id === "operacoes-especializadas" && index < 2
                         ? "eager"
                         : "lazy"
                     }

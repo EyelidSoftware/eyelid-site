@@ -117,3 +117,26 @@ A responsive and theme-adaptive card component designed to showcase AI workflows
   Preview: https://cdn.21st.dev/jatin-yadav05/expand-map/default/preview.1765303872044.png
 - Voxel Topography Grid (daiwiikharihar): An interactive, high-performance 3D canvas topography grid featuring dynamic wave math, smooth cursor physics, elevation shading, and zero-allocation frame optimization.
   Preview: https://cdn.21st.dev/daiwiikharihar/voxel-topography-grid/default/preview.1785555281449-771301fa-dda0-42f1-a314-bc6636d53134.webp
+
+## Operações especializadas: indústria, campo e dados
+
+- Heat Calendar (starc007): A GitHub-style activity calendar that visualizes weekly intensity values as a single-hue grid, with a legend, hover/click tooltips, and range selection with totals.
+  Preview: https://cdn.21st.dev/user_3GMbzDOOqkmdobxoz8ep4iCuufg/heat-calendar/default/preview.1790093196255.png
+- Monthly Heatmap Calendar (ruixen.ui): This Monthly Heatmap Calendar component is a fully interactive scheduling tool built entirely with shadcn/ui. It allows users to navigate across different months and years using clean dropdown selectors while still displaying a structured grid view of the month. Each day cell supports adding events through a popover form, where users can enter a title and select a specific time. Scheduled events are visually marked with a badge indicator, and event details can be viewed, edited, or deleted directly within the popover. The calendar layout is spaced for clarity, making it easy to scan through days while still keeping event management compact and intuitive. This component is particularly useful for task planning, booking systems, or productivity dashboards, offering a more feature-rich and customizable experience compared to traditional date pickers.
+  Preview: https://cdn.21st.dev/ruixen.ui/monthly-heatmap-calendar/default/preview.1757759493231.png
+- Weekly KPI Chart (isaiahbjork): This is an interactive day-based data chart that visualizes values (like revenue or activity) using minimalistic vertical lines and animated gradient highlights. It’s perfect for dashboards or financial summaries where users need quick, clean visual feedback with a focus on a specific day.
+  Preview: https://cdn.21st.dev/isaiahbjork/weekly-kpi-chart/default/preview.1785302842690-e6074757-0636-409b-9adc-0d1e603c7fd9.png
+- Usage Dashboard (mohammadshehadeh): Metered usage panel with per-resource progress bars that tint amber near the limit and red over it. Ships composable parts.
+  Preview: https://cdn.21st.dev/hirael/usage-dashboard/default/preview.1790322364201-dbcf7395-7496-4c98-9334-5a70ad43569d.png
+- Deployment Pipeline (rmahammad): A display component that visualizes a CI/CD deployment run as ordered stages with status (queued, running, passed, failed, cancelled, skipped), per-stage durations, expandable logs, and a retry action on failed stages.
+  Preview: https://cdn.21st.dev/rmahammad/deployment-pipeline/default/preview.1790068774237-0ea035cc-4bc4-48db-8b9a-b52f21a0f0ac.png
+- Build Pipeline (ibrandify): An interactive 3D build pipeline visualizing CI/CD stages as a floating isometric timeline.
+  Preview: https://cdn.21st.dev/ibrandify/build-pipeline/default/preview.1791486229172-5a87c2be-d48c-4b26-b393-6c6b648eb986.png
+- Focus City (ibrandify): A compact focus calendar with a morphing isometric skyline, heatmap, interactive day inspection, session breakdown and responsive controls.
+  Preview: https://cdn.21st.dev/user_3K8GSYF91kjaGwg40OUV71wFUh3/focus-city/default/preview.1791467530354.png
+- Calendar Heatmap (arihantcodes_1f7b8c4d): A GitHub-style contributions grid that visualizes a year of daily values as week columns with quantized color intensity, streak stats, and month labels.
+  Preview: https://cdn.21st.dev/arihantcodes_1f7b8c4d/calendar-heatmap/default/preview.1789956984692-a92c4c18-9935-477b-b894-30f91d264e23.png
+- Animated Features Bento with Live Diagrams (kedhareswer): Animated features bento with live diagrams: team edits flowing through a hub into printing reports, an integrations hub syncing one tool at a time, and a scrubbable forecast chart. Light/dark, zero dependencies.
+  Preview: https://cdn.21st.dev/user_30fkm37UoBFJx1GiK2Q4Sy8lSrO/ink-orbit-features/default/preview.1791312355781.webp
+- Animated Bar Chart Dashboard (kedhareswer): Animated bar chart dashboard: a performance chart of stacked cells where KPI tabs flip the board to a new metric in a diagonal wave, the axis rolls to its new scale and hovering a column shows a tooltip. For analytics and admin dashboards.
+  Preview: https://cdn.21st.dev/user_30fkm37UoBFJx1GiK2Q4Sy8lSrO/cell-column-trend/default/preview.1793900161863.png

@@ -4,14 +4,14 @@ import { createHash } from "node:crypto";
 import sharp from "sharp";
 
 const screens = JSON.parse(await readFile("src/lib/screens.json", "utf8"));
-assert(screens.length >= 26, "coleção com pelo menos 26 soluções");
+assert(screens.length >= 36, "coleção com pelo menos 36 soluções");
 assert.equal(
   new Set(screens.map((s) => s.slug)).size,
   screens.length,
   "slugs únicos",
 );
-assert.equal(screens.filter((s) => s.theme === "light").length, 13);
-assert.equal(screens.filter((s) => s.theme === "dark").length, 13);
+assert.equal(screens.filter((s) => s.theme === "light").length, 18);
+assert.equal(screens.filter((s) => s.theme === "dark").length, 18);
 const gallery = await readFile("dist/solucoes.html", "utf8");
 const sitemap = await readFile("dist/sitemap-imagens.xml", "utf8");
 const index = await readFile("dist/sitemap-index.xml", "utf8");

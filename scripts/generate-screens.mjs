@@ -3,6 +3,7 @@ import { readFile, writeFile, mkdir } from "node:fs/promises";
 import sharp from "sharp";
 import { site } from "../src/lib/site.ts";
 import { engineeringRenderers } from "./engineering-screens.mjs";
+import { strategicRenderers } from "./strategic-screens.mjs";
 
 const screens = JSON.parse(await readFile("src/lib/screens.json", "utf8"));
 const logo = (await readFile("public/brand/logo.svg", "utf8"))
@@ -1674,6 +1675,7 @@ const renderers = [
   documents,
   portal,
   ...engineeringRenderers,
+  ...strategicRenderers,
 ];
 const thumbnails = [];
 for (let i = 0; i < screens.length; i++) {

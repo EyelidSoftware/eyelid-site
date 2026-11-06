@@ -65,3 +65,24 @@ Revisão visual dos seis rasters, verificação da geometria dos textos e mediç
 As seis páginas foram abertas a 390×844: imagens 1600×1100 carregadas, três recursos por solução e sem rolagem horizontal excedente. O verificador confere as 26 páginas, os sitemaps, as 26 imagens distintas e todos os caminhos da logo aprovada.
 
 A galeria identifica esses materiais como conceitos, com dados fictícios. Não há marcas, interfaces copiadas ou declarações de integração, certificação ou compatibilidade com aplicativos de terceiros. Os projetos usam geometria desenhada diretamente no gerador.
+
+## Ampliação para 36 interfaces: dez operações especializadas
+
+Seleção para ampliar as situações de uso apresentadas: produção e instalações industriais, armazém, campo, qualidade, obras, energia, compras B2B, serviços e integrações. São conceitos originais com dados fictícios. Não representam resultados medidos em clientes nem integração validada com programas de terceiros.
+
+| Aplicação | Oportunidade representada |
+| --- | --- |
+| Produção industrial e ordens | Coordenar ordens, células e apontamentos da produção |
+| Supervisão de instalações | Contextualizar equipamentos, leituras e ocorrências |
+| Armazém e separação de pedidos | Organizar endereços, ondas de coleta e conferência |
+| Planejamento e operação agrícola | Planejar áreas, atividades e responsáveis em campo |
+| Inspeção visual com IA | Apoiar revisão humana de regiões de interesse na inspeção |
+| Orçamento e quantitativos de obras | Relacionar elementos de projeto, quantidades e composições |
+| Gestão de energia e consumo | Acompanhar fontes, cargas e consumo por área |
+| Portal comercial B2B | Facilitar catálogo e montagem de pedidos entre empresas |
+| Agenda de equipes de campo | Organizar disponibilidade e preparação das visitas técnicas |
+| Central de integrações e dados | Mapear, transformar e validar dados entre sistemas |
+
+Avaliação: revisão dos dez rasters em três pranchas; nenhum texto fora do quadro ou sobreposto; contraste mínimo medido de 4,53:1. Foi reforçado o contraste dos horários na agenda. Valores do balanço de potência e quantidade de visitas foram conferidos.
+
+As dez páginas foram abertas a 390×844, com imagem 1600×1100 e três recursos descritivos, sem rolagem horizontal excedente. Check, build e verificação do site passaram: 59 páginas, 36 interfaces e 36 imagens distintas com logo aprovada. Cinco novas interfaces claras e cinco escuras, totalizando 18 de cada tema. Evidências em avaliacao-aplicacoes.json.

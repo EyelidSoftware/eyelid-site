@@ -494,5 +494,161 @@
         "width": 375
       }
     ]
+  },
+  "strategic": {
+    "visualGeometryAndContrast": [
+      {
+        "contrastFailures": [],
+        "minContrast": 6.12,
+        "outside": [],
+        "overlaps": [],
+        "slug": "producao-industrial",
+        "texts": 72
+      },
+      {
+        "contrastFailures": [],
+        "minContrast": 4.53,
+        "outside": [],
+        "overlaps": [],
+        "slug": "supervisao-instalacoes",
+        "texts": 66
+      },
+      {
+        "contrastFailures": [],
+        "minContrast": 5.66,
+        "outside": [],
+        "overlaps": [],
+        "slug": "armazem-separacao",
+        "texts": 104
+      },
+      {
+        "contrastFailures": [],
+        "minContrast": 4.53,
+        "outside": [],
+        "overlaps": [],
+        "slug": "planejamento-agricola",
+        "texts": 72
+      },
+      {
+        "contrastFailures": [],
+        "minContrast": 5.66,
+        "outside": [],
+        "overlaps": [],
+        "slug": "inspecao-visual-ia",
+        "texts": 54
+      },
+      {
+        "contrastFailures": [],
+        "minContrast": 4.53,
+        "outside": [],
+        "overlaps": [],
+        "slug": "orcamento-quantitativos-obras",
+        "texts": 67
+      },
+      {
+        "contrastFailures": [],
+        "minContrast": 5.66,
+        "outside": [],
+        "overlaps": [],
+        "slug": "gestao-energia",
+        "texts": 62
+      },
+      {
+        "contrastFailures": [],
+        "minContrast": 4.53,
+        "outside": [],
+        "overlaps": [],
+        "slug": "portal-comercial-b2b",
+        "texts": 69
+      },
+      {
+        "contrastFailures": [],
+        "minContrast": 5.66,
+        "outside": [],
+        "overlaps": [],
+        "slug": "agenda-equipes-campo",
+        "texts": 96
+      },
+      {
+        "contrastFailures": [],
+        "minContrast": 4.53,
+        "outside": [],
+        "overlaps": [],
+        "slug": "central-integracoes-dados",
+        "texts": 69
+      }
+    ],
+    "mobile": [
+      {
+        "features": 3,
+        "image": 1600,
+        "path": "/solucoes/producao-industrial",
+        "viewport": 390,
+        "width": 375
+      },
+      {
+        "features": 3,
+        "image": 1600,
+        "path": "/solucoes/supervisao-instalacoes",
+        "viewport": 390,
+        "width": 375
+      },
+      {
+        "features": 3,
+        "image": 1600,
+        "path": "/solucoes/armazem-separacao",
+        "viewport": 390,
+        "width": 375
+      },
+      {
+        "features": 3,
+        "image": 1600,
+        "path": "/solucoes/planejamento-agricola",
+        "viewport": 390,
+        "width": 375
+      },
+      {
+        "features": 3,
+        "image": 1600,
+        "path": "/solucoes/inspecao-visual-ia",
+        "viewport": 390,
+        "width": 375
+      },
+      {
+        "features": 3,
+        "image": 1600,
+        "path": "/solucoes/orcamento-quantitativos-obras",
+        "viewport": 390,
+        "width": 375
+      },
+      {
+        "features": 3,
+        "image": 1600,
+        "path": "/solucoes/gestao-energia",
+        "viewport": 390,
+        "width": 375
+      },
+      {
+        "features": 3,
+        "image": 1600,
+        "path": "/solucoes/portal-comercial-b2b",
+        "viewport": 390,
+        "width": 375
+      },
+      {
+        "features": 3,
+        "image": 1600,
+        "path": "/solucoes/agenda-equipes-campo",
+        "viewport": 390,
+        "width": 375
+      },
+      {
+        "features": 3,
+        "image": 1600,
+        "path": "/solucoes/central-integracoes-dados",
+        "viewport": 390,
+        "width": 375
+      }
+    ]
   }
 }
