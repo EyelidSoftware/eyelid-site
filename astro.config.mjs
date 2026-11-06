@@ -6,7 +6,9 @@ import sitemap from "@astrojs/sitemap";
 // Mantenha igual ao `site.url` em src/lib/site.ts.
 export default defineConfig({
   site: "https://eyelid.com.br",
-  integrations: [sitemap()],
+  integrations: [
+    sitemap({ customSitemaps: ["https://eyelid.com.br/sitemap-imagens.xml"] }),
+  ],
   build: {
     // URLs sem barra no final: /autofeedr em vez de /autofeedr/
     format: "file",

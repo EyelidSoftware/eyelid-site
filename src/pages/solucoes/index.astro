@@ -1,0 +1,142 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { screens, screenImage } from "../../lib/screens";
+import { site, absoluteUrl } from "../../lib/site";
+import "../../styles/solutions.css";
+const categories = [
+  {
+    name: "Software",
+    id: "software",
+    description:
+      "Aplicações que acompanham as regras e as pessoas da sua operação.",
+  },
+  {
+    name: "Automação",
+    id: "automacao",
+    description:
+      "Rotinas, canais e sistemas conectados, com cada etapa visível.",
+  },
+  {
+    name: "Inteligência artificial",
+    id: "inteligencia-artificial",
+    description: "IA com contexto, fontes e espaço para a participação humana.",
+  },
+  {
+    name: "Gestão e dados",
+    id: "gestao-e-dados",
+    description:
+      "Informação organizada para acompanhar a operação e decidir o próximo passo.",
+  },
+];
+const description = `Explore 20 interfaces da ${site.publicName}: software sob medida, ERP, CRM, automações, IA e dashboards em temas claros e escuros.`;
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: `Soluções em tela | ${site.publicName}`,
+  description,
+  url: absoluteUrl("/solucoes"),
+  mainEntity: {
+    "@type": "ItemList",
+    numberOfItems: screens.length,
+    itemListElement: screens.map((s, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: s.title,
+      url: absoluteUrl(`/solucoes/${s.slug}`),
+    })),
+  },
+};
+---
+
+<BaseLayout
+  title="Soluções em tela: software, automação e IA"
+  description={description}
+  schema={schema}
+>
+  <section class="container screen-intro">
+    <p class="eyebrow">Soluções em tela</p>
+    <h1>
+      Possibilidades para
+      <br />o seu próximo projeto.
+    </h1>
+    <p class="screen-lead">
+      Do processo à experiência de quem usa. Explore interfaces de aplicações,
+      automações e painéis que podemos construir com a sua equipe.
+    </p>
+    <p class="screen-context">
+      20 conceitos de interface com dados fictícios, criados pela{" "}
+      {site.publicName}. Cada projeto é desenvolvido conforme a realidade do
+      negócio.
+    </p>
+    <nav class="screen-categories" aria-label="Tipos de solução">
+      {categories.map((c) => (
+        <a href={`#${c.id}`}>
+          {c.name}{" "}
+          <span>{screens.filter((s) => s.category === c.name).length}</span>
+        </a>
+      ))}
+    </nav>
+  </section>
+  {categories.map((category) => (
+    <section
+      class="container screen-group"
+      id={category.id}
+      aria-labelledby={`${category.id}-titulo`}
+    >
+      <div class="screen-group-title">
+        <h2 id={`${category.id}-titulo`}>{category.name}</h2>
+        <p>{category.description}</p>
+      </div>
+      <div class="screen-grid">
+        {screens
+          .filter((s) => s.category === category.name)
+          .map((screen, index) => (
+            <article class="screen-card">
+              <a href={`/solucoes/${screen.slug}`} class="screen-card-link">
+                <div class="screen-card-image">
+                  <img
+                    src={screenImage(screen.slug, "webp")}
+                    alt={`${screen.title}: ${screen.description}`}
+                    width="800"
+                    height="550"
+                    loading={
+                      category.id === "software" && index < 2 ? "eager" : "lazy"
+                    }
+                    decoding="async"
+                  />
+                </div>
+                <div class="screen-card-copy">
+                  <p class="screen-theme">
+                    {screen.theme === "light" ? "Tema claro" : "Tema escuro"}
+                  </p>
+                  <h3>
+                    {screen.title}
+                    <span aria-hidden="true">↗</span>
+                  </h3>
+                  <p>{screen.description}</p>
+                  <span class="screen-card-more">
+                    Explorar a solução <span aria-hidden="true">→</span>
+                  </span>
+                </div>
+              </a>
+            </article>
+          ))}
+      </div>
+    </section>
+  ))}
+  <section class="container screen-cta">
+    <p class="eyebrow">Construído com você</p>
+    <h2>
+      Qual processo merece
+      <br />
+      uma experiência melhor?
+    </h2>
+    <p>
+      Começamos entendendo a operação. Você acompanha as decisões, testa as
+      entregas e participa da evolução semanalmente.
+    </p>
+    <a class="button" href="/contato">
+      Vamos conversar ↗
+    </a>
+  </section>
+</BaseLayout>

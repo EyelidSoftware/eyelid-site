@@ -4,6 +4,7 @@ import TunnelScene from "../components/TunnelScene.astro";
 import CurvedPanels from "../components/CurvedPanels.astro";
 import { site } from "../lib/site";
 import { articles } from "../lib/content";
+import "../styles/solutions.css";
 const offerings = [
   {
     num: "01",
@@ -137,6 +138,9 @@ const featured = readingOrder.map((item) => ({
       ))}
     </div>
     <CurvedPanels />
+    <a class="gallery-link" href="/solucoes">
+      Explore 20 soluções em tela ↗
+    </a>
   </section>
 
   <section class="method-section section" id="como-trabalhamos">

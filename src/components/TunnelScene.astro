@@ -1,11 +1,11 @@
 ---
 const panels = [
-  "operacao-claro",
-  "automacao",
-  "assistente",
-  "monitoramento-claro",
-  "operacao",
-  "assistente",
+  "dashboard-executivo",
+  "ia-workflows",
+  "dashboard-faturamento",
+  "customizacao-crm",
+  "monitoramento-sistemas",
+  "assistente-documentos",
 ];
 ---
 
@@ -14,10 +14,10 @@ const panels = [
   {panels.map((name, i) => (
     <div class="tunnel-panel" data-depth={i} style={`--i:${i}`}>
       <img
-        src={`/visuals/${name}.svg?v=3`}
+        src={`/solucoes/eyelid-${name}.webp`}
         alt=""
         width="800"
-        height="580"
+        height="550"
         loading={i < 2 ? "eager" : "lazy"}
       />
     </div>

@@ -17,16 +17,16 @@
   <noscript>
     <div class="static-panels">
       <img
-        src="/visuals/operacao-claro.svg?v=3"
+        src="/solucoes/eyelid-dashboard-executivo.webp"
         alt="Painel de gestão de solicitações"
         width="800"
-        height="580"
+        height="550"
       />
       <img
-        src="/visuals/assistente.svg?v=3"
+        src="/solucoes/eyelid-assistente-documentos.webp"
         alt="Interface de assistente conectado a documentos"
         width="800"
-        height="580"
+        height="550"
       />
     </div>
   </noscript>
@@ -127,10 +127,10 @@
   const hero = document.querySelector(".technology-hero");
   const reduce = matchMedia("(prefers-reduced-motion: reduce)");
   const images = [
-    "operacao-claro",
-    "automacao",
-    "assistente-claro",
-    "monitoramento",
+    "dashboard-executivo",
+    "automacao-whatsapp",
+    "assistente-documentos",
+    "dashboard-faturamento",
   ];
   let curve = [];
   let curveProgress = 0;
@@ -152,7 +152,7 @@
     if (!width || !height) return;
     const bend = (68 * Math.PI) / 180,
       camera = 1.6,
-      aspect = 800 / 580;
+      aspect = 1600 / 1100;
     const radius =
       (width * (camera - 1 + Math.cos(bend))) / (2 * camera * Math.sin(bend));
     const tileH = Math.min(height * 0.55, (width * 0.48) / aspect);
@@ -186,7 +186,7 @@
           left: (tileW - share) / 2 + "px",
           width: share + 1 + "px",
           backgroundImage:
-            'url("/visuals/' + images[i % images.length] + '.svg?v=3")',
+            'url("/solucoes/eyelid-' + images[i % images.length] + '.webp")',
           backgroundPosition: -k * share + "px 0",
           transform:
             "translateZ(" +

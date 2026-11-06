@@ -1,0 +1,142 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { screens, screenImage, screenSchema } from "../../lib/screens";
+import { site, breadcrumbSchema } from "../../lib/site";
+import "../../styles/solutions.css";
+export function getStaticPaths() {
+  return screens.map((screen) => ({
+    params: { slug: screen.slug },
+    props: { screen },
+  }));
+}
+const { screen } = Astro.props;
+const index = screens.findIndex((s) => s.slug === screen.slug);
+const next = screens[(index + 1) % screens.length];
+const related = screens
+  .filter((s) => s.category === screen.category && s.slug !== screen.slug)
+  .slice(0, 2);
+const schema = [
+  screenSchema(screen),
+  breadcrumbSchema(
+    { name: "Soluções em tela", path: "/solucoes" },
+    { name: screen.title, path: `/solucoes/${screen.slug}` },
+  ),
+];
+---
+
+<BaseLayout
+  title={screen.title}
+  description={screen.description}
+  image={screenImage(screen.slug + "-social")}
+  schema={schema}
+>
+  <section class="container screen-intro screen-detail-intro">
+    <nav class="screen-breadcrumb" aria-label="Caminho da página">
+      <a href="/">Início</a>
+      <span aria-hidden="true">/</span>
+      <a href="/solucoes">Soluções em tela</a>
+    </nav>
+    <p class="eyebrow">
+      {screen.category} ·{" "}
+      {screen.theme === "light" ? "Tema claro" : "Tema escuro"}
+    </p>
+    <h1>{screen.title}.</h1>
+    <p class="screen-lead">{screen.description}</p>
+  </section>
+  <figure class="container screen-figure">
+    <a
+      href={screenImage(screen.slug)}
+      aria-label={`Abrir imagem em alta resolução: ${screen.title}`}
+    >
+      <img
+        src={screenImage(screen.slug)}
+        alt={`${site.publicName}: ${screen.title}. ${screen.description}`}
+        width="1600"
+        height="1100"
+        fetchpriority="high"
+        decoding="async"
+      />
+    </a>
+    <figcaption>
+      <span>
+        {screen.title} · {site.publicName}
+      </span>
+      <a href={screenImage(screen.slug)} download>
+        Baixar PNG em alta resolução ↓
+      </a>
+    </figcaption>
+  </figure>
+  <section class="container screen-details">
+    <div>
+      <p class="eyebrow">O que esta solução reúne</p>
+      <h2>
+        Uma interface a serviço
+        <br />
+        do processo.
+      </h2>
+      <ul>
+        {screen.features.map((feature) => (
+          <li>{feature}</li>
+        ))}
+      </ul>
+    </div>
+    <div class="screen-about">
+      <p>
+        Este conceito usa dados fictícios para apresentar possibilidades de
+        desenvolvimento. No seu projeto, conhecemos a operação e validamos as
+        regras, integrações e experiência com as pessoas que vão usar a solução.
+      </p>
+      <p>
+        O diagnóstico pode ser contratado de forma independente. No
+        desenvolvimento, você acompanha atualizações semanais e testa as
+        entregas.
+      </p>
+      <a class="text-link" href={`/servicos/${screen.service}`}>
+        Conheça nossa forma de trabalhar ↗
+      </a>
+    </div>
+  </section>
+  <section class="container screen-related">
+    <div class="screen-group-title">
+      <h2>Outras possibilidades.</h2>
+      <a class="text-link" href="/solucoes">
+        Ver as 20 telas ↗
+      </a>
+    </div>
+    <div class="screen-grid">
+      {related.map((s) => (
+        <article class="screen-card">
+          <a class="screen-card-link" href={`/solucoes/${s.slug}`}>
+            <div class="screen-card-image">
+              <img
+                src={screenImage(s.slug, "webp")}
+                alt={s.title}
+                width="800"
+                height="550"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="screen-card-copy">
+              <h3>
+                {s.title}
+                <span aria-hidden="true">↗</span>
+              </h3>
+              <p>{s.description}</p>
+            </div>
+          </a>
+        </article>
+      ))}
+    </div>
+  </section>
+  <section class="container screen-cta">
+    <p class="eyebrow">Seu próximo projeto</p>
+    <h2>Vamos pensar na sua operação?</h2>
+    <a class="button" href="/contato">
+      Converse com a equipe ↗
+    </a>
+    <a class="screen-next text-link" href={`/solucoes/${next.slug}`}>
+      Próxima tela: {next.title} →
+    </a>
+  </section>
+</BaseLayout>

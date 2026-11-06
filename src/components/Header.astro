@@ -2,7 +2,8 @@
 import { site } from "../lib/site";
 const links = [
   { href: "/#solucoes", label: "Soluções" },
-  { href: "/#como-trabalhamos", label: "Como trabalhamos" },
+  { href: "/#como-trabalhamos", label: "Como trabalhamos", compact: "Método" },
+  { href: "/solucoes", label: "Em tela" },
   { href: "/blog", label: "Artigos" },
 ];
 ---
@@ -21,11 +22,21 @@ const links = [
       {links.map((l) => (
         <a
           href={l.href}
+          aria-label={l.label}
           aria-current={
             Astro.url.pathname.startsWith(l.href) ? "page" : undefined
           }
         >
-          {l.label}
+          {"compact" in l ? (
+            <>
+              <span class="nav-long">{l.label}</span>
+              <span class="nav-short" aria-hidden="true">
+                {l.compact}
+              </span>
+            </>
+          ) : (
+            l.label
+          )}
         </a>
       ))}
       <a
@@ -38,3 +49,16 @@ const links = [
     </nav>
   </div>
 </header>
+<style>
+  .nav-short {
+    display: none;
+  }
+  @media (max-width: 540px) {
+    .nav-long {
+      display: none;
+    }
+    .nav-short {
+      display: inline;
+    }
+  }
+</style>

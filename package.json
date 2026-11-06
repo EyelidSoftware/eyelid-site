@@ -11,7 +11,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "check": "astro check",
-    "verify:site": "node scripts/verify-site.mjs"
+    "verify:site": "node scripts/verify-site.mjs && node scripts/verify-screens.mjs",
+    "generate:screens": "node scripts/generate-screens.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",
@@ -21,6 +22,7 @@
     "@astrojs/check": "^0.9.10",
     "prettier": "^3.9.10",
     "prettier-plugin-astro": "^1.1.2",
+    "sharp": "^0.35.5",
     "typescript": "^6.0.3",
     "wrangler": "^4.157.0"
   }

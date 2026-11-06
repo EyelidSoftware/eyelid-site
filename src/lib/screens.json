@@ -1,0 +1,322 @@
+[
+  {
+    "slug": "automacao-publicacoes-linkedin",
+    "title": "Publicações no LinkedIn",
+    "category": "Automação",
+    "theme": "light",
+    "accent": "blue",
+    "screen": "Sua presença, bem planejada.",
+    "subtitle": "Conteúdo, revisão e publicação no mesmo calendário.",
+    "description": "Planejamento editorial com calendário de publicações, revisão humana e acompanhamento de conteúdo para o LinkedIn.",
+    "features": [
+      "Calendário editorial por canal e responsável",
+      "Aprovação de conteúdo antes de publicar",
+      "Histórico de publicações e próximos agendamentos"
+    ],
+    "service": "automacao-e-integracoes"
+  },
+  {
+    "slug": "desenvolvimento-sites",
+    "title": "Sites e experiências digitais",
+    "category": "Software",
+    "theme": "dark",
+    "accent": "violet",
+    "screen": "Uma presença que faz sentido.",
+    "subtitle": "Estruture páginas, conteúdos e experiências para sua marca.",
+    "description": "Ambiente de criação de sites com prévia da experiência, organização de páginas e acompanhamento dos critérios de publicação.",
+    "features": [
+      "Prévia de páginas e componentes",
+      "Conteúdo organizado para busca e acessibilidade",
+      "Checklist de qualidade e publicação"
+    ],
+    "service": "software-sob-medida"
+  },
+  {
+    "slug": "customizacao-erp",
+    "title": "Seu ERP, conectado à operação",
+    "category": "Software",
+    "theme": "light",
+    "accent": "amber",
+    "screen": "O ERP acompanha seu processo.",
+    "subtitle": "Campos, regras e integrações para a rotina da sua equipe.",
+    "description": "Customização de ERP com campos próprios, regras de aprovação e mapeamento das informações entre sistemas.",
+    "features": [
+      "Campos e validações conforme o processo",
+      "Mapeamento entre ERP e sistemas externos",
+      "Versionamento e validação das configurações"
+    ],
+    "service": "software-sob-medida"
+  },
+  {
+    "slug": "erp-personalizado",
+    "title": "ERP desenvolvido sob medida",
+    "category": "Software",
+    "theme": "dark",
+    "accent": "blue",
+    "screen": "Sua operação. Uma visão integrada.",
+    "subtitle": "Pedidos, estoque e financeiro com as regras do seu negócio.",
+    "description": "ERP personalizado que conecta pedidos, estoque, compras e financeiro em uma visão operacional construída para cada empresa.",
+    "features": [
+      "Pedidos e disponibilidade de estoque",
+      "Aprovações e responsabilidades por etapa",
+      "Visão integrada de compras e financeiro"
+    ],
+    "service": "software-sob-medida"
+  },
+  {
+    "slug": "customizacao-crm",
+    "title": "CRM para seu processo comercial",
+    "category": "Software",
+    "theme": "light",
+    "accent": "violet",
+    "screen": "Cada oportunidade, no lugar certo.",
+    "subtitle": "Etapas, próximos contatos e negociações sem perder contexto.",
+    "description": "CRM com funil comercial adaptado à operação, cartões de oportunidades e próximas ações visíveis para a equipe.",
+    "features": [
+      "Etapas comerciais configuráveis",
+      "Responsável e próximo contato em cada negociação",
+      "Visão de valores e oportunidades por etapa"
+    ],
+    "service": "software-sob-medida"
+  },
+  {
+    "slug": "crm-relacionamento",
+    "title": "Relacionamento com contexto",
+    "category": "Software",
+    "theme": "dark",
+    "accent": "teal",
+    "screen": "Conheça cada relacionamento.",
+    "subtitle": "Interações, oportunidades e próximos passos em uma única visão.",
+    "description": "Visão de relacionamento com histórico de interações, preferências de contato e acompanhamento de oportunidades por conta.",
+    "features": [
+      "Linha do tempo de contatos e decisões",
+      "Visão de oportunidades por conta",
+      "Tarefas e responsáveis para o próximo passo"
+    ],
+    "service": "software-sob-medida"
+  },
+  {
+    "slug": "respostas-whatsapp",
+    "title": "Atendimento no WhatsApp",
+    "category": "Automação",
+    "theme": "light",
+    "accent": "teal",
+    "screen": "Atendimento com continuidade.",
+    "subtitle": "Respostas assistidas, contexto e passagem para sua equipe.",
+    "description": "Central de atendimento no WhatsApp com fila compartilhada, respostas sugeridas e transferência para pessoas quando necessário.",
+    "features": [
+      "Conversas organizadas por fila e prioridade",
+      "Sugestões com revisão do atendente",
+      "Histórico e contexto na transferência"
+    ],
+    "service": "automacao-e-integracoes"
+  },
+  {
+    "slug": "automacao-whatsapp",
+    "title": "Fluxos personalizados no WhatsApp",
+    "category": "Automação",
+    "theme": "dark",
+    "accent": "teal",
+    "screen": "Converse. Entenda. Encaminhe.",
+    "subtitle": "Desenhe jornadas de atendimento com regras claras de continuidade.",
+    "description": "Editor de jornadas no WhatsApp com condições, integração a sistemas e encaminhamento para atendimento humano.",
+    "features": [
+      "Jornadas visuais por intenção de atendimento",
+      "Consulta a sistemas com permissões",
+      "Encaminhamento humano e acompanhamento de falhas"
+    ],
+    "service": "automacao-e-integracoes"
+  },
+  {
+    "slug": "automacao-processos",
+    "title": "Processos e aprovações",
+    "category": "Automação",
+    "theme": "light",
+    "accent": "blue",
+    "screen": "Do pedido à aprovação, sem ruído.",
+    "subtitle": "Regras de negócio, responsáveis e rastreabilidade em cada etapa.",
+    "description": "Fluxo de aprovação de solicitações com regras por valor, responsáveis definidos e histórico de execução para acompanhamento.",
+    "features": [
+      "Condições e alçadas de aprovação",
+      "Responsáveis e prazos por etapa",
+      "Histórico de decisões e execuções"
+    ],
+    "service": "automacao-e-integracoes"
+  },
+  {
+    "slug": "ia-workflows",
+    "title": "IA integrada aos seus fluxos",
+    "category": "Inteligência artificial",
+    "theme": "dark",
+    "accent": "violet",
+    "screen": "Inteligência que participa do trabalho.",
+    "subtitle": "Agentes, ferramentas e revisão humana em um fluxo rastreável.",
+    "description": "Orquestração de agentes de IA que consultam informações, executam etapas autorizadas e encaminham decisões para revisão humana.",
+    "features": [
+      "Ferramentas e permissões por agente",
+      "Revisão humana antes de ações sensíveis",
+      "Rastreabilidade das etapas e fontes consultadas"
+    ],
+    "service": "inteligencia-artificial"
+  },
+  {
+    "slug": "modelos-preditivos",
+    "title": "Modelos preditivos personalizados",
+    "category": "Inteligência artificial",
+    "theme": "light",
+    "accent": "blue",
+    "screen": "Antecipe cenários. Decida com contexto.",
+    "subtitle": "Previsões, intervalos de confiança e validação do modelo.",
+    "description": "Painel de previsão de demanda com histórico observado, cenários e intervalos de incerteza para apoiar o planejamento.",
+    "features": [
+      "Séries históricas e projeções comparáveis",
+      "Intervalos de incerteza explícitos",
+      "Validação temporal e acompanhamento de erro"
+    ],
+    "service": "inteligencia-artificial"
+  },
+  {
+    "slug": "melhoria-processos",
+    "title": "Desempenho dos processos",
+    "category": "Gestão e dados",
+    "theme": "dark",
+    "accent": "amber",
+    "screen": "Encontre o próximo ponto de melhoria.",
+    "subtitle": "Tempos, gargalos e prioridades com contexto operacional.",
+    "description": "Análise de processos com distribuição de tempos, identificação de gargalos e acompanhamento das iniciativas de melhoria.",
+    "features": [
+      "Tempo de ciclo por etapa",
+      "Distribuição de casos e identificação de gargalos",
+      "Plano de melhoria com responsáveis"
+    ],
+    "service": "acompanhamento-de-processos"
+  },
+  {
+    "slug": "gestao-pessoas",
+    "title": "Gestão de pessoas e equipes",
+    "category": "Gestão e dados",
+    "theme": "light",
+    "accent": "violet",
+    "screen": "Pessoas no centro da operação.",
+    "subtitle": "Equipes, disponibilidade e desenvolvimento em perspectiva.",
+    "description": "Painel de gestão de pessoas com diretório de equipes, disponibilidade e acompanhamento de planos de desenvolvimento.",
+    "features": [
+      "Diretório por equipe e área",
+      "Disponibilidade e planejamento da equipe",
+      "Acompanhamento de desenvolvimento profissional"
+    ],
+    "service": "software-sob-medida"
+  },
+  {
+    "slug": "dashboard-faturamento",
+    "title": "Faturamento e recebimentos",
+    "category": "Gestão e dados",
+    "theme": "dark",
+    "accent": "blue",
+    "screen": "Clareza para acompanhar o financeiro.",
+    "subtitle": "Faturamento, vencimentos e recebimentos no mesmo horizonte.",
+    "description": "Dashboard financeiro com faturamento mensal, composição da receita e situação dos recebimentos por vencimento.",
+    "features": [
+      "Receita por período e categoria",
+      "Separação entre faturado e recebido",
+      "Contas e vencimentos para acompanhamento"
+    ],
+    "service": "software-sob-medida"
+  },
+  {
+    "slug": "dashboard-executivo",
+    "title": "Visão executiva do negócio",
+    "category": "Gestão e dados",
+    "theme": "light",
+    "accent": "teal",
+    "screen": "O essencial para decidir melhor.",
+    "subtitle": "Indicadores, metas e prioridades em uma visão de gestão.",
+    "description": "Painel executivo com indicadores de receita, operação e relacionamento, metas e ações prioritárias para a gestão.",
+    "features": [
+      "Indicadores com período e contexto",
+      "Metas e acompanhamento por área",
+      "Prioridades conectadas às decisões"
+    ],
+    "service": "acompanhamento-de-processos"
+  },
+  {
+    "slug": "gestao-projetos",
+    "title": "Projetos e entregas",
+    "category": "Software",
+    "theme": "dark",
+    "accent": "violet",
+    "screen": "Planos que viram entregas.",
+    "subtitle": "Marcos, dependências e acompanhamento próximo da equipe.",
+    "description": "Gestão de projetos com cronograma de entregas, dependências e revisões semanais entre a equipe e o cliente.",
+    "features": [
+      "Cronograma com marcos e dependências",
+      "Acompanhamento de responsáveis e revisões",
+      "Entregas e decisões visíveis para o cliente"
+    ],
+    "service": "software-sob-medida"
+  },
+  {
+    "slug": "logistica-operacao",
+    "title": "Logística e acompanhamento",
+    "category": "Gestão e dados",
+    "theme": "light",
+    "accent": "amber",
+    "screen": "Cada entrega tem um caminho.",
+    "subtitle": "Rotas, ocorrências e acompanhamento da operação logística.",
+    "description": "Painel de logística com rotas esquemáticas, situação das entregas e acompanhamento das ocorrências pela equipe.",
+    "features": [
+      "Visão das rotas e pontos de entrega",
+      "Ocorrências e responsáveis por resolução",
+      "Acompanhamento de prazos por pedido"
+    ],
+    "service": "software-sob-medida"
+  },
+  {
+    "slug": "monitoramento-sistemas",
+    "title": "Monitoramento de sistemas",
+    "category": "Gestão e dados",
+    "theme": "dark",
+    "accent": "teal",
+    "screen": "Saiba o que está acontecendo.",
+    "subtitle": "Serviços, execuções e alertas com o contexto certo para agir.",
+    "description": "Central de observabilidade com situação de serviços, latência, histórico de incidentes e acompanhamento de execuções.",
+    "features": [
+      "Estado e latência dos serviços",
+      "Histórico de incidentes e execuções",
+      "Alertas com responsável e contexto"
+    ],
+    "service": "automacao-e-integracoes"
+  },
+  {
+    "slug": "assistente-documentos",
+    "title": "Assistente conectado a documentos",
+    "category": "Inteligência artificial",
+    "theme": "light",
+    "accent": "violet",
+    "screen": "Pergunte. Encontre. Confira a fonte.",
+    "subtitle": "Respostas contextualizadas com documentos e permissões da empresa.",
+    "description": "Assistente de IA com busca em documentos, referências consultáveis e controle de acesso às informações da empresa.",
+    "features": [
+      "Respostas acompanhadas de referências",
+      "Documentos organizados por domínio",
+      "Acesso conforme as permissões do usuário"
+    ],
+    "service": "inteligencia-artificial"
+  },
+  {
+    "slug": "portal-cliente",
+    "title": "Portal de acompanhamento do cliente",
+    "category": "Software",
+    "theme": "dark",
+    "accent": "blue",
+    "screen": "Uma experiência próxima, do início ao fim.",
+    "subtitle": "Entregas, documentos e decisões compartilhadas com clareza.",
+    "description": "Portal do cliente para acompanhar entregas, revisar documentos e participar das decisões em um ambiente personalizado.",
+    "features": [
+      "Visão das próximas entregas e marcos",
+      "Documentos e revisões centralizados",
+      "Histórico de decisões e solicitações"
+    ],
+    "service": "software-sob-medida"
+  }
+]

@@ -1,0 +1,388 @@
+{
+  "geometry": [
+    {
+      "file": "eyelid-assistente-documentos.svg",
+      "outside": [],
+      "overlaps": [],
+      "textCount": 59
+    },
+    {
+      "file": "eyelid-automacao-processos.svg",
+      "outside": [],
+      "overlaps": [],
+      "textCount": 55
+    },
+    {
+      "file": "eyelid-automacao-publicacoes-linkedin.svg",
+      "outside": [],
+      "overlaps": [],
+      "textCount": 104
+    },
+    {
+      "file": "eyelid-automacao-whatsapp.svg",
+      "outside": [],
+      "overlaps": [],
+      "textCount": 55
+    },
+    {
+      "file": "eyelid-crm-relacionamento.svg",
+      "outside": [],
+      "overlaps": [],
+      "textCount": 63
+    },
+    {
+      "file": "eyelid-customizacao-crm.svg",
+      "outside": [],
+      "overlaps": [],
+      "textCount": 94
+    },
+    {
+      "file": "eyelid-customizacao-erp.svg",
+      "outside": [],
+      "overlaps": [],
+      "textCount": 65
+    },
+    {
+      "file": "eyelid-dashboard-executivo.svg",
+      "outside": [],
+      "overlaps": [],
+      "textCount": 74
+    },
+    {
+      "file": "eyelid-dashboard-faturamento.svg",
+      "outside": [],
+      "overlaps": [],
+      "textCount": 80
+    },
+    {
+      "file": "eyelid-desenvolvimento-sites.svg",
+      "outside": [],
+      "overlaps": [],
+      "textCount": 57
+    },
+    {
+      "file": "eyelid-erp-personalizado.svg",
+      "outside": [],
+      "overlaps": [],
+      "textCount": 83
+    },
+    {
+      "file": "eyelid-gestao-pessoas.svg",
+      "outside": [],
+      "overlaps": [],
+      "textCount": 79
+    },
+    {
+      "file": "eyelid-gestao-projetos.svg",
+      "outside": [],
+      "overlaps": [],
+      "textCount": 59
+    },
+    {
+      "file": "eyelid-ia-workflows.svg",
+      "outside": [],
+      "overlaps": [],
+      "textCount": 55
+    },
+    {
+      "file": "eyelid-logistica-operacao.svg",
+      "outside": [],
+      "overlaps": [],
+      "textCount": 58
+    },
+    {
+      "file": "eyelid-melhoria-processos.svg",
+      "outside": [],
+      "overlaps": [],
+      "textCount": 72
+    },
+    {
+      "file": "eyelid-modelos-preditivos.svg",
+      "outside": [],
+      "overlaps": [],
+      "textCount": 60
+    },
+    {
+      "file": "eyelid-monitoramento-sistemas.svg",
+      "outside": [],
+      "overlaps": [],
+      "textCount": 79
+    },
+    {
+      "file": "eyelid-portal-cliente.svg",
+      "outside": [],
+      "overlaps": [],
+      "textCount": 59
+    },
+    {
+      "file": "eyelid-respostas-whatsapp.svg",
+      "outside": [],
+      "overlaps": [],
+      "textCount": 82
+    }
+  ],
+  "contrast": [
+    {
+      "failures": [],
+      "file": "eyelid-assistente-documentos.svg",
+      "minContrast": 4.53
+    },
+    {
+      "failures": [],
+      "file": "eyelid-automacao-processos.svg",
+      "minContrast": 4.53
+    },
+    {
+      "failures": [],
+      "file": "eyelid-automacao-publicacoes-linkedin.svg",
+      "minContrast": 4.53
+    },
+    {
+      "failures": [],
+      "file": "eyelid-automacao-whatsapp.svg",
+      "minContrast": 6.12
+    },
+    {
+      "failures": [],
+      "file": "eyelid-crm-relacionamento.svg",
+      "minContrast": 5.66
+    },
+    {
+      "failures": [],
+      "file": "eyelid-customizacao-crm.svg",
+      "minContrast": 4.53
+    },
+    {
+      "failures": [],
+      "file": "eyelid-customizacao-erp.svg",
+      "minContrast": 4.53
+    },
+    {
+      "failures": [],
+      "file": "eyelid-dashboard-executivo.svg",
+      "minContrast": 4.53
+    },
+    {
+      "failures": [],
+      "file": "eyelid-dashboard-faturamento.svg",
+      "minContrast": 5.66
+    },
+    {
+      "failures": [],
+      "file": "eyelid-desenvolvimento-sites.svg",
+      "minContrast": 5.81
+    },
+    {
+      "failures": [],
+      "file": "eyelid-erp-personalizado.svg",
+      "minContrast": 5.66
+    },
+    {
+      "failures": [],
+      "file": "eyelid-gestao-pessoas.svg",
+      "minContrast": 4.53
+    },
+    {
+      "failures": [],
+      "file": "eyelid-gestao-projetos.svg",
+      "minContrast": 5.66
+    },
+    {
+      "failures": [],
+      "file": "eyelid-ia-workflows.svg",
+      "minContrast": 6.12
+    },
+    {
+      "failures": [],
+      "file": "eyelid-logistica-operacao.svg",
+      "minContrast": 4.53
+    },
+    {
+      "failures": [],
+      "file": "eyelid-melhoria-processos.svg",
+      "minContrast": 5.66
+    },
+    {
+      "failures": [],
+      "file": "eyelid-modelos-preditivos.svg",
+      "minContrast": 4.53
+    },
+    {
+      "failures": [],
+      "file": "eyelid-monitoramento-sistemas.svg",
+      "minContrast": 5.66
+    },
+    {
+      "failures": [],
+      "file": "eyelid-portal-cliente.svg",
+      "minContrast": 6.12
+    },
+    {
+      "failures": [],
+      "file": "eyelid-respostas-whatsapp.svg",
+      "minContrast": 4.53
+    }
+  ],
+  "mobile": [
+    {
+      "features": 3,
+      "h1": "Sites e experiências digitais.",
+      "image": 1600,
+      "path": "/solucoes/desenvolvimento-sites",
+      "viewport": 390,
+      "width": 375
+    },
+    {
+      "features": 3,
+      "h1": "Seu ERP, conectado à operação.",
+      "image": 1600,
+      "path": "/solucoes/customizacao-erp",
+      "viewport": 390,
+      "width": 375
+    },
+    {
+      "features": 3,
+      "h1": "ERP desenvolvido sob medida.",
+      "image": 1600,
+      "path": "/solucoes/erp-personalizado",
+      "viewport": 390,
+      "width": 375
+    },
+    {
+      "features": 3,
+      "h1": "CRM para seu processo comercial.",
+      "image": 1600,
+      "path": "/solucoes/customizacao-crm",
+      "viewport": 390,
+      "width": 375
+    },
+    {
+      "features": 3,
+      "h1": "Relacionamento com contexto.",
+      "image": 1600,
+      "path": "/solucoes/crm-relacionamento",
+      "viewport": 390,
+      "width": 375
+    },
+    {
+      "features": 3,
+      "h1": "Projetos e entregas.",
+      "image": 1600,
+      "path": "/solucoes/gestao-projetos",
+      "viewport": 390,
+      "width": 375
+    },
+    {
+      "features": 3,
+      "h1": "Portal de acompanhamento do cliente.",
+      "image": 1600,
+      "path": "/solucoes/portal-cliente",
+      "viewport": 390,
+      "width": 375
+    },
+    {
+      "features": 3,
+      "h1": "Publicações no LinkedIn.",
+      "image": 1600,
+      "path": "/solucoes/automacao-publicacoes-linkedin",
+      "viewport": 390,
+      "width": 375
+    },
+    {
+      "features": 3,
+      "h1": "Atendimento no WhatsApp.",
+      "image": 1600,
+      "path": "/solucoes/respostas-whatsapp",
+      "viewport": 390,
+      "width": 375
+    },
+    {
+      "features": 3,
+      "h1": "Fluxos personalizados no WhatsApp.",
+      "image": 1600,
+      "path": "/solucoes/automacao-whatsapp",
+      "viewport": 390,
+      "width": 375
+    },
+    {
+      "features": 3,
+      "h1": "Processos e aprovações.",
+      "image": 1600,
+      "path": "/solucoes/automacao-processos",
+      "viewport": 390,
+      "width": 375
+    },
+    {
+      "features": 3,
+      "h1": "IA integrada aos seus fluxos.",
+      "image": 1600,
+      "path": "/solucoes/ia-workflows",
+      "viewport": 390,
+      "width": 375
+    },
+    {
+      "features": 3,
+      "h1": "Modelos preditivos personalizados.",
+      "image": 1600,
+      "path": "/solucoes/modelos-preditivos",
+      "viewport": 390,
+      "width": 375
+    },
+    {
+      "features": 3,
+      "h1": "Assistente conectado a documentos.",
+      "image": 1600,
+      "path": "/solucoes/assistente-documentos",
+      "viewport": 390,
+      "width": 375
+    },
+    {
+      "features": 3,
+      "h1": "Desempenho dos processos.",
+      "image": 1600,
+      "path": "/solucoes/melhoria-processos",
+      "viewport": 390,
+      "width": 375
+    },
+    {
+      "features": 3,
+      "h1": "Gestão de pessoas e equipes.",
+      "image": 1600,
+      "path": "/solucoes/gestao-pessoas",
+      "viewport": 390,
+      "width": 375
+    },
+    {
+      "features": 3,
+      "h1": "Faturamento e recebimentos.",
+      "image": 1600,
+      "path": "/solucoes/dashboard-faturamento",
+      "viewport": 390,
+      "width": 375
+    },
+    {
+      "features": 3,
+      "h1": "Visão executiva do negócio.",
+      "image": 1600,
+      "path": "/solucoes/dashboard-executivo",
+      "viewport": 390,
+      "width": 375
+    },
+    {
+      "features": 3,
+      "h1": "Logística e acompanhamento.",
+      "image": 1600,
+      "path": "/solucoes/logistica-operacao",
+      "viewport": 390,
+      "width": 375
+    },
+    {
+      "features": 3,
+      "h1": "Monitoramento de sistemas.",
+      "image": 1600,
+      "path": "/solucoes/monitoramento-sistemas",
+      "viewport": 390,
+      "width": 375
+    }
+  ]
+}

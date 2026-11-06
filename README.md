@@ -32,6 +32,13 @@ O build gera `dist/`, sem backend ou banco de dados. A home tem um módulo JavaS
 - `public/og/default.png`: imagem de compartilhamento.
 - `public/visuals`: telas vetoriais próprias em temas claro e escuro, geradas com `python3 scripts/generate-visuals.py`.
 - `src/components/CurvedPanels.astro`: faixa de painéis com scroll horizontal nativo, arraste e teclado.
+- `src/lib/screens.json`: catálogo de 20 conceitos de aplicações, com descrições e recursos por solução.
+- `/solucoes`: galeria com categorias e páginas individuais. Os conceitos usam exclusivamente dados fictícios.
+- `public/solucoes`: 20 SVGs originais, PNGs 1600×1100, miniaturas WebP e cards sociais 1200×630. Regerar com `npm run generate:screens` (Sharp está declarado nas dependências de desenvolvimento).
+- `scripts/verify-screens.mjs`: verifica a logo aprovada, imagens distintas, dimensões, conteúdo no HTML e presença nos sitemaps de páginas e imagens.
+- `docs/design/referencias-aplicacoes-21st.md`: 36 referências consultadas pelo MCP 21st. Nenhum código pago foi necessário.
+
+O `sitemap-imagens.xml` vincula cada PNG à sua página de descrição. Está registrado no índice de sitemaps e no `robots.txt`. As imagens são elementos `<img>` no HTML estático e cada página contém `ImageObject` e breadcrumbs. A publicação permite descoberta; a inclusão e a posição no Google Imagens dependem do Google.
 
 Não publicar nomes de clientes, métricas internas, depoimentos ou cases sem autorização. Os artigos iniciais são conteúdo editorial geral; não descrevem resultados medidos em clientes.
 
