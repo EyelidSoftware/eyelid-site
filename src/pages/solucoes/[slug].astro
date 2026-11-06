@@ -18,7 +18,7 @@ const related = screens
 const schema = [
   screenSchema(screen),
   breadcrumbSchema(
-    { name: "Soluções em tela", path: "/solucoes" },
+    { name: "Experiência", path: "/solucoes" },
     { name: screen.title, path: `/solucoes/${screen.slug}` },
   ),
 ];
@@ -34,7 +34,7 @@ const schema = [
     <nav class="screen-breadcrumb" aria-label="Caminho da página">
       <a href="/">Início</a>
       <span aria-hidden="true">/</span>
-      <a href="/solucoes">Soluções em tela</a>
+      <a href="/solucoes">Experiência</a>
     </nav>
     <p class="eyebrow">
       {screen.category} ·{" "}
@@ -68,11 +68,11 @@ const schema = [
   </figure>
   <section class="container screen-details">
     <div>
-      <p class="eyebrow">O que esta solução reúne</p>
+      <p class="eyebrow">O que desenvolvemos</p>
       <h2>
-        Uma interface a serviço
+        Tecnologia aplicada
         <br />
-        do processo.
+        ao processo.
       </h2>
       <ul>
         {screen.features.map((feature) => (
@@ -82,9 +82,9 @@ const schema = [
     </div>
     <div class="screen-about">
       <p>
-        Este conceito usa dados fictícios para apresentar possibilidades de
-        desenvolvimento. No seu projeto, conhecemos a operação e validamos as
-        regras, integrações e experiência com as pessoas que vão usar a solução.
+        Reunimos arquitetura, desenvolvimento e integração para transformar
+        processos em soluções de uso simples. Nosso trabalho considera as regras
+        do negócio, os sistemas envolvidos e a experiência de quem usa.
       </p>
       <p>
         O diagnóstico pode ser contratado de forma independente. No
@@ -98,9 +98,9 @@ const schema = [
   </section>
   <section class="container screen-related">
     <div class="screen-group-title">
-      <h2>Outras possibilidades.</h2>
+      <h2>Mais da nossa atuação.</h2>
       <a class="text-link" href="/solucoes">
-        Ver as {screens.length} telas ↗
+        Explore nossas competências ↗
       </a>
     </div>
     <div class="screen-grid">
@@ -130,13 +130,13 @@ const schema = [
     </div>
   </section>
   <section class="container screen-cta">
-    <p class="eyebrow">Seu próximo projeto</p>
+    <p class="eyebrow">Converse com a equipe</p>
     <h2>Vamos pensar na sua operação?</h2>
     <a class="button" href="/contato">
       Converse com a equipe ↗
     </a>
     <a class="screen-next text-link" href={`/solucoes/${next.slug}`}>
-      Próxima tela: {next.title} →
+      Conheça também: {next.title} →
     </a>
   </section>
 </BaseLayout>

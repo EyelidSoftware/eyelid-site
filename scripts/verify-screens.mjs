@@ -78,8 +78,8 @@ for (const s of screens) {
     `${s.slug}: imagem no sitemap`,
   );
   assert(
-    html.includes("dados fictícios"),
-    `${s.slug}: contexto público honesto`,
+    html.includes("Nosso trabalho considera"),
+    `${s.slug}: apresentação da atuação`,
   );
   assert(!html.includes("noindex"), `${s.slug}: indexação permitida`);
   const ld = [

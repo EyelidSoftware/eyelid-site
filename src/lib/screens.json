@@ -327,7 +327,7 @@
     "accent": "blue",
     "screen": "Precisão em cada traço.",
     "subtitle": "Plantas, camadas e cotas em um ambiente de desenho técnico.",
-    "description": "Conceito de aplicação para desenho técnico 2D, com planta de ambientes, cotas, camadas e propriedades dos elementos.",
+    "description": "Aplicação para desenho técnico 2D, com planta de ambientes, cotas, camadas e propriedades dos elementos.",
     "features": [
       "Organização por camadas de desenho",
       "Cotas e propriedades de elementos selecionados",
@@ -343,7 +343,7 @@
     "accent": "violet",
     "screen": "Explore cada parte do conjunto.",
     "subtitle": "Uma visão espacial para peças, componentes e documentação.",
-    "description": "Conceito de visualizador técnico 3D com conjunto mecânico em vista explodida, árvore de componentes e propriedades da peça selecionada.",
+    "description": "Visualizador técnico 3D com conjunto mecânico em vista explodida, árvore de componentes e propriedades da peça selecionada.",
     "features": [
       "Árvore de componentes e seleção de peças",
       "Vista explodida para leitura do conjunto",
@@ -359,7 +359,7 @@
     "accent": "teal",
     "screen": "Contexto para revisar o projeto.",
     "subtitle": "Pavimentos, disciplinas e apontamentos em uma visão compartilhada.",
-    "description": "Conceito de ambiente para revisão de projetos de engenharia, com modelo espacial de edificação, disciplinas e apontamentos de compatibilização.",
+    "description": "Ambiente para revisão de projetos de engenharia, com modelo espacial de edificação, disciplinas e apontamentos de compatibilização.",
     "features": [
       "Navegação por pavimento e disciplina",
       "Apontamentos vinculados a elementos do projeto",
@@ -375,7 +375,7 @@
     "accent": "blue",
     "screen": "Cada conexão, bem documentada.",
     "subtitle": "Equipamentos, instrumentos e linhas em um diagrama de processo.",
-    "description": "Conceito de editor de diagramas industriais com equipamentos, tubulações, instrumentos e propriedades técnicas organizadas por circuito.",
+    "description": "Editor de diagramas industriais com equipamentos, tubulações, instrumentos e propriedades técnicas organizadas por circuito.",
     "features": [
       "Identificação de equipamentos e instrumentos",
       "Organização de linhas e circuitos",
@@ -391,7 +391,7 @@
     "accent": "amber",
     "screen": "Uma nova perspectiva do território.",
     "subtitle": "Áreas, camadas e observações para planejar a operação.",
-    "description": "Conceito de aplicação geoespacial com áreas esquemáticas, camadas temáticas e observações para apoiar a análise territorial.",
+    "description": "Aplicação geoespacial com áreas esquemáticas, camadas temáticas e observações para apoiar a análise territorial.",
     "features": [
       "Áreas e camadas temáticas no mesmo mapa",
       "Seleção de parcelas e consulta de atributos",
@@ -407,7 +407,7 @@
     "accent": "teal",
     "screen": "Encontre o ativo. Entenda o contexto.",
     "subtitle": "Instalações, equipamentos e ordens de serviço em uma visão espacial.",
-    "description": "Conceito de aplicação para manutenção com planta operacional, localização de equipamentos e histórico de inspeções por ativo.",
+    "description": "Aplicação para manutenção com planta operacional, localização de equipamentos e histórico de inspeções por ativo.",
     "features": [
       "Localização de equipamentos na planta",
       "Histórico de inspeções e ordens por ativo",
@@ -423,7 +423,7 @@
     "accent": "blue",
     "screen": "O ritmo da fábrica, em perspectiva.",
     "subtitle": "Ordens, células e apontamentos conectados à rotina industrial.",
-    "description": "Conceito de aplicação de execução da produção com ordens por célula, andamento dos lotes e apontamentos para a equipe industrial.",
+    "description": "Aplicação de execução da produção com ordens por célula, andamento dos lotes e apontamentos para a equipe industrial.",
     "features": [
       "Ordens e lotes por célula de produção",
       "Planejamento e apontamentos por etapa",
@@ -439,7 +439,7 @@
     "accent": "teal",
     "screen": "Entenda o processo em uma única vista.",
     "subtitle": "Equipamentos, leituras e ocorrências em um painel de supervisão.",
-    "description": "Conceito de supervisório de instalações com diagrama de processo, leituras demonstrativas e acompanhamento de ocorrências por equipamento.",
+    "description": "Supervisório de instalações com diagrama de processo, leituras demonstrativas e acompanhamento de ocorrências por equipamento.",
     "features": [
       "Diagrama operacional com identificação de ativos",
       "Leituras e tendências contextualizadas",
@@ -455,7 +455,7 @@
     "accent": "amber",
     "screen": "Do endereço certo à próxima expedição.",
     "subtitle": "Posições, ondas de separação e pedidos no mesmo ambiente.",
-    "description": "Conceito de sistema de gestão de armazém com endereçamento visual, ondas de separação e acompanhamento de pedidos para expedição.",
+    "description": "Sistema de gestão de armazém com endereçamento visual, ondas de separação e acompanhamento de pedidos para expedição.",
     "features": [
       "Endereços e ocupação por corredor",
       "Ondas de separação e sequência de coleta",
@@ -471,7 +471,7 @@
     "accent": "teal",
     "screen": "Cada área, no tempo da operação.",
     "subtitle": "Áreas de manejo, calendário e atividades para a equipe de campo.",
-    "description": "Conceito de plataforma agrícola com áreas de manejo esquemáticas, planejamento de atividades e acompanhamento do calendário operacional.",
+    "description": "Plataforma agrícola com áreas de manejo esquemáticas, planejamento de atividades e acompanhamento do calendário operacional.",
     "features": [
       "Áreas e atividades de manejo em uma visão",
       "Calendário de execução por equipe",
@@ -487,7 +487,7 @@
     "accent": "violet",
     "screen": "Veja o detalhe que merece revisão.",
     "subtitle": "Imagens, regiões de interesse e decisão humana no processo de qualidade.",
-    "description": "Conceito de aplicação de inspeção visual com IA que destaca regiões de interesse em uma peça e organiza a revisão humana da análise.",
+    "description": "Aplicação de inspeção visual com IA que destaca regiões de interesse em uma peça e organiza a revisão humana da análise.",
     "features": [
       "Regiões de interesse vinculadas à imagem",
       "Fila de inspeções para revisão humana",
@@ -503,7 +503,7 @@
     "accent": "blue",
     "screen": "Do desenho ao planejamento da obra.",
     "subtitle": "Elementos, quantidades e composições organizados por ambiente.",
-    "description": "Conceito de ferramenta de orçamento de obras com desenho de referência, seleção de elementos e composição de quantitativos por ambiente.",
+    "description": "Ferramenta de orçamento de obras com desenho de referência, seleção de elementos e composição de quantitativos por ambiente.",
     "features": [
       "Elementos e quantidades vinculados ao desenho",
       "Composições de custo por etapa",
@@ -519,7 +519,7 @@
     "accent": "teal",
     "screen": "Energia com contexto para decidir.",
     "subtitle": "Fontes, consumo e prioridades de acompanhamento da instalação.",
-    "description": "Conceito de aplicação de gestão de energia com fluxo entre fontes e cargas, perfil de consumo e acompanhamento por área da instalação.",
+    "description": "Aplicação de gestão de energia com fluxo entre fontes e cargas, perfil de consumo e acompanhamento por área da instalação.",
     "features": [
       "Fluxo de fontes e cargas da instalação",
       "Perfis de consumo por período",
@@ -535,7 +535,7 @@
     "accent": "violet",
     "screen": "Comprar também pode ser simples.",
     "subtitle": "Catálogo, condições e pedidos em uma experiência para empresas.",
-    "description": "Conceito de portal B2B com catálogo de materiais, seleção de itens e montagem de pedidos para avaliação comercial.",
+    "description": "Portal B2B com catálogo de materiais, seleção de itens e montagem de pedidos para avaliação comercial.",
     "features": [
       "Catálogo organizado por categoria e disponibilidade",
       "Montagem de pedidos com quantidades",
@@ -551,7 +551,7 @@
     "accent": "blue",
     "screen": "O serviço certo, com a equipe certa.",
     "subtitle": "Disponibilidade, visitas e ordens de serviço em uma agenda compartilhada.",
-    "description": "Conceito de aplicação para equipes de campo com agenda de técnicos, ordens de serviço e contexto necessário para preparar cada visita.",
+    "description": "Aplicação para equipes de campo com agenda de técnicos, ordens de serviço e contexto necessário para preparar cada visita.",
     "features": [
       "Agenda por equipe e janela de atendimento",
       "Ordens com contexto e prioridades",
@@ -567,7 +567,7 @@
     "accent": "blue",
     "screen": "Dados que encontram o caminho certo.",
     "subtitle": "Fontes, mapeamentos e validações para conectar a operação.",
-    "description": "Conceito de central de integração de dados com mapeamento de campos, prévia de registros e validações entre sistemas da operação.",
+    "description": "Central de integração de dados com mapeamento de campos, prévia de registros e validações entre sistemas da operação.",
     "features": [
       "Mapeamento entre campos de origem e destino",
       "Prévia dos registros e regras de transformação",

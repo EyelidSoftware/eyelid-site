@@ -8,13 +8,13 @@ const categories = [
     name: "Operações especializadas",
     id: "operacoes-especializadas",
     description:
-      "Conceitos de aplicações para indústria, campo, energia, obras e operações comerciais.",
+      "Aplicações para indústria, campo, energia, obras e operações comerciais.",
   },
   {
     name: "Engenharia e operação",
     id: "engenharia-e-operacao",
     description:
-      "Conceitos de aplicações para desenho técnico, modelos espaciais e operações de engenharia.",
+      "Desenho técnico, modelos espaciais e ferramentas para operações de engenharia.",
   },
   {
     name: "Software",
@@ -43,11 +43,11 @@ const categories = [
 const orderedScreens = categories.flatMap((c) =>
   screens.filter((s) => s.category === c.name),
 );
-const description = `Explore ${screens.length} interfaces da ${site.publicName}: engenharia, software sob medida, ERP, CRM, automações, IA e dashboards em temas claros e escuros.`;
+const description = `Conheça a experiência e as competências da ${site.publicName} em desenvolvimento de software, automação, integrações e inteligência artificial aplicada a empresas.`;
 const schema = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  name: `Soluções em tela | ${site.publicName}`,
+  name: `Experiência e competências | ${site.publicName}`,
   description,
   url: absoluteUrl("/solucoes"),
   mainEntity: {
@@ -64,24 +64,26 @@ const schema = {
 ---
 
 <BaseLayout
-  title="Soluções em tela: software, automação e IA"
+  title="Experiência em software, automação e IA"
   description={description}
   schema={schema}
 >
   <section class="container screen-intro">
-    <p class="eyebrow">Soluções em tela</p>
+    <p class="eyebrow">Nossa experiência</p>
     <h1>
-      Possibilidades para
-      <br />o seu próximo projeto.
+      Nossa experiência,
+      <br />
+      aplicada ao seu negócio.
     </h1>
     <p class="screen-lead">
-      Do processo à experiência de quem usa. Explore interfaces de aplicações,
-      automações e painéis que podemos construir com a sua equipe.
+      Desenvolvemos software sob medida, automações e soluções com IA, da
+      arquitetura à implantação e evolução em produção. Conheça parte do nosso
+      repertório técnico em aplicações, integrações e experiências digitais para
+      empresas.
     </p>
     <p class="screen-context">
-      {screens.length} conceitos de interface com dados fictícios, criados pela{" "}
-      {site.publicName}. Cada projeto é desenvolvido conforme a realidade do
-      negócio.
+      Engenharia de software, cuidado com a experiência de uso e participação
+      próxima do cliente em cada etapa.
     </p>
     <nav class="screen-categories" aria-label="Tipos de solução">
       {categories.map((c) => (
@@ -132,7 +134,7 @@ const schema = {
                   </h3>
                   <p>{screen.description}</p>
                   <span class="screen-card-more">
-                    Explorar a solução <span aria-hidden="true">→</span>
+                    Conheça a aplicação <span aria-hidden="true">→</span>
                   </span>
                 </div>
               </a>
@@ -142,15 +144,14 @@ const schema = {
     </section>
   ))}
   <section class="container screen-cta">
-    <p class="eyebrow">Construído com você</p>
+    <p class="eyebrow">Experiência e proximidade</p>
     <h2>
-      Qual processo merece
-      <br />
-      uma experiência melhor?
+      Tecnologia para
+      <br />a realidade do seu negócio.
     </h2>
     <p>
-      Começamos entendendo a operação. Você acompanha as decisões, testa as
-      entregas e participa da evolução semanalmente.
+      Acompanhamos a operação de perto, traduzimos necessidades em entregas e
+      evoluímos as soluções com a participação da sua equipe.
     </p>
     <a class="button" href="/contato">
       Vamos conversar ↗

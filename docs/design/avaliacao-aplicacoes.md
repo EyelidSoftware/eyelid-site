@@ -86,3 +86,9 @@ Seleção para ampliar as situações de uso apresentadas: produção e instala�
 Avaliação: revisão dos dez rasters em três pranchas; nenhum texto fora do quadro ou sobreposto; contraste mínimo medido de 4,53:1. Foi reforçado o contraste dos horários na agenda. Valores do balanço de potência e quantidade de visitas foram conferidos.
 
 As dez páginas foram abertas a 390×844, com imagem 1600×1100 e três recursos descritivos, sem rolagem horizontal excedente. Check, build e verificação do site passaram: 59 páginas, 36 interfaces e 36 imagens distintas com logo aprovada. Cinco novas interfaces claras e cinco escuras, totalizando 18 de cada tema. Evidências em avaliacao-aplicacoes.json.
+
+## Apresentação da experiência da empresa
+
+Em 6 de novembro de 2026, a pedido do fundador, a página passou a apresentar o repertório técnico, a experiência e as capacidades da empresa. Menu, home, rodapé, breadcrumbs, metadados, introdução e páginas de detalhe foram alinhados com essa direção. Título principal: Nossa experiência, aplicada ao seu negócio.
+
+As interfaces são exemplos visuais das capacidades da equipe. A redação trata de competências e forma de trabalho, sem atribuir as 36 interfaces a um número de contratos, clientes ou resultados. Foram retiradas da apresentação as chamadas centradas em projetos futuros e a distinção editorial entre tipos de interface. Imagens e rotas foram preservadas.
