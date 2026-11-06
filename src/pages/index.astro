@@ -82,11 +82,7 @@ const featured = readingOrder.map((item) => ({
 }));
 ---
 
-<BaseLayout
-  title="Desenvolvimento de software e consultoria tecnológica"
-  description={site.description}
-  path="/"
->
+<BaseLayout title={site.homeTitle} description={site.description} path="/">
   <section class="technology-hero" aria-labelledby="hero-title">
     <div class="hero-gridlines" aria-hidden="true"></div>
     <TunnelScene />
@@ -126,10 +122,7 @@ const featured = readingOrder.map((item) => ({
           sua operação.
         </h2>
       </div>
-      <p class="solutions-intro">
-        Da primeira ideia à melhoria de um processo, desenvolvemos e conectamos
-        o que sua empresa precisa.
-      </p>
+      <p class="solutions-intro">{site.presentation}</p>
     </div>
     <div class="container solutions-grid">
       {offerings.map((item) => (

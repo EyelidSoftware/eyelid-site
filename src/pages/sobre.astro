@@ -1,24 +1,18 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { site, products } from "../lib/site";
+import { site } from "../lib/site";
 ---
 
 <BaseLayout
-  title="Quem somos"
-  description={`Conheça a ${site.company}, empresa de desenvolvimento de software sob medida, consultoria tecnológica e automação de processos.`}
+  title="Quem somos e como trabalhamos"
+  description={site.description}
   path="/sobre"
 >
   <div class="container">
     <header class="page-heading">
       <p class="eyebrow">Quem somos</p>
-      <h1>
-        Conheça a {site.company}.
-      </h1>
-      <p class="lead">
-        Somos uma empresa de soluções de tecnologia. Desenvolvemos software,
-        integrações e automações com atenção ao negócio e às pessoas que vão
-        usar cada entrega.
-      </p>
+      <h1>Conheça a {site.publicName}.</h1>
+      <p class="lead">{site.presentation}</p>
     </header>
     <section class="section split">
       <div class="big-symbol">
@@ -38,9 +32,10 @@ import { site, products } from "../lib/site";
           íris e a pálpebra inspirou nosso nome.
         </p>
         <p>
-          Elian e Luigi fundaram a empresa em 5 de fevereiro de 2024. Essa
-          parceria continua presente na construção das soluções e nas decisões
-          sobre os caminhos da empresa.
+          Elian e Luigi fundaram a empresa em{" "}
+          <time datetime={site.foundingDate}>{site.foundingDateLabel}</time>.
+          Essa parceria continua presente na construção das soluções e nas
+          decisões sobre os caminhos da empresa.
         </p>
       </div>
     </section>
@@ -78,13 +73,30 @@ import { site, products } from "../lib/site";
       </div>
     </section>
     <section class="section prose">
-      <h2>Produtos que desenvolvemos</h2>
-      <p>Também desenvolvemos produtos próprios. Conheça o que está disponível para experimentar.</p>
-      <ul>
-        {products.map((product) => (
-          <li><a href={`/${product.slug}`}>{product.name}</a>. {product.tagline}.</li>
-        ))}
-      </ul>
+      <h2>Da descoberta à solução em uso.</h2>
+      <p>
+        Atendemos empresas que querem criar uma aplicação e equipes que precisam
+        melhorar processos existentes. O trabalho começa entendendo a operação,
+        as pessoas envolvidas e as oportunidades de evolução.
+      </p>
+      <p>
+        O diagnóstico pode ser contratado de forma independente. Quando seguimos
+        para desenvolvimento, o cliente acompanha atualizações semanais, testa
+        as entregas e participa das decisões. Conforme o projeto, usamos
+        protótipos, provas de conceito, pilotos ou MVPs para validar antes de
+        ampliar o uso.
+      </p>
+      <p>
+        Conectamos aplicações, painéis, assistentes e integrações em soluções
+        que fazem sentido para cada negócio, com atenção à qualidade, à entrega
+        e à experiência de quem usa.
+      </p>
+      <p>
+        <a href="/servicos">Conheça nossas soluções ↗</a>
+      </p>
+      <a class="btn btn--primary" href="/contato">
+        Converse com a equipe ↗
+      </a>
     </section>
   </div>
 </BaseLayout>

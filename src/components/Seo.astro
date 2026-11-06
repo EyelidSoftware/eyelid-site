@@ -36,8 +36,8 @@ const {
 
 const isHome = path === "/";
 const fullTitle = isHome
-  ? `${site.company} | ${title}`
-  : `${title} | ${site.company}`;
+  ? `${site.publicName} | ${title}`
+  : `${title} | ${site.publicName}`;
 
 const canonical = absoluteUrl(path);
 const imageUrl = absoluteUrl(image);
@@ -46,7 +46,10 @@ const organization = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "@id": absoluteUrl("/#organization"),
-  name: site.company,
+  name: site.publicName,
+  alternateName: site.alternateNames,
+  description: site.description,
+  foundingDate: site.foundingDate,
   url: absoluteUrl(),
   logo: {
     "@type": "ImageObject",
@@ -61,7 +64,8 @@ const website = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "@id": absoluteUrl("/#website"),
-  name: site.company,
+  name: site.publicName,
+  alternateName: site.alternateNames,
   url: absoluteUrl(),
   inLanguage: site.locale,
   publisher: { "@id": organization["@id"] },
@@ -74,7 +78,7 @@ const website = {
 
 {noindex && <meta name="robots" content="noindex, nofollow" />}
 
-<meta property="og:site_name" content={site.company} />
+<meta property="og:site_name" content={site.publicName} />
 <meta property="og:type" content={type} />
 <meta property="og:title" content={fullTitle} />
 <meta property="og:description" content={description} />
@@ -89,18 +93,20 @@ const website = {
 <meta name="twitter:description" content={description} />
 <meta name="twitter:image" content={imageUrl} />
 
-{isHome && (
+{(isHome || path === "/sobre") && (
   <>
     <script
       is:inline
       type="application/ld+json"
       set:html={JSON.stringify(organization)}
     />
-    <script
-      is:inline
-      type="application/ld+json"
-      set:html={JSON.stringify(website)}
-    />
+    {isHome && (
+      <script
+        is:inline
+        type="application/ld+json"
+        set:html={JSON.stringify(website)}
+      />
+    )}
   </>
 )}
 {[schema]

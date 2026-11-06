@@ -9,10 +9,17 @@
 export const site = {
   /** Empresa. O site é da Eyelid; AutoFeedr é um dos produtos. */
   company: "eyelid",
+  publicName: "Eyelid Software",
+  alternateNames: ["eyelid", "EyelidSoftware"],
+  foundingDate: "2024-02-05",
+  foundingDateLabel: "5 de fevereiro de 2024",
+  homeTitle: "Software sob medida, automação e IA",
+  presentation:
+    "A Eyelid Software desenvolve soluções de tecnologia sob medida para empresas. Acompanhamos seus processos, identificamos oportunidades e construímos aplicações, automações, integrações e soluções com IA. Você participa das decisões, testa as entregas e acompanha a evolução semanalmente.",
   legalName: "eyelid",
   tagline: "Software para o seu jeito de trabalhar.",
   description:
-    "Desenvolvimento de software sob medida, consultoria tecnológica e acompanhamento de processos para empresas.",
+    "A Eyelid Software desenvolve software sob medida, automações e soluções com IA. Conhecemos seus processos e construímos com participação da sua equipe.",
   url: "https://eyelid.com.br",
   locale: "pt-BR",
   email: "contato@eyelid.com.br",
@@ -58,15 +65,13 @@ export function breadcrumbSchema(
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    itemListElement: [
-      { name: "Início", path: "/" },
-      section,
-      page,
-    ].map(({ name, path }, index) => ({
-      "@type": "ListItem",
-      position: index + 1,
-      name,
-      item: absoluteUrl(path),
-    })),
+    itemListElement: [{ name: "Início", path: "/" }, section, page].map(
+      ({ name, path }, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name,
+        item: absoluteUrl(path),
+      }),
+    ),
   };
 }

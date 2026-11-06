@@ -24,7 +24,12 @@ const articleSchema = {
   "@type": "Article",
   headline: article.title,
   description: article.excerpt,
-  author: { "@type": "Organization", name: site.company, url: site.url },
+  author: {
+    "@type": "Organization",
+    "@id": absoluteUrl("/#organization"),
+    name: site.publicName,
+    url: site.url,
+  },
   mainEntityOfPage: absoluteUrl(path),
   image: absoluteUrl("/og/default.png"),
 };
@@ -50,7 +55,7 @@ const articleSchema = {
       </a>
       <h1>{article.title}</h1>
       <p class="lead">{article.excerpt}</p>
-      <p class="eyebrow">Por {site.company} · Leitura prática</p>
+      <p class="eyebrow">Por {site.publicName} · Leitura prática</p>
     </header>
     <div class="prose reading">
       <Content />
