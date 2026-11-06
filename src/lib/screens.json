@@ -7,13 +7,14 @@
     "accent": "blue",
     "screen": "Sua presença, bem planejada.",
     "subtitle": "Conteúdo, revisão e publicação no mesmo calendário.",
-    "description": "Planejamento editorial com calendário de publicações, revisão humana e acompanhamento de conteúdo para o LinkedIn.",
+    "description": "Desenvolvimento de automações para publicações no LinkedIn, com planejamento editorial, revisão pela equipe e acompanhamento dos agendamentos.",
     "features": [
       "Calendário editorial por canal e responsável",
       "Aprovação de conteúdo antes de publicar",
       "Histórico de publicações e próximos agendamentos"
     ],
-    "service": "automacao-e-integracoes"
+    "service": "automacao-e-integracoes",
+    "imageAlt": "Calendário editorial com publicações agendadas e painel de revisão de conteúdo para o LinkedIn."
   },
   {
     "slug": "desenvolvimento-sites",
@@ -23,13 +24,14 @@
     "accent": "violet",
     "screen": "Uma presença que faz sentido.",
     "subtitle": "Estruture páginas, conteúdos e experiências para sua marca.",
-    "description": "Ambiente de criação de sites com prévia da experiência, organização de páginas e acompanhamento dos critérios de publicação.",
+    "description": "Desenvolvimento de sites e experiências digitais, com organização de conteúdo, interfaces responsivas e atenção à acessibilidade e à publicação.",
     "features": [
       "Prévia de páginas e componentes",
       "Conteúdo organizado para busca e acessibilidade",
       "Checklist de qualidade e publicação"
     ],
-    "service": "software-sob-medida"
+    "service": "software-sob-medida",
+    "imageAlt": "Editor de site com prévia da página, estrutura de conteúdo e checklist de publicação."
   },
   {
     "slug": "customizacao-erp",
@@ -39,13 +41,14 @@
     "accent": "amber",
     "screen": "O ERP acompanha seu processo.",
     "subtitle": "Campos, regras e integrações para a rotina da sua equipe.",
-    "description": "Customização de ERP com campos próprios, regras de aprovação e mapeamento das informações entre sistemas.",
+    "description": "Customização de ERP para adaptar campos, validações, aprovações e integrações às regras e aos processos da empresa.",
     "features": [
       "Campos e validações conforme o processo",
       "Mapeamento entre ERP e sistemas externos",
       "Versionamento e validação das configurações"
     ],
-    "service": "software-sob-medida"
+    "service": "software-sob-medida",
+    "imageAlt": "Configuração de campos de um ERP, com regras de validação e mapeamento de dados."
   },
   {
     "slug": "erp-personalizado",
@@ -55,13 +58,14 @@
     "accent": "blue",
     "screen": "Sua operação. Uma visão integrada.",
     "subtitle": "Pedidos, estoque e financeiro com as regras do seu negócio.",
-    "description": "ERP personalizado que conecta pedidos, estoque, compras e financeiro em uma visão operacional construída para cada empresa.",
+    "description": "Desenvolvimento de ERP sob medida, reunindo pedidos, estoque, compras e financeiro em aplicações alinhadas à operação da empresa.",
     "features": [
       "Pedidos e disponibilidade de estoque",
       "Aprovações e responsabilidades por etapa",
       "Visão integrada de compras e financeiro"
     ],
-    "service": "software-sob-medida"
+    "service": "software-sob-medida",
+    "imageAlt": "ERP com indicadores de pedidos e estoque, gráfico de acompanhamento e lista de solicitações."
   },
   {
     "slug": "customizacao-crm",
@@ -71,13 +75,14 @@
     "accent": "violet",
     "screen": "Cada oportunidade, no lugar certo.",
     "subtitle": "Etapas, próximos contatos e negociações sem perder contexto.",
-    "description": "CRM com funil comercial adaptado à operação, cartões de oportunidades e próximas ações visíveis para a equipe.",
+    "description": "Desenvolvimento e personalização de CRM, com etapas comerciais, responsáveis e próximas ações definidos conforme o processo de vendas.",
     "features": [
       "Etapas comerciais configuráveis",
       "Responsável e próximo contato em cada negociação",
       "Visão de valores e oportunidades por etapa"
     ],
-    "service": "software-sob-medida"
+    "service": "software-sob-medida",
+    "imageAlt": "CRM com oportunidades distribuídas em colunas de qualificação, diagnóstico, proposta e negociação."
   },
   {
     "slug": "crm-relacionamento",
@@ -87,13 +92,14 @@
     "accent": "teal",
     "screen": "Conheça cada relacionamento.",
     "subtitle": "Interações, oportunidades e próximos passos em uma única visão.",
-    "description": "Visão de relacionamento com histórico de interações, preferências de contato e acompanhamento de oportunidades por conta.",
+    "description": "Desenvolvimento de aplicações de relacionamento com clientes, centralizando interações, oportunidades e responsabilidades em uma visão por conta.",
     "features": [
       "Linha do tempo de contatos e decisões",
       "Visão de oportunidades por conta",
       "Tarefas e responsáveis para o próximo passo"
     ],
-    "service": "software-sob-medida"
+    "service": "software-sob-medida",
+    "imageAlt": "Visão de uma conta no CRM, com histórico de contatos, oportunidade em foco e próximos passos."
   },
   {
     "slug": "respostas-whatsapp",
@@ -103,13 +109,14 @@
     "accent": "teal",
     "screen": "Atendimento com continuidade.",
     "subtitle": "Respostas assistidas, contexto e passagem para sua equipe.",
-    "description": "Central de atendimento no WhatsApp com fila compartilhada, respostas sugeridas e transferência para pessoas quando necessário.",
+    "description": "Desenvolvimento de soluções de atendimento no WhatsApp, com organização de conversas, contexto compartilhado e respostas assistidas pela equipe.",
     "features": [
       "Conversas organizadas por fila e prioridade",
       "Sugestões com revisão do atendente",
       "Histórico e contexto na transferência"
     ],
-    "service": "automacao-e-integracoes"
+    "service": "automacao-e-integracoes",
+    "imageAlt": "Central de atendimento com lista de conversas, mensagens, resposta sugerida e contexto do pedido."
   },
   {
     "slug": "automacao-whatsapp",
@@ -119,13 +126,14 @@
     "accent": "teal",
     "screen": "Converse. Entenda. Encaminhe.",
     "subtitle": "Desenhe jornadas de atendimento com regras claras de continuidade.",
-    "description": "Editor de jornadas no WhatsApp com condições, integração a sistemas e encaminhamento para atendimento humano.",
+    "description": "Desenvolvimento de automações para jornadas no WhatsApp, combinando regras de atendimento, consulta a sistemas e encaminhamento para a equipe.",
     "features": [
       "Jornadas visuais por intenção de atendimento",
       "Consulta a sistemas com permissões",
       "Encaminhamento humano e acompanhamento de falhas"
     ],
-    "service": "automacao-e-integracoes"
+    "service": "automacao-e-integracoes",
+    "imageAlt": "Editor visual de jornada no WhatsApp, com identificação de intenção e encaminhamento do atendimento."
   },
   {
     "slug": "automacao-processos",
@@ -135,13 +143,14 @@
     "accent": "blue",
     "screen": "Do pedido à aprovação, sem ruído.",
     "subtitle": "Regras de negócio, responsáveis e rastreabilidade em cada etapa.",
-    "description": "Fluxo de aprovação de solicitações com regras por valor, responsáveis definidos e histórico de execução para acompanhamento.",
+    "description": "Desenvolvimento de automações de processos e aprovações, com regras de negócio, responsáveis, prazos e histórico de execução.",
     "features": [
       "Condições e alçadas de aprovação",
       "Responsáveis e prazos por etapa",
       "Histórico de decisões e execuções"
     ],
-    "service": "automacao-e-integracoes"
+    "service": "automacao-e-integracoes",
+    "imageAlt": "Fluxo visual de aprovação de compras, com validação de alçada, revisão e atualização de sistema."
   },
   {
     "slug": "ia-workflows",
@@ -151,13 +160,14 @@
     "accent": "violet",
     "screen": "Inteligência que participa do trabalho.",
     "subtitle": "Agentes, ferramentas e revisão humana em um fluxo rastreável.",
-    "description": "Orquestração de agentes de IA que consultam informações, executam etapas autorizadas e encaminham decisões para revisão humana.",
+    "description": "Desenvolvimento de fluxos com agentes de IA, ferramentas autorizadas e revisão humana, com atenção ao contexto e à rastreabilidade das ações.",
     "features": [
       "Ferramentas e permissões por agente",
       "Revisão humana antes de ações sensíveis",
       "Rastreabilidade das etapas e fontes consultadas"
     ],
-    "service": "inteligencia-artificial"
+    "service": "inteligencia-artificial",
+    "imageAlt": "Fluxo de agentes de IA com consulta a dados, revisão humana e configuração de permissões."
   },
   {
     "slug": "modelos-preditivos",
@@ -167,13 +177,14 @@
     "accent": "blue",
     "screen": "Antecipe cenários. Decida com contexto.",
     "subtitle": "Previsões, intervalos de confiança e validação do modelo.",
-    "description": "Painel de previsão de demanda com histórico observado, cenários e intervalos de incerteza para apoiar o planejamento.",
+    "description": "Desenvolvimento de modelos preditivos personalizados, com séries históricas, avaliação de erro e projeções contextualizadas para o planejamento.",
     "features": [
       "Séries históricas e projeções comparáveis",
       "Intervalos de incerteza explícitos",
       "Validação temporal e acompanhamento de erro"
     ],
-    "service": "inteligencia-artificial"
+    "service": "inteligencia-artificial",
+    "imageAlt": "Painel de previsão de demanda com histórico, projeção, faixa de incerteza e variáveis consideradas."
   },
   {
     "slug": "melhoria-processos",
@@ -183,13 +194,14 @@
     "accent": "amber",
     "screen": "Encontre o próximo ponto de melhoria.",
     "subtitle": "Tempos, gargalos e prioridades com contexto operacional.",
-    "description": "Análise de processos com distribuição de tempos, identificação de gargalos e acompanhamento das iniciativas de melhoria.",
+    "description": "Desenvolvimento de ferramentas para analisar e melhorar processos, com tempos de ciclo, identificação de gargalos e acompanhamento das iniciativas.",
     "features": [
       "Tempo de ciclo por etapa",
       "Distribuição de casos e identificação de gargalos",
       "Plano de melhoria com responsáveis"
     ],
-    "service": "acompanhamento-de-processos"
+    "service": "acompanhamento-de-processos",
+    "imageAlt": "Análise de processos com tempos por etapa, distribuição dos ciclos e ações de melhoria."
   },
   {
     "slug": "gestao-pessoas",
@@ -199,13 +211,14 @@
     "accent": "violet",
     "screen": "Pessoas no centro da operação.",
     "subtitle": "Equipes, disponibilidade e desenvolvimento em perspectiva.",
-    "description": "Painel de gestão de pessoas com diretório de equipes, disponibilidade e acompanhamento de planos de desenvolvimento.",
+    "description": "Desenvolvimento de aplicações de gestão de pessoas, com organização de equipes, disponibilidade e acompanhamento de planos de desenvolvimento.",
     "features": [
       "Diretório por equipe e área",
       "Disponibilidade e planejamento da equipe",
       "Acompanhamento de desenvolvimento profissional"
     ],
-    "service": "software-sob-medida"
+    "service": "software-sob-medida",
+    "imageAlt": "Diretório de equipes com perfis, disponibilidade e progresso dos planos de desenvolvimento."
   },
   {
     "slug": "dashboard-faturamento",
@@ -215,13 +228,14 @@
     "accent": "blue",
     "screen": "Clareza para acompanhar o financeiro.",
     "subtitle": "Faturamento, vencimentos e recebimentos no mesmo horizonte.",
-    "description": "Dashboard financeiro com faturamento mensal, composição da receita e situação dos recebimentos por vencimento.",
+    "description": "Desenvolvimento de dashboards financeiros, com faturamento, recebimentos e vencimentos organizados para acompanhar a operação com clareza.",
     "features": [
       "Receita por período e categoria",
       "Separação entre faturado e recebido",
       "Contas e vencimentos para acompanhamento"
     ],
-    "service": "software-sob-medida"
+    "service": "software-sob-medida",
+    "imageAlt": "Dashboard de faturamento com gráfico mensal, composição da receita e contas a receber."
   },
   {
     "slug": "dashboard-executivo",
@@ -231,13 +245,14 @@
     "accent": "teal",
     "screen": "O essencial para decidir melhor.",
     "subtitle": "Indicadores, metas e prioridades em uma visão de gestão.",
-    "description": "Painel executivo com indicadores de receita, operação e relacionamento, metas e ações prioritárias para a gestão.",
+    "description": "Desenvolvimento de painéis executivos que conectam indicadores, metas e prioridades, com informações organizadas para apoiar decisões de gestão.",
     "features": [
       "Indicadores com período e contexto",
       "Metas e acompanhamento por área",
       "Prioridades conectadas às decisões"
     ],
-    "service": "acompanhamento-de-processos"
+    "service": "acompanhamento-de-processos",
+    "imageAlt": "Painel executivo com indicadores de receita e operação, metas por área e prioridades da gestão."
   },
   {
     "slug": "gestao-projetos",
@@ -247,13 +262,14 @@
     "accent": "violet",
     "screen": "Planos que viram entregas.",
     "subtitle": "Marcos, dependências e acompanhamento próximo da equipe.",
-    "description": "Gestão de projetos com cronograma de entregas, dependências e revisões semanais entre a equipe e o cliente.",
+    "description": "Desenvolvimento de aplicações de gestão de projetos, com marcos, dependências e revisões que aproximam a equipe e o cliente das entregas.",
     "features": [
       "Cronograma com marcos e dependências",
       "Acompanhamento de responsáveis e revisões",
       "Entregas e decisões visíveis para o cliente"
     ],
-    "service": "software-sob-medida"
+    "service": "software-sob-medida",
+    "imageAlt": "Cronograma de projeto com etapas, dependências, marcos e atividades da próxima revisão."
   },
   {
     "slug": "logistica-operacao",
@@ -263,13 +279,14 @@
     "accent": "amber",
     "screen": "Cada entrega tem um caminho.",
     "subtitle": "Rotas, ocorrências e acompanhamento da operação logística.",
-    "description": "Painel de logística com rotas esquemáticas, situação das entregas e acompanhamento das ocorrências pela equipe.",
+    "description": "Desenvolvimento de aplicações de logística, com visualização de rotas, acompanhamento de pedidos e tratamento das ocorrências da operação.",
     "features": [
       "Visão das rotas e pontos de entrega",
       "Ocorrências e responsáveis por resolução",
       "Acompanhamento de prazos por pedido"
     ],
-    "service": "software-sob-medida"
+    "service": "software-sob-medida",
+    "imageAlt": "Painel de logística com pontos de uma rota, status dos pedidos e ocorrências de entrega."
   },
   {
     "slug": "monitoramento-sistemas",
@@ -279,13 +296,14 @@
     "accent": "teal",
     "screen": "Saiba o que está acontecendo.",
     "subtitle": "Serviços, execuções e alertas com o contexto certo para agir.",
-    "description": "Central de observabilidade com situação de serviços, latência, histórico de incidentes e acompanhamento de execuções.",
+    "description": "Desenvolvimento de ferramentas de observabilidade e monitoramento, com estado dos serviços, latência, execuções e contexto para investigar falhas.",
     "features": [
       "Estado e latência dos serviços",
       "Histórico de incidentes e execuções",
       "Alertas com responsável e contexto"
     ],
-    "service": "automacao-e-integracoes"
+    "service": "automacao-e-integracoes",
+    "imageAlt": "Central de monitoramento com estado dos serviços, gráfico de latência e histórico de execuções."
   },
   {
     "slug": "assistente-documentos",
@@ -295,13 +313,14 @@
     "accent": "violet",
     "screen": "Pergunte. Encontre. Confira a fonte.",
     "subtitle": "Respostas contextualizadas com documentos e permissões da empresa.",
-    "description": "Assistente de IA com busca em documentos, referências consultáveis e controle de acesso às informações da empresa.",
+    "description": "Desenvolvimento de assistentes de IA conectados a documentos, com referências consultáveis e controle de acesso às informações da empresa.",
     "features": [
       "Respostas acompanhadas de referências",
       "Documentos organizados por domínio",
       "Acesso conforme as permissões do usuário"
     ],
-    "service": "inteligencia-artificial"
+    "service": "inteligencia-artificial",
+    "imageAlt": "Assistente de IA com documentos autorizados, resposta organizada por etapas e referência à fonte."
   },
   {
     "slug": "portal-cliente",
@@ -311,13 +330,14 @@
     "accent": "blue",
     "screen": "Uma experiência próxima, do início ao fim.",
     "subtitle": "Entregas, documentos e decisões compartilhadas com clareza.",
-    "description": "Portal do cliente para acompanhar entregas, revisar documentos e participar das decisões em um ambiente personalizado.",
+    "description": "Desenvolvimento de portais do cliente, com entregas, documentos e decisões organizados para aproximar o acompanhamento e a participação no projeto.",
     "features": [
       "Visão das próximas entregas e marcos",
       "Documentos e revisões centralizados",
       "Histórico de decisões e solicitações"
     ],
-    "service": "software-sob-medida"
+    "service": "software-sob-medida",
+    "imageAlt": "Portal do cliente com andamento do projeto, próximas entregas e decisões para revisão."
   },
   {
     "slug": "desenho-tecnico-2d",
@@ -327,13 +347,14 @@
     "accent": "blue",
     "screen": "Precisão em cada traço.",
     "subtitle": "Plantas, camadas e cotas em um ambiente de desenho técnico.",
-    "description": "Aplicação para desenho técnico 2D, com planta de ambientes, cotas, camadas e propriedades dos elementos.",
+    "description": "Desenvolvimento de aplicações de desenho técnico 2D, com organização por camadas, cotas e propriedades para apoiar fluxos de projeto e revisão.",
     "features": [
       "Organização por camadas de desenho",
       "Cotas e propriedades de elementos selecionados",
       "Revisões e observações por projeto"
     ],
-    "service": "software-sob-medida"
+    "service": "software-sob-medida",
+    "imageAlt": "Planta técnica 2D com ambientes, mobiliário, cotas e propriedades da sala selecionada."
   },
   {
     "slug": "modelagem-inspecao-3d",
@@ -343,13 +364,14 @@
     "accent": "violet",
     "screen": "Explore cada parte do conjunto.",
     "subtitle": "Uma visão espacial para peças, componentes e documentação.",
-    "description": "Visualizador técnico 3D com conjunto mecânico em vista explodida, árvore de componentes e propriedades da peça selecionada.",
+    "description": "Desenvolvimento de visualizadores técnicos 3D, com seleção de componentes, propriedades e vistas espaciais para explorar conjuntos e documentação.",
     "features": [
       "Árvore de componentes e seleção de peças",
       "Vista explodida para leitura do conjunto",
       "Propriedades e revisões da documentação técnica"
     ],
-    "service": "software-sob-medida"
+    "service": "software-sob-medida",
+    "imageAlt": "Conjunto mecânico em vista explodida 3D, com árvore de componentes e propriedades da placa superior."
   },
   {
     "slug": "revisao-projetos-engenharia",
@@ -359,13 +381,14 @@
     "accent": "teal",
     "screen": "Contexto para revisar o projeto.",
     "subtitle": "Pavimentos, disciplinas e apontamentos em uma visão compartilhada.",
-    "description": "Ambiente para revisão de projetos de engenharia, com modelo espacial de edificação, disciplinas e apontamentos de compatibilização.",
+    "description": "Desenvolvimento de ferramentas para revisão de projetos de engenharia, com modelos espaciais, disciplinas e apontamentos vinculados aos elementos.",
     "features": [
       "Navegação por pavimento e disciplina",
       "Apontamentos vinculados a elementos do projeto",
       "Responsáveis e decisões de revisão"
     ],
-    "service": "software-sob-medida"
+    "service": "software-sob-medida",
+    "imageAlt": "Modelo espacial de uma edificação por pavimentos, com disciplinas e apontamento de revisão."
   },
   {
     "slug": "diagramas-instalacoes-industriais",
@@ -375,13 +398,14 @@
     "accent": "blue",
     "screen": "Cada conexão, bem documentada.",
     "subtitle": "Equipamentos, instrumentos e linhas em um diagrama de processo.",
-    "description": "Editor de diagramas industriais com equipamentos, tubulações, instrumentos e propriedades técnicas organizadas por circuito.",
+    "description": "Desenvolvimento de editores de diagramas industriais, com identificação de equipamentos, instrumentos e circuitos para organizar a documentação técnica.",
     "features": [
       "Identificação de equipamentos e instrumentos",
       "Organização de linhas e circuitos",
       "Revisão das propriedades e da documentação"
     ],
-    "service": "software-sob-medida"
+    "service": "software-sob-medida",
+    "imageAlt": "Diagrama industrial com reservatório, bomba, instrumentos, tubulação e propriedades da linha."
   },
   {
     "slug": "mapas-analise-territorial",
@@ -391,13 +415,14 @@
     "accent": "amber",
     "screen": "Uma nova perspectiva do território.",
     "subtitle": "Áreas, camadas e observações para planejar a operação.",
-    "description": "Aplicação geoespacial com áreas esquemáticas, camadas temáticas e observações para apoiar a análise territorial.",
+    "description": "Desenvolvimento de aplicações geoespaciais, com camadas temáticas, atributos de áreas e observações de campo para apoiar o planejamento territorial.",
     "features": [
       "Áreas e camadas temáticas no mesmo mapa",
       "Seleção de parcelas e consulta de atributos",
       "Observações de campo vinculadas ao território"
     ],
-    "service": "software-sob-medida"
+    "service": "software-sob-medida",
+    "imageAlt": "Mapa com áreas delimitadas, camadas de relevo e acesso, observação de campo e atributos da parcela."
   },
   {
     "slug": "inspecao-ativos-manutencao",
@@ -407,13 +432,14 @@
     "accent": "teal",
     "screen": "Encontre o ativo. Entenda o contexto.",
     "subtitle": "Instalações, equipamentos e ordens de serviço em uma visão espacial.",
-    "description": "Aplicação para manutenção com planta operacional, localização de equipamentos e histórico de inspeções por ativo.",
+    "description": "Desenvolvimento de aplicações de manutenção, relacionando localização de ativos, inspeções e ordens de serviço ao contexto da instalação.",
     "features": [
       "Localização de equipamentos na planta",
       "Histórico de inspeções e ordens por ativo",
       "Planejamento de ações e responsáveis"
     ],
-    "service": "software-sob-medida"
+    "service": "software-sob-medida",
+    "imageAlt": "Planta operacional com equipamentos, ativo selecionado e contexto da ordem de manutenção."
   },
   {
     "slug": "producao-industrial",
@@ -423,13 +449,14 @@
     "accent": "blue",
     "screen": "O ritmo da fábrica, em perspectiva.",
     "subtitle": "Ordens, células e apontamentos conectados à rotina industrial.",
-    "description": "Aplicação de execução da produção com ordens por célula, andamento dos lotes e apontamentos para a equipe industrial.",
+    "description": "Desenvolvimento de aplicações para execução da produção, com ordens, células, lotes e apontamentos organizados para acompanhar a rotina industrial.",
     "features": [
       "Ordens e lotes por célula de produção",
       "Planejamento e apontamentos por etapa",
       "Ocorrências e responsabilidades visíveis"
     ],
-    "service": "software-sob-medida"
+    "service": "software-sob-medida",
+    "imageAlt": "Linha de produção com etapas de preparação, usinagem, montagem e inspeção, além das ordens por lote."
   },
   {
     "slug": "supervisao-instalacoes",
@@ -439,13 +466,14 @@
     "accent": "teal",
     "screen": "Entenda o processo em uma única vista.",
     "subtitle": "Equipamentos, leituras e ocorrências em um painel de supervisão.",
-    "description": "Supervisório de instalações com diagrama de processo, leituras demonstrativas e acompanhamento de ocorrências por equipamento.",
+    "description": "Desenvolvimento de interfaces de supervisão de instalações, com diagramas de processo, leituras contextualizadas e acompanhamento de ocorrências.",
     "features": [
       "Diagrama operacional com identificação de ativos",
       "Leituras e tendências contextualizadas",
       "Ocorrências encaminhadas à equipe responsável"
     ],
-    "service": "software-sob-medida"
+    "service": "software-sob-medida",
+    "imageAlt": "Supervisório com reservatório, bomba, filtro, leituras de processo e gráfico de tendência da pressão."
   },
   {
     "slug": "armazem-separacao",
@@ -455,13 +483,14 @@
     "accent": "amber",
     "screen": "Do endereço certo à próxima expedição.",
     "subtitle": "Posições, ondas de separação e pedidos no mesmo ambiente.",
-    "description": "Sistema de gestão de armazém com endereçamento visual, ondas de separação e acompanhamento de pedidos para expedição.",
+    "description": "Desenvolvimento de sistemas de gestão de armazém, com endereçamento, ondas de separação e conferência dos pedidos antes da expedição.",
     "features": [
       "Endereços e ocupação por corredor",
       "Ondas de separação e sequência de coleta",
       "Pedidos e conferências antes da expedição"
     ],
-    "service": "software-sob-medida"
+    "service": "software-sob-medida",
+    "imageAlt": "Mapa de endereços do armazém com sequência de coleta, itens da onda e andamento da separação."
   },
   {
     "slug": "planejamento-agricola",
@@ -471,13 +500,14 @@
     "accent": "teal",
     "screen": "Cada área, no tempo da operação.",
     "subtitle": "Áreas de manejo, calendário e atividades para a equipe de campo.",
-    "description": "Plataforma agrícola com áreas de manejo esquemáticas, planejamento de atividades e acompanhamento do calendário operacional.",
+    "description": "Desenvolvimento de aplicações para operações agrícolas, com áreas de manejo, calendário e atividades organizadas para a equipe de campo.",
     "features": [
       "Áreas e atividades de manejo em uma visão",
       "Calendário de execução por equipe",
       "Observações de campo e planejamento conjunto"
     ],
-    "service": "software-sob-medida"
+    "service": "software-sob-medida",
+    "imageAlt": "Áreas de manejo com calendário de atividades e informações da visita programada para a equipe."
   },
   {
     "slug": "inspecao-visual-ia",
@@ -487,13 +517,14 @@
     "accent": "violet",
     "screen": "Veja o detalhe que merece revisão.",
     "subtitle": "Imagens, regiões de interesse e decisão humana no processo de qualidade.",
-    "description": "Aplicação de inspeção visual com IA que destaca regiões de interesse em uma peça e organiza a revisão humana da análise.",
+    "description": "Desenvolvimento de aplicações de inspeção visual com IA, com regiões de interesse, fila de avaliação e registro das decisões da equipe de qualidade.",
     "features": [
       "Regiões de interesse vinculadas à imagem",
       "Fila de inspeções para revisão humana",
       "Registro de decisões e contexto da avaliação"
     ],
-    "service": "inteligencia-artificial"
+    "service": "inteligencia-artificial",
+    "imageAlt": "Peça com regiões de interesse destacadas, fila de inspeções e painel de avaliação humana."
   },
   {
     "slug": "orcamento-quantitativos-obras",
@@ -503,13 +534,14 @@
     "accent": "blue",
     "screen": "Do desenho ao planejamento da obra.",
     "subtitle": "Elementos, quantidades e composições organizados por ambiente.",
-    "description": "Ferramenta de orçamento de obras com desenho de referência, seleção de elementos e composição de quantitativos por ambiente.",
+    "description": "Desenvolvimento de ferramentas de orçamento e quantitativos de obras, relacionando elementos do projeto, quantidades e composições de custo.",
     "features": [
       "Elementos e quantidades vinculados ao desenho",
       "Composições de custo por etapa",
       "Revisão das premissas com a equipe do projeto"
     ],
-    "service": "software-sob-medida"
+    "service": "software-sob-medida",
+    "imageAlt": "Planta de ambientes com parede selecionada, quantitativos e tabela de composições do orçamento."
   },
   {
     "slug": "gestao-energia",
@@ -519,13 +551,14 @@
     "accent": "teal",
     "screen": "Energia com contexto para decidir.",
     "subtitle": "Fontes, consumo e prioridades de acompanhamento da instalação.",
-    "description": "Aplicação de gestão de energia com fluxo entre fontes e cargas, perfil de consumo e acompanhamento por área da instalação.",
+    "description": "Desenvolvimento de aplicações de gestão de energia, com visualização de fontes e cargas, perfis de consumo e acompanhamento por área da instalação.",
     "features": [
       "Fluxo de fontes e cargas da instalação",
       "Perfis de consumo por período",
       "Leituras e prioridades para acompanhamento"
     ],
-    "service": "software-sob-medida"
+    "service": "software-sob-medida",
+    "imageAlt": "Fluxo de energia entre rede, geração, armazenamento e cargas, acompanhado do perfil de consumo."
   },
   {
     "slug": "portal-comercial-b2b",
@@ -535,13 +568,14 @@
     "accent": "violet",
     "screen": "Comprar também pode ser simples.",
     "subtitle": "Catálogo, condições e pedidos em uma experiência para empresas.",
-    "description": "Portal B2B com catálogo de materiais, seleção de itens e montagem de pedidos para avaliação comercial.",
+    "description": "Desenvolvimento de portais comerciais B2B, com catálogo, montagem de pedidos e condições organizadas para a experiência de compra entre empresas.",
     "features": [
       "Catálogo organizado por categoria e disponibilidade",
       "Montagem de pedidos com quantidades",
       "Condições comerciais e revisão antes de enviar"
     ],
-    "service": "software-sob-medida"
+    "service": "software-sob-medida",
+    "imageAlt": "Catálogo B2B com materiais, preços unitários e resumo do pedido para revisão comercial."
   },
   {
     "slug": "agenda-equipes-campo",
@@ -551,13 +585,14 @@
     "accent": "blue",
     "screen": "O serviço certo, com a equipe certa.",
     "subtitle": "Disponibilidade, visitas e ordens de serviço em uma agenda compartilhada.",
-    "description": "Aplicação para equipes de campo com agenda de técnicos, ordens de serviço e contexto necessário para preparar cada visita.",
+    "description": "Desenvolvimento de aplicações para serviços em campo, com agenda de equipes, ordens e informações de preparação para cada atendimento.",
     "features": [
       "Agenda por equipe e janela de atendimento",
       "Ordens com contexto e prioridades",
       "Disponibilidade e próximos atendimentos visíveis"
     ],
-    "service": "software-sob-medida"
+    "service": "software-sob-medida",
+    "imageAlt": "Agenda semanal por equipe com visitas, horários e detalhes da próxima ordem de serviço."
   },
   {
     "slug": "central-integracoes-dados",
@@ -567,12 +602,13 @@
     "accent": "blue",
     "screen": "Dados que encontram o caminho certo.",
     "subtitle": "Fontes, mapeamentos e validações para conectar a operação.",
-    "description": "Central de integração de dados com mapeamento de campos, prévia de registros e validações entre sistemas da operação.",
+    "description": "Desenvolvimento de integrações de dados entre sistemas, com mapeamento de campos, transformações, prévia dos registros e validações antes da execução.",
     "features": [
       "Mapeamento entre campos de origem e destino",
       "Prévia dos registros e regras de transformação",
       "Validações e histórico de sincronização"
     ],
-    "service": "automacao-e-integracoes"
+    "service": "automacao-e-integracoes",
+    "imageAlt": "Mapeamento de campos entre sistemas, com regras de transformação, prévia dos registros e validações."
   }
 ]

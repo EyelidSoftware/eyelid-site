@@ -28,6 +28,7 @@ const schema = [
   title={screen.title}
   description={screen.description}
   image={screenImage(screen.slug + "-social")}
+  imageAlt={screen.imageAlt}
   schema={schema}
 >
   <section class="container screen-intro screen-detail-intro">
@@ -50,7 +51,7 @@ const schema = [
     >
       <img
         src={screenImage(screen.slug)}
-        alt={`${site.publicName}: ${screen.title}. ${screen.description}`}
+        alt={`${site.publicName}: ${screen.imageAlt}`}
         width="1600"
         height="1100"
         fetchpriority="high"
@@ -110,7 +111,7 @@ const schema = [
             <div class="screen-card-image">
               <img
                 src={screenImage(s.slug, "webp")}
-                alt={s.title}
+                alt={s.imageAlt}
                 width="800"
                 height="550"
                 loading="lazy"

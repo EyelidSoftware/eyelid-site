@@ -1,3 +1,10 @@
+---
+import { screens, screenImage } from "../lib/screens";
+const staticPanels = ["modelagem-inspecao-3d", "inspecao-visual-ia"].map(
+  (slug) => screens.find((screen) => screen.slug === slug)!,
+);
+---
+
 <div class="curved-showcase" data-curved-showcase>
   <div class="curved-stage">
     <div class="curved-track" aria-hidden="true"></div>
@@ -5,7 +12,7 @@
       class="curve-input"
       tabindex="0"
       role="region"
-      aria-label="Explorar telas das soluções"
+      aria-label="Explorar aplicações e capacidades de desenvolvimento"
       aria-describedby="curve-instructions"
     >
       <div class="curve-space"></div>
@@ -16,18 +23,14 @@
   </p>
   <noscript>
     <div class="static-panels">
-      <img
-        src="/solucoes/eyelid-modelagem-inspecao-3d.webp"
-        alt="Visualizador de conjunto mecânico em vista explodida"
-        width="800"
-        height="550"
-      />
-      <img
-        src="/solucoes/eyelid-inspecao-visual-ia.webp"
-        alt="Inspeção visual com regiões de interesse para revisão humana"
-        width="800"
-        height="550"
-      />
+      {staticPanels.map((screen) => (
+        <img
+          src={screenImage(screen.slug, "webp")}
+          alt={screen.imageAlt}
+          width="800"
+          height="550"
+        />
+      ))}
     </div>
   </noscript>
 </div>

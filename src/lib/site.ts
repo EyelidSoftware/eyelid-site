@@ -13,13 +13,13 @@ export const site = {
   alternateNames: ["eyelid", "EyelidSoftware"],
   foundingDate: "2024-02-05",
   foundingDateLabel: "5 de fevereiro de 2024",
-  homeTitle: "Software sob medida, automação e IA",
+  homeTitle: "Experiência em software, automação e IA",
   presentation:
-    "A Eyelid Software desenvolve soluções de tecnologia sob medida para empresas. Acompanhamos seus processos, identificamos oportunidades e construímos aplicações, automações, integrações e soluções com IA. Você participa das decisões, testa as entregas e acompanha a evolução semanalmente.",
+    "A Eyelid Software reúne experiência em desenvolvimento de software, automação, integrações e IA para empresas. Atuamos da arquitetura à implantação e evolução em produção, com atenção à qualidade e à experiência de uso. Sua equipe participa das decisões, testa as entregas e acompanha o desenvolvimento semanalmente.",
   legalName: "eyelid",
   tagline: "Software para o seu jeito de trabalhar.",
   description:
-    "A Eyelid Software desenvolve software sob medida, automações e soluções com IA. Conhecemos seus processos e construímos com participação da sua equipe.",
+    "Experiência em software sob medida, automação e IA para empresas. A Eyelid Software atua da arquitetura à produção, com qualidade e desenvolvimento próximo do cliente.",
   url: "https://eyelid.com.br",
   locale: "pt-BR",
   email: "contato@eyelid.com.br",

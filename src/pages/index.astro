@@ -10,7 +10,7 @@ const offerings = [
     num: "01",
     title: "Software sob medida",
     description:
-      "Aplicações, portais e ferramentas pensados para as regras e as pessoas da sua operação.",
+      "Arquitetura, interfaces e aplicações construídas para as regras da sua operação e a experiência de quem usa.",
     slug: "software-sob-medida",
     type: "software" as const,
   },
@@ -18,7 +18,7 @@ const offerings = [
     num: "02",
     title: "IA aplicada ao negócio",
     description:
-      "Assistentes e fluxos conectados aos seus dados, com contexto, permissões e validação.",
+      "Assistentes e agentes conectados a dados e documentos, com permissões, rastreabilidade e validação.",
     slug: "inteligencia-artificial",
     type: "ai" as const,
   },
@@ -26,7 +26,7 @@ const offerings = [
     num: "03",
     title: "Automação e integrações",
     description:
-      "Conectamos sistemas, automatizamos rotinas e monitoramos as execuções.",
+      "Fluxos e integrações entre sistemas, com regras de negócio, monitoramento e tratamento de falhas.",
     slug: "automacao-e-integracoes",
     type: "automation" as const,
   },
@@ -34,15 +34,15 @@ const offerings = [
 const steps = [
   [
     "Entender",
-    "Conhecemos sua operação e definimos juntos o primeiro problema a resolver.",
+    "Traduzimos o contexto da operação em prioridades, requisitos e decisões de arquitetura.",
   ],
   [
     "Construir",
-    "Você acompanha atualizações semanais, testa as entregas e participa das decisões.",
+    "Você testa protótipos, pilotos e entregas, com atualizações semanais e participação nas decisões.",
   ],
   [
     "Evoluir",
-    "Colocamos a solução em uso e ajustamos a partir da experiência da sua equipe.",
+    "Implantamos, acompanhamos o uso em produção e evoluímos a solução com a experiência da sua equipe.",
   ],
 ];
 const readingOrder = [
@@ -89,21 +89,21 @@ const featured = readingOrder.map((item) => ({
     <TunnelScene />
     <div class="container hero-copy">
       <h1 id="hero-title">
-        Sua próxima ideia.
+        Experiência em software.
         <br />
-        <span>Em funcionamento.</span>
+        <span>Da arquitetura à produção.</span>
       </h1>
       <p class="hero-description">
-        Software sob medida, automação e inteligência artificial.
-        <br class="desktop-break" /> Da descoberta à entrega, com você por
-        perto.
+        Software sob medida, automação e IA para os processos da sua empresa.
+        <br class="desktop-break" /> Engenharia, experiência de uso e validação
+        com sua equipe, toda semana.
       </p>
       <div class="actions hero-actions">
         <a class="btn hero-primary" href="/contato">
-          Vamos conversar <span aria-hidden="true">↗</span>
+          Converse com a equipe <span aria-hidden="true">↗</span>
         </a>
-        <a class="hero-secondary" href="#solucoes">
-          Conheça as soluções <span aria-hidden="true">↓</span>
+        <a class="hero-secondary" href="/solucoes">
+          Conheça nossa experiência <span aria-hidden="true">↗</span>
         </a>
       </div>
     </div>
@@ -116,11 +116,11 @@ const featured = readingOrder.map((item) => ({
   >
     <div class="container solutions-heading">
       <div>
-        <p class="eyebrow">O que fazemos</p>
+        <p class="eyebrow">Nossas competências</p>
         <h2 id="solutions-title">
-          Soluções para
+          Tecnologia para
           <br />
-          sua operação.
+          processos reais.
         </h2>
       </div>
       <p class="solutions-intro">{site.presentation}</p>
@@ -149,14 +149,14 @@ const featured = readingOrder.map((item) => ({
         <div>
           <p class="eyebrow">Como trabalhamos</p>
           <h2>
-            Você acompanha
+            Experiência técnica.
             <br />
-            cada etapa.
+            Desenvolvimento próximo.
           </h2>
         </div>
         <p>
-          Comece com um diagnóstico independente ou traga uma ideia para
-          desenvolvermos juntos.
+          Entendemos o processo com sua equipe, validamos as decisões na prática
+          e acompanhamos as entregas semanalmente.
         </p>
       </div>
       <ol class="method-timeline">
@@ -214,8 +214,9 @@ const featured = readingOrder.map((item) => ({
       </h2>
       <div class="closing-bottom">
         <p>
-          Conte a ideia, o processo ou o desafio.
-          <br />A gente começa entendendo.
+          Conte o desafio da sua operação.
+          <br />
+          Nossa equipe começa entendendo o contexto.
         </p>
         <a class="btn hero-primary" href="/contato">
           Converse com a {site.company} <span aria-hidden="true">↗</span>
@@ -264,6 +265,19 @@ const featured = readingOrder.map((item) => ({
     text-align: center;
     padding-block: var(--space-24);
     pointer-events: none;
+  }
+  .technology-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: radial-gradient(
+      ellipse at 50% 48%,
+      color-mix(in srgb, var(--tech-bg) 85%, transparent) 0%,
+      color-mix(in srgb, var(--tech-bg) 65%, transparent) 40%,
+      transparent 78%
+    );
   }
   .hero-copy a {
     pointer-events: auto;

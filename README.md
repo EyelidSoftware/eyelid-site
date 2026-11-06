@@ -32,7 +32,7 @@ O build gera `dist/`, sem backend ou banco de dados. A home tem um módulo JavaS
 - `public/og/default.png`: imagem de compartilhamento.
 - `public/visuals`: telas vetoriais próprias em temas claro e escuro, geradas com `python3 scripts/generate-visuals.py`.
 - `src/components/CurvedPanels.astro`: faixa de painéis com scroll horizontal nativo, arraste e teclado.
-- `src/lib/screens.json`: catálogo de 36 conceitos de aplicações, com descrições e recursos por solução.
+- `src/lib/screens.json`: catálogo de 36 interfaces, com descrições das capacidades de desenvolvimento (`description`), textos alternativos precisos sobre a composição visual (`imageAlt`) e recursos por solução. Esses textos alimentam galeria, páginas de detalhe, SVGs e metadados de compartilhamento.
 - `scripts/engineering-screens.mjs`: desenhos originais de plantas, modelos espaciais, instalações, território e ativos. Sem marcas, formatos proprietários ou afirmações de integração com software de terceiros.
 - `scripts/strategic-screens.mjs`: dez aplicações especializadas para produção, instalações, armazém, agricultura, qualidade, obras, energia, comércio B2B, serviços em campo e integração de dados.
 - `/solucoes`: galeria com categorias e páginas individuais. Os conceitos usam exclusivamente dados fictícios.

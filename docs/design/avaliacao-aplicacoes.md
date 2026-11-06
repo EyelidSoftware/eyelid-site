@@ -92,3 +92,11 @@ As dez páginas foram abertas a 390×844, com imagem 1600×1100 e três recursos
 Em 6 de novembro de 2026, a pedido do fundador, a página passou a apresentar o repertório técnico, a experiência e as capacidades da empresa. Menu, home, rodapé, breadcrumbs, metadados, introdução e páginas de detalhe foram alinhados com essa direção. Título principal: Nossa experiência, aplicada ao seu negócio.
 
 As interfaces são exemplos visuais das capacidades da equipe. A redação trata de competências e forma de trabalho, sem atribuir as 36 interfaces a um número de contratos, clientes ou resultados. Foram retiradas da apresentação as chamadas centradas em projetos futuros e a distinção editorial entre tipos de interface. Imagens e rotas foram preservadas.
+
+## Página inicial e descrições das imagens
+
+Em 6 de novembro de 2026, a abertura da home foi alinhada à apresentação de experiência e competências: Experiência em software. Da arquitetura à produção. O texto apresenta software sob medida, automação e IA, com engenharia, experiência de uso e validação semanal com a equipe do cliente. As seções de competências e método reforçam arquitetura, implantação, acompanhamento e evolução em produção.
+
+As 36 descrições foram revisadas para apresentar capacidades de desenvolvimento. Cada interface ganhou um texto alternativo específico, que descreve os elementos visíveis. Textos alternativos de compartilhamento foram adicionados aos metadados Open Graph e Twitter, e as descrições estruturadas e dos SVGs foram alinhadas. Imagens decorativas da animação continuam fora da leitura assistiva; as páginas de aplicação mantêm a descrição completa.
+
+Validação: check e build sem erros ou avisos; 59 páginas e 36 imagens verificadas. Conferência adicional dos 36 textos alternativos, descrições, metadados sociais, ImageObjects e descrições SVG no HTML gerado. Home revisada em desktop e a 390×844 sem excesso de largura. Contraste da área central da animação reforçado para preservar a leitura do título e do conteúdo.

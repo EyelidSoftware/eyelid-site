@@ -60,7 +60,7 @@ class UI {
             warn: "#efc47f",
           };
     this.add(
-      `<title>${esc(site.publicName + " | " + meta.title)}</title><desc>${esc(meta.description)} Dados fictícios para explorar possibilidades de interface.</desc><defs><linearGradient id="wash" x2="1" y2="1"><stop stop-color="${this.p.accent}" stop-opacity=".18"/><stop offset="1" stop-color="${this.p.accent}" stop-opacity="0"/></linearGradient><pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="${this.p.line}"/></pattern></defs>`,
+      `<title>${esc(site.publicName + " | " + meta.title)}</title><desc>${esc(meta.description + " " + meta.imageAlt)}</desc><defs><linearGradient id="wash" x2="1" y2="1"><stop stop-color="${this.p.accent}" stop-opacity=".18"/><stop offset="1" stop-color="${this.p.accent}" stop-opacity="0"/></linearGradient><pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="${this.p.line}"/></pattern></defs>`,
     );
   }
   c(v) {
