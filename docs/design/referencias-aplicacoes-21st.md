@@ -98,3 +98,22 @@ A responsive and theme-adaptive card component designed to showcase AI workflows
 
 - Members Table (uvain), id 28871: Everyone in the workspace, with bulk actions that state their refusals before they run: the owner it will not demote, the row that is you, the people already on that role. Search and filters narrow what select-all means. Part of Workspace Access: layro.vercel.app
   Preview: https://cdn.21st.dev/user_3AAcYdXInfTxs5akkUBbQIUQdhX/members-table/default/preview.1790087016687.webp
+
+## Engenharia e visualização espacial
+
+- 3D ASCII Model Viewer (daniel__designs): Here is 3D ASCII Model Viewer component
+  Preview: https://cdn.21st.dev/daniel__designs/3d-ascii-model-viewer/default/preview.1785468964696-30f97f28-5ca1-44d5-a76a-de92f1acd8d9.png
+- 3D Globe (manuarora700): An interactive, textured 3D Earth globe with rotating camera controls and clickable location markers for showcasing global presence or users on a map.
+  Preview: https://cdn.21st.dev/user_aceternity/3d-globe/default/preview.1788971148529.webp
+- Expanded Map (dev.shejanmahamud): An interactive location card with a subtle 3D tilt that expands on click to reveal real map tiles, coordinates, and a location marker.
+  Preview: https://cdn.21st.dev/user_32IAZZ0jCu5Ox98TEx5aAsxVNyq/expanded-map/expanded-map-zoom/preview.1787663380313.png
+- Wireframe Dotted Globe (moazamtrade): interactive 3D globe that allows you to rotate and zoom in on Earth with intuitive mouse controls
+  Preview: https://cdn.21st.dev/moazamtrade/wireframe-dotted-globe/default/preview.1757537780531.png
+- Volumetric Studio (alexperezcedeno): A stunning 3D WebGL studio environment with physically accurate spotlights. Part of The UI Factory.
+  Preview: https://cdn.21st.dev/alexperezcedeno/volumetric-studio/default/preview.1782494920649.png
+- ThreeD Wall Calendar (ruixen.ui): The 3D Wall Calendar component transforms a traditional month view into an immersive, interactive 3D wall of days. Each day is represented as a panel, arranged in a grid-like wall, where users can tilt, scroll, or drag to change the perspective. Events appear as floating markers on these panels and can be clicked to reveal details inside neatly styled popovers. Navigation controls allow switching between months, while an inline form lets users add events directly to specific dates. This design not only makes browsing a month visually engaging but also provides a futuristic feel to event management, blending functionality with a dynamic 3D user experience.
+  Preview: https://cdn.21st.dev/ruixen.ui/three-dwall-calendar/default/preview.1758743766694.png
+- Expand Map (jatin-yadav05): Click on this component to get a clean map street view with some details.
+  Preview: https://cdn.21st.dev/jatin-yadav05/expand-map/default/preview.1765303872044.png
+- Voxel Topography Grid (daiwiikharihar): An interactive, high-performance 3D canvas topography grid featuring dynamic wave math, smooth cursor physics, elevation shading, and zero-allocation frame optimization.
+  Preview: https://cdn.21st.dev/daiwiikharihar/voxel-topography-grid/default/preview.1785555281449-771301fa-dda0-42f1-a314-bc6636d53134.webp

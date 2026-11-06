@@ -5,6 +5,12 @@ import { site, absoluteUrl } from "../../lib/site";
 import "../../styles/solutions.css";
 const categories = [
   {
+    name: "Engenharia e operação",
+    id: "engenharia-e-operacao",
+    description:
+      "Conceitos de aplicações para desenho técnico, modelos espaciais e operações de engenharia.",
+  },
+  {
     name: "Software",
     id: "software",
     description:
@@ -28,7 +34,10 @@ const categories = [
       "Informação organizada para acompanhar a operação e decidir o próximo passo.",
   },
 ];
-const description = `Explore 20 interfaces da ${site.publicName}: software sob medida, ERP, CRM, automações, IA e dashboards em temas claros e escuros.`;
+const orderedScreens = categories.flatMap((c) =>
+  screens.filter((s) => s.category === c.name),
+);
+const description = `Explore ${screens.length} interfaces da ${site.publicName}: engenharia, software sob medida, ERP, CRM, automações, IA e dashboards em temas claros e escuros.`;
 const schema = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
@@ -38,7 +47,7 @@ const schema = {
   mainEntity: {
     "@type": "ItemList",
     numberOfItems: screens.length,
-    itemListElement: screens.map((s, i) => ({
+    itemListElement: orderedScreens.map((s, i) => ({
       "@type": "ListItem",
       position: i + 1,
       name: s.title,
@@ -64,7 +73,7 @@ const schema = {
       automações e painéis que podemos construir com a sua equipe.
     </p>
     <p class="screen-context">
-      20 conceitos de interface com dados fictícios, criados pela{" "}
+      {screens.length} conceitos de interface com dados fictícios, criados pela{" "}
       {site.publicName}. Cada projeto é desenvolvido conforme a realidade do
       negócio.
     </p>
@@ -100,7 +109,9 @@ const schema = {
                     width="800"
                     height="550"
                     loading={
-                      category.id === "software" && index < 2 ? "eager" : "lazy"
+                      category.id === "engenharia-e-operacao" && index < 2
+                        ? "eager"
+                        : "lazy"
                     }
                     decoding="async"
                   />

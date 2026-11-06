@@ -2,6 +2,7 @@
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import sharp from "sharp";
 import { site } from "../src/lib/site.ts";
+import { engineeringRenderers } from "./engineering-screens.mjs";
 
 const screens = JSON.parse(await readFile("src/lib/screens.json", "utf8"));
 const logo = (await readFile("public/brand/logo.svg", "utf8"))
@@ -1672,6 +1673,7 @@ const renderers = [
   monitoring,
   documents,
   portal,
+  ...engineeringRenderers,
 ];
 const thumbnails = [];
 for (let i = 0; i < screens.length; i++) {
@@ -1701,7 +1703,7 @@ for (let i = 0; i < screens.length; i++) {
   console.log(`${String(i + 1).padStart(2, "0")} ${m.title} · ${m.theme}`);
 }
 await mkdir("/tmp/eyelid-evidence", { recursive: true });
-for (let g = 0; g < 5; g++)
+for (let g = 0; g < Math.ceil(screens.length / 4); g++)
   await sharp({
     create: { width: 1600, height: 1100, channels: 3, background: "#10151e" },
   })

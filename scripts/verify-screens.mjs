@@ -4,16 +4,20 @@ import { createHash } from "node:crypto";
 import sharp from "sharp";
 
 const screens = JSON.parse(await readFile("src/lib/screens.json", "utf8"));
-assert.equal(screens.length, 20, "20 soluções distintas");
-assert.equal(new Set(screens.map((s) => s.slug)).size, 20, "slugs únicos");
-assert.equal(screens.filter((s) => s.theme === "light").length, 10);
-assert.equal(screens.filter((s) => s.theme === "dark").length, 10);
+assert(screens.length >= 26, "coleção com pelo menos 26 soluções");
+assert.equal(
+  new Set(screens.map((s) => s.slug)).size,
+  screens.length,
+  "slugs únicos",
+);
+assert.equal(screens.filter((s) => s.theme === "light").length, 13);
+assert.equal(screens.filter((s) => s.theme === "dark").length, 13);
 const gallery = await readFile("dist/solucoes.html", "utf8");
 const sitemap = await readFile("dist/sitemap-imagens.xml", "utf8");
 const index = await readFile("dist/sitemap-index.xml", "utf8");
 const pages = await readFile("dist/sitemap-0.xml", "utf8");
 assert(index.includes("/sitemap-imagens.xml"), "sitemap de imagens no índice");
-assert.equal((sitemap.match(/<image:loc>/g) || []).length, 20);
+assert.equal((sitemap.match(/<image:loc>/g) || []).length, screens.length);
 const approvedLogo = await readFile("public/brand/logo.svg", "utf8");
 const logoPaths = [...approvedLogo.matchAll(/\sd="([^"]+)"/g)].map((m) => m[1]);
 assert(logoPaths.length > 0);
@@ -106,14 +110,14 @@ for (const s of screens) {
     imageSitemap: true,
   });
 }
-assert.equal(hashes.size, 20, "20 imagens visualmente distintas");
+assert.equal(hashes.size, screens.length, "imagens visualmente distintas");
 console.log(
   JSON.stringify(
     {
       screens: results.length,
       uniqueRasters: hashes.size,
-      light: 10,
-      dark: 10,
+      light: screens.filter((s) => s.theme === "light").length,
+      dark: screens.filter((s) => s.theme === "dark").length,
       results,
     },
     null,

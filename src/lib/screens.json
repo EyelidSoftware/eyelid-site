@@ -318,5 +318,101 @@
       "Histórico de decisões e solicitações"
     ],
     "service": "software-sob-medida"
+  },
+  {
+    "slug": "desenho-tecnico-2d",
+    "title": "Desenho técnico e plantas",
+    "category": "Engenharia e operação",
+    "theme": "dark",
+    "accent": "blue",
+    "screen": "Precisão em cada traço.",
+    "subtitle": "Plantas, camadas e cotas em um ambiente de desenho técnico.",
+    "description": "Conceito de aplicação para desenho técnico 2D, com planta de ambientes, cotas, camadas e propriedades dos elementos.",
+    "features": [
+      "Organização por camadas de desenho",
+      "Cotas e propriedades de elementos selecionados",
+      "Revisões e observações por projeto"
+    ],
+    "service": "software-sob-medida"
+  },
+  {
+    "slug": "modelagem-inspecao-3d",
+    "title": "Modelagem e inspeção 3D",
+    "category": "Engenharia e operação",
+    "theme": "light",
+    "accent": "violet",
+    "screen": "Explore cada parte do conjunto.",
+    "subtitle": "Uma visão espacial para peças, componentes e documentação.",
+    "description": "Conceito de visualizador técnico 3D com conjunto mecânico em vista explodida, árvore de componentes e propriedades da peça selecionada.",
+    "features": [
+      "Árvore de componentes e seleção de peças",
+      "Vista explodida para leitura do conjunto",
+      "Propriedades e revisões da documentação técnica"
+    ],
+    "service": "software-sob-medida"
+  },
+  {
+    "slug": "revisao-projetos-engenharia",
+    "title": "Revisão de projetos de engenharia",
+    "category": "Engenharia e operação",
+    "theme": "dark",
+    "accent": "teal",
+    "screen": "Contexto para revisar o projeto.",
+    "subtitle": "Pavimentos, disciplinas e apontamentos em uma visão compartilhada.",
+    "description": "Conceito de ambiente para revisão de projetos de engenharia, com modelo espacial de edificação, disciplinas e apontamentos de compatibilização.",
+    "features": [
+      "Navegação por pavimento e disciplina",
+      "Apontamentos vinculados a elementos do projeto",
+      "Responsáveis e decisões de revisão"
+    ],
+    "service": "software-sob-medida"
+  },
+  {
+    "slug": "diagramas-instalacoes-industriais",
+    "title": "Diagramas e instalações industriais",
+    "category": "Engenharia e operação",
+    "theme": "light",
+    "accent": "blue",
+    "screen": "Cada conexão, bem documentada.",
+    "subtitle": "Equipamentos, instrumentos e linhas em um diagrama de processo.",
+    "description": "Conceito de editor de diagramas industriais com equipamentos, tubulações, instrumentos e propriedades técnicas organizadas por circuito.",
+    "features": [
+      "Identificação de equipamentos e instrumentos",
+      "Organização de linhas e circuitos",
+      "Revisão das propriedades e da documentação"
+    ],
+    "service": "software-sob-medida"
+  },
+  {
+    "slug": "mapas-analise-territorial",
+    "title": "Mapas e análise territorial",
+    "category": "Engenharia e operação",
+    "theme": "dark",
+    "accent": "amber",
+    "screen": "Uma nova perspectiva do território.",
+    "subtitle": "Áreas, camadas e observações para planejar a operação.",
+    "description": "Conceito de aplicação geoespacial com áreas esquemáticas, camadas temáticas e observações para apoiar a análise territorial.",
+    "features": [
+      "Áreas e camadas temáticas no mesmo mapa",
+      "Seleção de parcelas e consulta de atributos",
+      "Observações de campo vinculadas ao território"
+    ],
+    "service": "software-sob-medida"
+  },
+  {
+    "slug": "inspecao-ativos-manutencao",
+    "title": "Inspeção de ativos e manutenção",
+    "category": "Engenharia e operação",
+    "theme": "light",
+    "accent": "teal",
+    "screen": "Encontre o ativo. Entenda o contexto.",
+    "subtitle": "Instalações, equipamentos e ordens de serviço em uma visão espacial.",
+    "description": "Conceito de aplicação para manutenção com planta operacional, localização de equipamentos e histórico de inspeções por ativo.",
+    "features": [
+      "Localização de equipamentos na planta",
+      "Histórico de inspeções e ordens por ativo",
+      "Planejamento de ações e responsáveis"
+    ],
+    "service": "software-sob-medida"
   }
 ]

@@ -384,5 +384,115 @@
       "viewport": 390,
       "width": 375
     }
-  ]
+  ],
+  "engineering": {
+    "geometry": [
+      {
+        "outside": [],
+        "overlaps": [],
+        "slug": "desenho-tecnico-2d"
+      },
+      {
+        "outside": [],
+        "overlaps": [],
+        "slug": "modelagem-inspecao-3d"
+      },
+      {
+        "outside": [],
+        "overlaps": [],
+        "slug": "revisao-projetos-engenharia"
+      },
+      {
+        "outside": [],
+        "overlaps": [],
+        "slug": "diagramas-instalacoes-industriais"
+      },
+      {
+        "outside": [],
+        "overlaps": [],
+        "slug": "mapas-analise-territorial"
+      },
+      {
+        "outside": [],
+        "overlaps": [],
+        "slug": "inspecao-ativos-manutencao"
+      }
+    ],
+    "contrast": [
+      {
+        "slug": "desenho-tecnico-2d",
+        "minContrast": 5.66,
+        "contrastFailures": []
+      },
+      {
+        "slug": "modelagem-inspecao-3d",
+        "minContrast": 4.53,
+        "contrastFailures": []
+      },
+      {
+        "slug": "revisao-projetos-engenharia",
+        "minContrast": 5.66,
+        "contrastFailures": []
+      },
+      {
+        "slug": "diagramas-instalacoes-industriais",
+        "minContrast": 4.53,
+        "contrastFailures": []
+      },
+      {
+        "slug": "mapas-analise-territorial",
+        "minContrast": 5.66,
+        "contrastFailures": []
+      },
+      {
+        "slug": "inspecao-ativos-manutencao",
+        "minContrast": 4.53,
+        "contrastFailures": []
+      }
+    ],
+    "mobile": [
+      {
+        "features": 3,
+        "image": 1600,
+        "path": "/solucoes/desenho-tecnico-2d",
+        "viewport": 390,
+        "width": 375
+      },
+      {
+        "features": 3,
+        "image": 1600,
+        "path": "/solucoes/modelagem-inspecao-3d",
+        "viewport": 390,
+        "width": 375
+      },
+      {
+        "features": 3,
+        "image": 1600,
+        "path": "/solucoes/revisao-projetos-engenharia",
+        "viewport": 390,
+        "width": 375
+      },
+      {
+        "features": 3,
+        "image": 1600,
+        "path": "/solucoes/diagramas-instalacoes-industriais",
+        "viewport": 390,
+        "width": 375
+      },
+      {
+        "features": 3,
+        "image": 1600,
+        "path": "/solucoes/mapas-analise-territorial",
+        "viewport": 390,
+        "width": 375
+      },
+      {
+        "features": 3,
+        "image": 1600,
+        "path": "/solucoes/inspecao-ativos-manutencao",
+        "viewport": 390,
+        "width": 375
+      }
+    ]
+  }
 }

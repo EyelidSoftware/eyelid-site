@@ -55,3 +55,13 @@ A verificação executável confere logo, quantidade, unicidade dos rasters, dim
 O sitemap de imagens tem 20 entradas, uma por página de solução, com o PNG principal no mesmo domínio. Está incluído no sitemap-index.xml e no robots.txt. A documentação oficial do Google recomenda imagens em elementos img e contexto útil na página: https://developers.google.com/search/docs/appearance/google-images.
 
 Publicação e indexação são etapas diferentes. O rastreamento e a seleção dos resultados dependem do Google.
+
+## Ampliação para 26 interfaces: engenharia e operação
+
+Seis novas composições originais: desenho técnico 2D com planta e cotas, conjunto mecânico em vista explodida, revisão espacial de edificação, diagrama industrial, mapa territorial esquemático e planta operacional com manutenção de ativos. Três temas claros e três escuros.
+
+Revisão visual dos seis rasters, verificação da geometria dos textos e medição de contraste. Foi corrigida uma interseção entre o indicador de eixo Y e um status de revisão no modelo da edificação. Verificação final: nenhum texto fora do quadro ou sobreposto; contraste mínimo medido 4,53:1.
+
+As seis páginas foram abertas a 390×844: imagens 1600×1100 carregadas, três recursos por solução e sem rolagem horizontal excedente. O verificador confere as 26 páginas, os sitemaps, as 26 imagens distintas e todos os caminhos da logo aprovada.
+
+A galeria identifica esses materiais como conceitos, com dados fictícios. Não há marcas, interfaces copiadas ou declarações de integração, certificação ou compatibilidade com aplicativos de terceiros. Os projetos usam geometria desenhada diretamente no gerador.
