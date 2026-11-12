@@ -6,6 +6,16 @@ const walk = (dir) =>
     e.isDirectory() ? walk(join(dir, e.name)) : [join(dir, e.name)],
   );
 const files = walk("dist").filter((p) => p.endsWith(".html"));
+const sitemap = readFileSync("dist/sitemap-0.xml", "utf8");
+const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(
+  ([, url]) => new URL(url),
+);
+for (const url of sitemapUrls) {
+  const file = url.pathname === "/" ? "dist/index.html" : `dist${url.pathname}.html`;
+  const html = readFileSync(file, "utf8");
+  const canonical = html.match(/<link rel="canonical" href="([^"]+)"/)?.[1];
+  assert.equal(canonical, url.href, `${file}: canonical must match sitemap`);
+}
 for (const file of files) {
   const html = readFileSync(file, "utf8");
   assert.equal((html.match(/<h1[ >]/g) || []).length, 1, `${file}: h1`);
