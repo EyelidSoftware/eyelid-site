@@ -28,7 +28,7 @@ interface Props {
 const {
   title,
   description,
-  path = Astro.url.pathname,
+  path = Astro.url.pathname.replace(/\.html$/, ""),
   image = "/og/default.png",
   imageAlt = `Identidade visual da ${site.publicName}`,
   type = "website",
@@ -77,6 +77,7 @@ const website = {
 <title>{fullTitle}</title>
 <meta name="description" content={description} />
 <link rel="canonical" href={canonical} />
+{isHome && <meta name="msvalidate.01" content="3B29F75BAB1367F594C42E587019F392" />}
 
 <meta
   name="robots"
