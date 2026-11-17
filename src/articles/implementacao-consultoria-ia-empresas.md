@@ -10,7 +10,7 @@ O diagnóstico também ajuda a decidir onde manter revisão humana. Uma coisa é
 
 O ponto de partida são exemplos da rotina: perguntas frequentes, respostas que dão trabalho e casos em que a equipe precisa consultar mais de uma fonte. A partir deles, é possível mapear dados, permissões e exceções, além de comparar IA com integração, automação ou ajuste no processo.
 
-Ao final, peça uma recomendação que responda: qual tarefa vale testar primeiro, quem vai usar a solução, quais fontes serão consultadas e como a equipe vai avaliar o resultado? Na [consultoria tecnológica da eyelid](/servicos/consultoria-tecnologica), o diagnóstico pode ser contratado separadamente. Se a empresa decidir seguir, o nosso time também desenvolve e implementa a solução.
+Ao final, peça uma recomendação que responda: qual tarefa vale testar primeiro, quem vai usar a solução, quais fontes serão consultadas e como a equipe vai avaliar o resultado? Na [consultoria e implementação de IA da Eyelid Software](/servicos/inteligencia-artificial), o diagnóstico pode ser contratado separadamente. Se a empresa decidir seguir, o nosso time também desenvolve e implementa a solução.
 
 ## Da prova de conceito ao uso real
 
@@ -22,4 +22,4 @@ Ao final, peça uma recomendação que responda: qual tarefa vale testar primeir
 
 A sequência depende do projeto. Durante o desenvolvimento, o cliente acompanha a evolução com atualizações semanais e participa dos testes. Isso permite ajustar o que foi construído com base na rotina de quem vai usar a ferramenta.
 
-Se sua empresa já tem um caso em mente, [converse com a eyelid](/contato) e traga algumas perguntas ou tarefas reais que você gostaria de melhorar. Se a prioridade ainda não está clara, veja [como descobrir o que automatizar e monitorar](/blog/como-descobrir-o-que-automatizar-e-monitorar).
+Se sua empresa já tem um caso em mente, [converse com a eyelid](/contato) e traga algumas perguntas ou tarefas reais que você gostaria de melhorar. Se você ainda está explorando possibilidades, veja [sete exemplos de uso de IA na sua empresa](/blog/como-usar-ia-na-empresa).

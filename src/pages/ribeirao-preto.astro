@@ -1,0 +1,78 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { breadcrumbSchema, site } from "../lib/site";
+
+const title = "Desenvolvimento de software em Ribeirão Preto";
+const path = "/ribeirao-preto";
+const description =
+  "Software sob medida, automação de processos e implementação de IA para empresas em Ribeirão Preto e região, com visitas agendadas e acompanhamento semanal.";
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  path={path}
+  schema={breadcrumbSchema(
+    { name: "Início", path: "/" },
+    { name: "Ribeirão Preto", path },
+  )}
+>
+  <div class="container">
+    <header class="page-heading prose">
+      <h1>{title}</h1>
+      <p class="lead">
+        A {site.publicName} desenvolve sistemas sob medida, automatiza processos
+        e implementa IA para empresas em Ribeirão Preto e região. Combinamos
+        visitas conforme o projeto e sua equipe acompanha as entregas toda semana.
+      </p>
+      <a class="btn btn--primary" href="/contato">Conte seu desafio ↗</a>
+    </header>
+
+    <div class="prose reading">
+      <section>
+        <h2>O que podemos construir com sua equipe</h2>
+        <ul>
+          <li>
+            <a href="/servicos/software-sob-medida">Software sob medida</a> para
+            organizar pedidos, aprovações, portais de clientes e operações de campo.
+          </li>
+          <li>
+            <a href="/servicos/automacao-e-integracoes">Automação e integração de sistemas</a>
+            para ligar CRM, ERP e outras ferramentas, acompanhar atrasos e tratar falhas.
+          </li>
+          <li>
+            <a href="/servicos/inteligencia-artificial">Consultoria e implementação de IA</a>
+            para consultar documentos autorizados, classificar solicitações ou apoiar
+            conferências.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Como começa o trabalho</h2>
+        <p>
+          Em um diagnóstico, acompanhamos um processo com quem executa a tarefa.
+          Se uma distribuidora registra orçamentos no WhatsApp e depois repete os
+          dados no CRM, podemos observar onde a informação se perde, combinar os
+          campos obrigatórios e testar um fluxo com a equipe comercial.
+        </p>
+        <p>
+          O <a href="/servicos/consultoria-tecnologica">diagnóstico</a> pode ser
+          contratado separadamente. Quando seguimos para o desenvolvimento, sua
+          equipe acompanha o que foi feito, testa a primeira versão e ajuda a
+          priorizar os ajustes antes de ampliar o uso.
+        </p>
+      </section>
+
+      <section>
+        <h2>Como agendar uma visita</h2>
+        <p>
+          Informe a cidade, a rotina que precisa melhorar e os sistemas envolvidos.
+          Combinamos uma conversa inicial e, quando fizer sentido para entender a
+          operação, uma visita à sua empresa.
+        </p>
+        <a href="/contato">Fale com nossa equipe ↗</a>
+      </section>
+    </div>
+  </div>
+</BaseLayout>

@@ -2,7 +2,7 @@ const capabilities = [
   {
     slug: "automacao-e-integracoes",
     num: "02",
-    title: "Automação e integrações",
+    title: "Automação de processos e integração de sistemas",
     short: "Menos etapas manuais. Mais continuidade entre seus sistemas.",
     description:
       "Integramos APIs, dados e processos para reduzir tarefas repetitivas e dar visibilidade ao que acontece em cada execução.",
@@ -15,7 +15,7 @@ const capabilities = [
   {
     slug: "inteligencia-artificial",
     num: "03",
-    title: "Inteligência artificial",
+    title: "Consultoria e implementação de IA para empresas",
     short: "IA aplicada a problemas que merecem uma solução.",
     description:
       "Construímos assistentes e fluxos com IA conectados ao contexto do negócio, com permissões, limites e critérios de validação.",
@@ -90,7 +90,8 @@ export const servicePages = [
       ["Mapeamos entradas e exceções", "Identificamos a fonte de cada dado, a regra de processamento e quem decide em casos fora do padrão."],
       ["Validamos um piloto", "Testamos duplicidades, indisponibilidade e retomada do fluxo antes de ampliar o volume."],
     ],
-    guide: "automatizar-processos-com-seguranca",
+    guide: "como-descobrir-o-que-automatizar-e-monitorar",
+    additionalGuide: "como-automatizar-whatsapp-empresa",
   },
   {
     ...capabilities[1],
@@ -98,11 +99,24 @@ export const servicePages = [
       ["Delimitamos a tarefa e as fontes", "Definimos a finalidade do assistente, quais dados podem ser consultados e as permissões de cada usuário."],
       ["Avaliamos antes de ampliar o uso", "Testamos respostas com casos reais autorizados, incluindo perguntas sem resposta e pedidos fora do escopo."],
     ],
-    guide: "ia-empresarial-com-contexto-e-limites",
+    guide: "implementacao-consultoria-ia-empresas",
+    additionalGuide: "como-usar-ia-na-empresa",
   },
 ] as const;
 
 export const articles = [
+  {
+    slug: "como-usar-ia-na-empresa",
+    category: "Inteligência artificial",
+    title: "Como usar IA na sua empresa: 7 exemplos e por onde começar",
+    excerpt: "Veja aplicações de IA em compras, atendimento, financeiro e operações. Escolha uma tarefa para testar com a equipe e saiba o que medir.",
+  },
+  {
+    slug: "como-automatizar-whatsapp-empresa",
+    category: "Automação",
+    title: "Como automatizar o WhatsApp da empresa e integrar com o CRM",
+    excerpt: "Descubra o que automatizar no WhatsApp Business e veja um fluxo de orçamento que conecta atendimento, equipe comercial e CRM.",
+  },
   {
     slug: "implementacao-consultoria-ia-empresas",
     category: "Inteligência artificial",
@@ -112,13 +126,13 @@ export const articles = [
   {
     slug: "como-descobrir-o-que-automatizar-e-monitorar",
     category: "Automação",
-    title: "Como descobrir o que automatizar e monitorar na sua empresa",
+    title: "Como automatizar processos na sua empresa: o que fazer primeiro",
     excerpt: "Aprenda a identificar tarefas repetitivas, falhas silenciosas e atrasos, e a decidir por onde começar.",
   },
   {
     slug: "como-escolher-empresa-desenvolvimento-software",
     category: "Produto & engenharia",
-    title: "Como escolher uma empresa de desenvolvimento de software?",
+    title: "Como escolher uma software house para desenvolver seu sistema?",
     excerpt: "Compare fornecedores de software sob medida pelo diagnóstico, pela primeira entrega, pelos critérios de aceite e pela continuidade da operação.",
   },
   {
